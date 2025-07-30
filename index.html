@@ -35,7 +35,12 @@
             </li>
             <li class="nav-item" role="presentation">
                 <button class="nav-link" id="cube-recipes-tab" data-bs-toggle="tab" data-bs-target="#cube-recipes-panel"
-                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Cube Recipes</button>
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Cube
+                    Recipes</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="craftingTab" data-bs-toggle="tab" data-bs-target="#craft-recipes-panel"
+                    type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"> Crafting</button>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
@@ -52,8 +57,8 @@
                                 <label for="quickSearchFL">Quick Search</label>
                             </div>
                             <div class="col-auto form-floating">
-                                <input style="min-width: 100px;" type="number" min="1" max="6" x-model="filters.sockets" class="form-control"
-                                    id="searchSockets" placeholder="Sockets">
+                                <input style="min-width: 100px;" type="number" min="1" max="6" x-model="filters.sockets"
+                                    class="form-control" id="searchSockets" placeholder="Sockets">
                                 <label for="searchSockets">Sockets</label>
                             </div>
                             <div class="col-auto form-floating">
@@ -138,93 +143,94 @@
 
     </div>
 
-   
+
 </body>
- <script type="text/javascript">
-        function runewordsApp() {
-            return {
-                runewords: [],
-                filters: {
-                    sockets: '',
-                    name: '',
-                    rune: '',
-                    itemType: ''
-                },
-                quickSearch: '', // New quick search model
-                sortBy: '',  // Column to sort by
-                sortAsc: true, // Sort direction
+<script type="text/javascript">
+    function runewordsApp() {
+        return {
+            runewords: [],
+            filters: {
+                sockets: '',
+                name: '',
+                rune: '',
+                itemType: ''
+            },
+            quickSearch: '', // New quick search model
+            sortBy: '',  // Column to sort by
+            sortAsc: true, // Sort direction
 
-                // Compute filtered runewords based on the current filters and quicksearch
-                get filteredRunewords() {
-                    let filtered = this.runewords.filter(runeword => {
-                        // Apply filters based on the quick search and specific filters
-                        let matchesQuickSearch = this.quickSearch === '' || (
-                            runeword.Name.toLowerCase().includes(this.quickSearch.toLowerCase()) ||
-                            runeword.ItemType.toLowerCase().includes(this.quickSearch.toLowerCase()) ||
-                            runeword.Runes.some(rune => rune.toLowerCase().includes(this.quickSearch.toLowerCase())) ||
-                            runeword.Bonuses.some(bonus => bonus.toLowerCase().includes(this.quickSearch.toLowerCase()))
-                        );
+            // Compute filtered runewords based on the current filters and quicksearch
+            get filteredRunewords() {
+                let filtered = this.runewords.filter(runeword => {
+                    // Apply filters based on the quick search and specific filters
+                    let matchesQuickSearch = this.quickSearch === '' || (
+                        runeword.Name.toLowerCase().includes(this.quickSearch.toLowerCase()) ||
+                        runeword.ItemType.toLowerCase().includes(this.quickSearch.toLowerCase()) ||
+                        runeword.Runes.some(rune => rune.toLowerCase().includes(this.quickSearch.toLowerCase())) ||
+                        runeword.Bonuses.some(bonus => bonus.toLowerCase().includes(this.quickSearch.toLowerCase()))
+                    );
 
-                        return matchesQuickSearch &&
-                            (this.filters.sockets === '' || runeword.Sockets == this.filters.sockets) &&
-                            (this.filters.name === '' || runeword.Name.toLowerCase().includes(this.filters.name.toLowerCase())) &&
-                            (this.filters.rune === '' ||
-                                runeword.Runes.some(rune => rune.toLowerCase().includes(this.filters.rune.toLowerCase()))
-                            ) &&
-                            (this.filters.itemType === '' || runeword.ItemType.toLowerCase().includes(this.filters.itemType.toLowerCase()));
+                    return matchesQuickSearch &&
+                        (this.filters.sockets === '' || runeword.Sockets == this.filters.sockets) &&
+                        (this.filters.name === '' || runeword.Name.toLowerCase().includes(this.filters.name.toLowerCase())) &&
+                        (this.filters.rune === '' ||
+                            runeword.Runes.some(rune => rune.toLowerCase().includes(this.filters.rune.toLowerCase()))
+                        ) &&
+                        (this.filters.itemType === '' || runeword.ItemType.toLowerCase().includes(this.filters.itemType.toLowerCase()));
+                });
+
+                // Sort the filtered runewords
+                if (this.sortBy) {
+                    filtered.sort((a, b) => {
+                        let valA = a[this.sortBy];
+                        let valB = b[this.sortBy];
+
+                        // Handle sorting by numbers (sockets, character level)
+                        if (typeof valA === 'number' && typeof valB === 'number') {
+                            return this.sortAsc ? valA - valB : valB - valA;
+                        }
+
+                        // Default string sorting
+                        return this.sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
                     });
-
-                    // Sort the filtered runewords
-                    if (this.sortBy) {
-                        filtered.sort((a, b) => {
-                            let valA = a[this.sortBy];
-                            let valB = b[this.sortBy];
-
-                            // Handle sorting by numbers (sockets, character level)
-                            if (typeof valA === 'number' && typeof valB === 'number') {
-                                return this.sortAsc ? valA - valB : valB - valA;
-                            }
-
-                            // Default string sorting
-                            return this.sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
-                        });
-                    }
-
-                    return filtered;
-                },
-
-                // Fetch runewords from an external JSON file
-                async fetchRunewords() {
-                    try {
-                        const response = await fetch('RuneWords.json'); // External JSON file path
-                        const data = await response.json();
-                        this.runewords = data.Runewords.map(runeword => {
-                            // Ensure each runeword has a 'Runes' array, filling with empty strings if fewer than 6
-                            const runes = [
-                                runeword.Rune1,
-                                runeword.Rune2,
-                                runeword.Rune3,
-                                runeword.Rune4 || '',
-                                runeword.Rune5 || '',
-                                runeword.Rune6 || ''
-                            ].filter(rune => rune);  // Remove empty entries
-                            return { ...runeword, Runes: runes };
-                        });
-                    } catch (error) {
-                        console.error('Error loading the JSON file:', error);
-                    }
-                },
-
-                // Toggle sorting direction and set the column to sort by
-                sortTable(column) {
-                    if (this.sortBy === column) {
-                        this.sortAsc = !this.sortAsc; // Toggle sort direction
-                    } else {
-                        this.sortBy = column; // Set the column to sort by
-                        this.sortAsc = true;  // Default to ascending
-                    }
                 }
-            };
-        }
-    </script>
+
+                return filtered;
+            },
+
+            // Fetch runewords from an external JSON file
+            async fetchRunewords() {
+                try {
+                    const response = await fetch('RuneWords.json'); // External JSON file path
+                    const data = await response.json();
+                    this.runewords = data.Runewords.map(runeword => {
+                        // Ensure each runeword has a 'Runes' array, filling with empty strings if fewer than 6
+                        const runes = [
+                            runeword.Rune1,
+                            runeword.Rune2,
+                            runeword.Rune3,
+                            runeword.Rune4 || '',
+                            runeword.Rune5 || '',
+                            runeword.Rune6 || ''
+                        ].filter(rune => rune);  // Remove empty entries
+                        return { ...runeword, Runes: runes };
+                    });
+                } catch (error) {
+                    console.error('Error loading the JSON file:', error);
+                }
+            },
+
+            // Toggle sorting direction and set the column to sort by
+            sortTable(column) {
+                if (this.sortBy === column) {
+                    this.sortAsc = !this.sortAsc; // Toggle sort direction
+                } else {
+                    this.sortBy = column; // Set the column to sort by
+                    this.sortAsc = true;  // Default to ascending
+                }
+            }
+        };
+    }
+</script>
+
 </html>
