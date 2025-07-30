@@ -645,7 +645,7 @@
         "Level 13 Spirit of Barbs (33 Charges) "
       ]
     },
-     {
+    {
       "Name": "Dragon -CHEST-",
       "Sockets": 3,
       "CharacterLevel": 61,
@@ -657,19 +657,19 @@
       "Rune6": "",
       "ItemType": "Chest",
       "Bonuses": [
- "You May Summon 1 Additional Hydra",
-"12% Chance to Cast Level 40 Hydra on Striking",
-"20% Chance to Cast Level 18 Venom when Struck",
-"Level 12 Holy Fire Aura when Equipped",
-"+[4-5] to Hydra (Sorceress Only)",
-"+[400-550] Defense",
-"+[0-37] to Strength (+0.375 per Character Level)",
-"Increase Maximum Mana 5%",
-"+4% to Maximum Lightning Resist",
-"Physical Damage Taken Reduced by 7 "
+        "You May Summon 1 Additional Hydra",
+        "12% Chance to Cast Level 40 Hydra on Striking",
+        "20% Chance to Cast Level 18 Venom when Struck",
+        "Level 12 Holy Fire Aura when Equipped",
+        "+[4-5] to Hydra (Sorceress Only)",
+        "+[400-550] Defense",
+        "+[0-37] to Strength (+0.375 per Character Level)",
+        "Increase Maximum Mana 5%",
+        "+4% to Maximum Lightning Resist",
+        "Physical Damage Taken Reduced by 7 "
       ]
     },
-     {
+    {
       "Name": "Chains of Honor",
       "Sockets": 4,
       "CharacterLevel": 63,
@@ -681,16 +681,85 @@
       "Rune6": "",
       "ItemType": "Chest",
       "Bonuses": [
-"+2 to All Skills",
-"+200% Damage to Demons",
-"+200% Damage to Undead",
-"8% Life Stolen per Hit",
-"+70% Enhanced Defense",
-"+20 to Strength",
-"Replenish Life +20",
-"All Resistances +[50-60]",
-"Physical Damage Taken Reduced by 5%",
-"30% Better Chance of Getting Magic Items "
+        "+2 to All Skills",
+        "+200% Damage to Demons",
+        "+200% Damage to Undead",
+        "8% Life Stolen per Hit",
+        "+70% Enhanced Defense",
+        "+20 to Strength",
+        "Replenish Life +20",
+        "All Resistances +[50-60]",
+        "Physical Damage Taken Reduced by 5%",
+        "30% Better Chance of Getting Magic Items "
+      ]
+    },
+    {
+      "Name": "Innocence",
+      "Sockets": 4,
+      "CharacterLevel": 69,
+      "Rune1": "Gul",
+      "Rune2": "Lem",
+      "Rune3": "Zod",
+      "Rune4": "Hel",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Chest",
+      "Bonuses": [
+        "Indestructible",
+        "Level [8-12] Blade Shield When Equipped",
+        "+2 to All Skills",
+        "+20% Chance of Crushing Blow",
+        "+[200-275]% Enhanced Defense",
+        "+4% to Maximum Poison Resist",
+        "Poison Length Reduced by 50%",
+        "Attacker Takes Damage of [600-800]",
+        "50% Extra Gold from Monsters",
+        "Requirements -25% "
+      ]
+    },
+    {
+      "Name": "Ancients' Pledge",
+      "Sockets": 3,
+      "CharacterLevel": 21,
+      "Rune1": "Ral",
+      "Rune2": "Ort",
+      "Rune3": "Tal",
+      "Rune4": "",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Shield",
+      "Bonuses": [
+        "+50% Enhanced Defense",
+        "Cold Resist +43%",
+        "Lightning Resist +48%",
+        "Fire Resist +48%",
+        "Poison Resist +48%",
+        "10% Damage Taken Gained as Mana when Hit "
+      ]
+    },
+     {
+      "Name": "Spirit",
+      "Sockets": 4,
+      "CharacterLevel": 25,
+      "Rune1": "Tal",
+      "Rune2": "Thul",
+      "Rune3": "Ort",
+      "Rune4": "Amn",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Shield",
+      "Bonuses": [
+"+1 to All Skills",
+"+[25-35]% Faster Cast Rate",
+"+25% Faster Hit Recovery",
+"+[11-22] to Vitality",
+"+[59-82] to Mana",
+"Cold Resist +35%",
+"Lightning Resist +35%",
+"Poison Resist +35%",
+"+[3-8] Magic Absorb",
+"Attacker Takes Damage of 24",
+"Requirements -15% "
       ]
     }
   ]
