@@ -1,6 +1,73 @@
 {
   "Runewords": [
     {
+      "Name": "Enigma",
+      "Sockets": 3,
+      "CharacterLevel": 65,
+      "Rune1": "Jah",
+      "Rune2": "Ith",
+      "Rune3": "Ber",
+      "ItemType": "Body Armor",
+      "Bonuses": [
+        "+2 to All Skills ",
+        "+25% Faster Run/Walk ",
+        "Level 1 Blink (5 Charges) Replenish 1 Charge in 3 Seconds",
+        "+[500-775] Defense ",
+        "+[0-74] to Strength (+[0.5-0.75] per Character Level) ",
+        "Increase Maximum Life 5%",
+        "15% Damage Taken Gained as Mana when Hit ",
+        "[0-74]% Better Chance of Getting Magic Items ([0.5-0.75]% per Character Level)"
+      ]
+    },
+    {
+      "Name": "Infinity",
+      "Sockets": 4,
+      "CharacterLevel": 63,
+      "Rune1": "Ber",
+      "Rune2": "Mal",
+      "Rune3": "Ber",
+      "Rune4": "Ist",
+      "ItemType": "Polearms / Spear / Staves",
+      "Bonuses": [
+        "25% Chance to Cast Level 20 Chain Lightning on Striking (Non-Staves Only)",
+        "15% Chance to Cast Level 20 Chain Lightning on Casting (Staves Only)",
+        "Level 12 Conviction Aura when Equipped ",
+        "+35% Faster Run/Walk ",
+        "+35% Faster Cast Rate (Staves Only)",
+        "+[255-325]% Enhanced Damage",
+        "-[45-55]% to Enemy Lightning Resistance ",
+        " +40% Chance of Crushing Blow",
+        "Prevent Monster Heal",
+        "+[0-49] to Vitality (+0.5 per Character Level)",
+        "30% Better Chance of Getting Magic Items ",
+        "+3 to Cyclone Armor (Non-Staves Only)",
+        "+[0-49] to Vitality (+0.5 per Character Level)",
+        "2% Chance to Cast Level 15 Cyclone Armor on Casting (Staves Only)"
+      ]
+    },
+    {
+      "Name": "Chains of Honor",
+      "Sockets": 4,
+      "CharacterLevel": 63,
+      "Rune1": "Dol",
+      "Rune2": "Um",
+      "Rune3": "Ber",
+      "Rune4": "Ist",
+      "ItemType": "Body Armor",
+      "Bonuses": [
+        "+2 to All Skills ",
+        "+200% Damage to Demons ",
+        "+200% Damage to Undead ",
+        " 8% Life Stolen per Hit ",
+        "+70% Enhanced Defense",
+        "+20 to Strength",
+        "Replenish Life +20",
+        "All Resistances +[50-60]",
+        "Physical Damage Taken Reduced by 5%",
+        "30% Better Chance of Getting Magic Items"
+      ]
+    },
+    {
       "Name": "Nadir",
       "Sockets": 2,
       "CharacterLevel": 13,
@@ -8,30 +75,30 @@
       "Rune2": "Tir",
       "Rune3": "",
       "Rune4": "",
-      "Rune5":"",
-      "Rune6":"",
+      "Rune5": "",
+      "Rune6": "",
       "ItemType": "Helmet",
       "Bonuses": [
-        "+50% Enhanced Defense ",
+        "+50% Enhanced Defense",
         "+10 Defense",
         "+30 Defense vs. Missile",
         "+5 Strength",
         "+[4-6] to Mana after each Kill",
         "-33% Extra Gold from Monsters",
         "-3 to Light Radius",
-        "Level 13 Cloak of Shadows (9 Charges)"
+        "Level 13 Cloak of Shadows (9 Charges) "
       ]
     },
-      {
+    {
       "Name": "Radiance",
-      "Sockets": 2,
-      "CharacterLevel": 13,
+      "Sockets": 3,
+      "CharacterLevel": 27,
       "Rune1": "Nef",
       "Rune2": "Sol",
       "Rune3": "Ith",
       "Rune4": "",
-      "Rune5":"",
-      "Rune6":"",
+      "Rune5": "",
+      "Rune6": "",
       "ItemType": "Helmet",
       "Bonuses": [
         "+[20-40]% Enhanced Damage",
@@ -44,7 +111,142 @@
         "15% Damage Taken Gained as Mana when Hit",
         "+5 to Light Radius "
       ]
+    },
+    {
+      "Name": "Lore",
+      "Sockets": 2,
+      "CharacterLevel": 27,
+      "Rune1": "Ort",
+      "Rune2": "Sol",
+      "Rune3": "",
+      "Rune4": "",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Helmet",
+      "Bonuses": [
+        "+1 to All Skills",
+        "+[5-10] to Energy",
+        "Lightning Resist +30%",
+        "Physical Damage Taken Reduced by 7",
+        "+[1-2] to Mana after each Kill",
+        "+2 to Light Radius "
+      ]
+    },
+    {
+      "Name": "Wisdom",
+      "Sockets": 3,
+      "CharacterLevel": 45,
+      "Rune1": "Pul",
+      "Rune2": "Ith",
+      "Rune3": "Eld",
+      "Rune4": "",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Helmet",
+      "Bonuses": [
+        "+33% Chance to Pierce",
+        "[15-25]% Bonus to Attack Rating",
+        "[4-8]% Mana Stolen per Hit",
+        "+50% Enhanced Defense",
+        "+10 to Energy",
+        "15% Slower Stamina Drain",
+        "Cannot Be Frozen",
+        "+5 to Mana after each Kill",
+        "15% Damage Gained as Mana when Hit "
+      ]
+    },
+    {
+      "Name": "Delirium",
+      "Sockets": 3,
+      "CharacterLevel": 51,
+      "Rune1": "Lem",
+      "Rune2": "Ist",
+      "Rune3": "Io",
+      "Rune4": "",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Helmet",
+      "Bonuses": [
+        "11% Chance to Cast Level 18 Confuse on Striking",
+        "6% Chance to Cast Level 14 Mind Blast when Struck",
+        "14% Chance to Cast Level 13 Terror when Struck",
+        "+2 to All Skills",
+        "+261 Defense",
+        "+10 to Vitality",
+        "50% Extra Gold from Monsters",
+        "30% Better Chance of Getting Magic Items",
+        "Level 17 Attract (60 Charges) "
+      ]
+    },
+    {
+      "Name": "Flickering Flame",
+      "Sockets": 3,
+      "CharacterLevel": 55,
+      "Rune1": "Nef",
+      "Rune2": "Pul",
+      "Rune3": "Vex",
+      "Rune4": "",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Helmet",
+      "Bonuses": [
+        "Level [1-6] Resist Fire Aura when Equipped",
+        "+2 to Fire Skills",
+        "-[5-10]% to Enemy Fire Resistance",
+        "+50% Enhanced Defense",
+        "+30 Defense vs. Missile",
+        "+[65-75] to Mana",
+        "+4% to Maximum Fire Resist",
+        "Half Freeze Duration",
+        "Poison Length Reduced by 50% "
+      ]
+    },
+    {
+      "Name": "Dream -HELMET-",
+      "Sockets": 3,
+      "CharacterLevel": 65,
+      "Rune1": "Io",
+      "Rune2": "Jah",
+      "Rune3": "Pul",
+      "Rune4": "",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Helmet",
+      "Bonuses": [
+        "10% Chance to Cast Level 15 Confuse when Struck",
+        "Level 14 Holy Shock Aura when Equipped",
+        "+[20-30]% Faster Hit Recovery",
+        "+50% Enhanced Defense",
+        "+[150-220] Defense",
+        "+10 to Vitality",
+        "Increase Maximum Life 5%",
+        "+[0-61] to Mana (+0.625 per Character Level)",
+        "All Resistances +[10-20]",
+        "[20-30]% Better Chance of Getting Magic Items "
+      ]
+    },
+    {
+      "Name": "Ferocity",
+      "Sockets": 3,
+      "CharacterLevel": 69,
+      "Rune1": "Zod",
+      "Rune2": "Cham",
+      "Rune3": "Shael",
+      "Rune4": "",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Helmet",
+      "Bonuses": [
+        "12% Chance to Cast Level 10 Taunt on Striking",
+        "Indestructible",
+        "+20% Faster Hit Recovery",
+        "[10-12]% Life Stolen per Hit",
+        "+18 to Zeal",
+        "+[150-200]% Enhanced Defense",
+        "Magic Damage Taken Reduced by [6-12]",
+        "Cannot Be Frozen",
+        "Attacker Takes Damage of [200-250] "
+      ]
     }
-    
   ]
 }
