@@ -1,0 +1,50 @@
+{
+  "Runewords": [
+    {
+      "Name": "Nadir",
+      "Sockets": 2,
+      "CharacterLevel": 13,
+      "Rune1": "Nef",
+      "Rune2": "Tir",
+      "Rune3": "",
+      "Rune4": "",
+      "Rune5":"",
+      "Rune6":"",
+      "ItemType": "Helmet",
+      "Bonuses": [
+        "+50% Enhanced Defense ",
+        "+10 Defense",
+        "+30 Defense vs. Missile",
+        "+5 Strength",
+        "+[4-6] to Mana after each Kill",
+        "-33% Extra Gold from Monsters",
+        "-3 to Light Radius",
+        "Level 13 Cloak of Shadows (9 Charges)"
+      ]
+    },
+      {
+      "Name": "Radiance",
+      "Sockets": 2,
+      "CharacterLevel": 13,
+      "Rune1": "Nef",
+      "Rune2": "Sol",
+      "Rune3": "Ith",
+      "Rune4": "",
+      "Rune5":"",
+      "Rune6":"",
+      "ItemType": "Helmet",
+      "Bonuses": [
+        "+[20-40]% Enhanced Damage",
+        "+75% Enhanced Defense",
+        "+30 Defense vs. Missile",
+        "+10 to Vitality",
+        "+10 to Energy",
+        "+33 to Mana",
+        "Physical Damage Taken Reduced by 7",
+        "15% Damage Taken Gained as Mana when Hit",
+        "+5 to Light Radius "
+      ]
+    }
+    
+  ]
+}
