@@ -39,20 +39,20 @@
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="runewords-panel" role="tabpanel" aria-labelledby="home-tab"
+            <div class="tab-pane fade show active mx-2" id="runewords-panel" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
                 <!-- Filter Form -->
                 <div class="filter-form">
                     <h3>Rune words</h3>
                     <form>
-                        <div class="row g-2 mx-1">
+                        <div class="row g-2">
                             <div class="col-auto form-floating">
                                 <input type="text" x-model="quickSearch" class="form-control" id="quickSearchFL"
                                     placeholder="Quicksearch">
                                 <label for="quickSearchFL">Quick Search</label>
                             </div>
                             <div class="col-auto form-floating">
-                                <input type="number" min="1" max="6" x-model="filters.sockets" class="form-control"
+                                <input style="min-width: 100px;" type="number" min="1" max="6" x-model="filters.sockets" class="form-control"
                                     id="searchSockets" placeholder="Sockets">
                                 <label for="searchSockets">Sockets</label>
                             </div>
@@ -76,7 +76,7 @@
                 </div>
 
                 <!-- Runewords Table -->
-                <table class="table table-bordered mt-2 table-striped mx-2">
+                <table class="table table-bordered mt-2 table-striped">
                     <thead>
                         <tr>
                             <th @click="sortTable('Name')"
