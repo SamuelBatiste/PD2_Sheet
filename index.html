@@ -13,7 +13,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Runewords with Filters</title>
+    <title>P2D Sheet</title>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
     <style>
 
@@ -194,7 +194,7 @@
                 // Fetch runewords from an external JSON file
                 async fetchRunewords() {
                     try {
-                        const response = await fetch('runewords.json'); // External JSON file path
+                        const response = await fetch('RuneWords.json'); // External JSON file path
                         const data = await response.json();
                         this.runewords = data.Runewords.map(runeword => {
                             // Ensure each runeword has a 'Runes' array, filling with empty strings if fewer than 6
