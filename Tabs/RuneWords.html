@@ -179,7 +179,7 @@
             // Fetch runewords from an external JSON file
             async fetchRunewords() {
                 try {
-                    const response = await fetch('/Tabs/RuneWords.json'); // External JSON file path
+                    const response = await fetch('RuneWords.json'); // External JSON file path
                     const data = await response.json();
                     this.runewords = data.Runewords.map(runeword => {
                         // Ensure each runeword has a 'Runes' array, filling with empty strings if fewer than 6
