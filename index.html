@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html data-bs-theme="dark" lang="en">
 
 <head>
 
@@ -16,12 +16,18 @@
     <title>P2D Sheet</title>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
     <style>
-
+        html,
+        body {
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+            /* Prevent whole page from scrolling */
+        }
     </style>
 </head>
 
 <body>
-    <div x-data="runewordsApp()" x-init="fetchRunewords()">
+    <div class="" style="height: 92%;">
         <ul class="nav nav-tabs mt-2" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="runewords-tab" data-bs-toggle="tab"
@@ -36,100 +42,21 @@
                     Recipes</button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="craftingTab" data-bs-toggle="tab" data-bs-target="#craft-recipes-panel"
+                <button class="nav-link" id="craftingTab" data-bs-toggle="tab" data-bs-target="#crafting-panel"
                     type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false"> Crafting</button>
             </li>
         </ul>
-        <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active mx-2" id="runewords-panel" role="tabpanel" aria-labelledby="home-tab"
+        <div class="tab-content h-100" id="myTabContent">
+            <div class="tab-pane fade show active mx-2 h-100" id="runewords-panel" role="tabpanel" aria-labelledby="home-tab"
                 tabindex="0">
-                <!-- Filter Form -->
-                <div class="filter-form">
-        
-                    <form>
-                        <div class="row g-2 mt-2">
-                            <div class="col-auto form-floating">
-                                <input type="text" x-model="quickSearch" class="form-control" id="quickSearchFL"
-                                    placeholder="Quicksearch">
-                                <label for="quickSearchFL">Quick Search</label>
-                            </div>
-                            <div class="col-auto form-floating">
-                                <input style="min-width: 100px;" type="number" min="1" max="6" x-model="filters.sockets"
-                                    class="form-control" id="searchSockets" placeholder="Sockets">
-                                <label for="searchSockets">Sockets</label>
-                            </div>
-                            <div class="col-auto form-floating">
-                                <input type="text" x-model="filters.name" class="form-control" id="searchName"
-                                    placeholder="Name">
-                                <label for="searchName">Runeword Name</label>
-                            </div>
-                            <div class="col-auto form-floating">
-                                <input type="text" x-model="filters.rune" class="form-control" id="searchRune"
-                                    placeholder="Name">
-                                <label for="searchRune">Rune</label>
-                            </div>
-                            <div class="col-auto form-floating">
-                                <input type="text" x-model="filters.itemType" class="form-control" id="itemTypeFl"
-                                    placeholder="Item Type">
-                                <label for="itemTypeFl">ItemType</label>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-
-                <!-- Runewords Table -->
-                <table class="table table-bordered mt-2 table-striped">
-                    <thead>
-                        <tr>
-                            <th @click="sortTable('Name')"
-                                :class="sortBy === 'Name' ? (sortAsc ? 'sort-asc' : 'sort-desc') : ''">
-                                Name
-                            </th>
-                            <th @click="sortTable('ItemType')"
-                                :class="sortBy === 'ItemType' ? (sortAsc ? 'sort-asc' : 'sort-desc') : ''">
-                                Item Type
-                            </th>
-                            <th @click="sortTable('Sockets')"
-                                :class="sortBy === 'Sockets' ? (sortAsc ? 'sort-asc' : 'sort-desc') : ''">
-                                Sockets
-                            </th>
-                            <th @click="sortTable('CharacterLevel')"
-                                :class="sortBy === 'CharacterLevel' ? (sortAsc ? 'sort-asc' : 'sort-desc') : ''">
-                                Character Level
-                            </th>
-                            <th>Runes</th>
-                            <th>Bonuses</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <template x-for="runeword in filteredRunewords" :key="runeword.Name">
-                            <tr>
-                                <td x-text="runeword.Name"></td>
-                                <td x-text="runeword.ItemType"></td>
-                                <td x-text="runeword.Sockets"></td>
-                                <td x-text="runeword.CharacterLevel"></td>
-                                <td>
-                                    <ul>
-                                        <!-- Dynamically render up to 6 runes -->
-                                        <template x-for="(rune, index) in runeword.Runes" :key="index">
-                                            <li x-text="rune"></li>
-                                        </template>
-                                    </ul>
-                                </td>
-                                <td>
-                                    <ul>
-                                        <template x-for="bonus in runeword.Bonuses" :key="bonus">
-                                            <li x-text="bonus"></li>
-                                        </template>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </template>
-                    </tbody>
-                </table>
+                <iframe class="w-100" style="height: 100%;" src="./Tabs/RuneWords.html"></iframe>
             </div>
             <div class="tab-pane fade" id="cube-recipes-panel" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                 ...
+            </div>
+            <div class="tab-pane fade h-100" id="crafting-panel" role="tabpanel"
+                aria-labelledby="crafting-tab" tabindex="0">
+                <iframe class="w-100" style="height: 100%;" src="./Tabs/Crafting.html"></iframe>
             </div>
         </div>
 
@@ -142,92 +69,5 @@
 
 
 </body>
-<script type="text/javascript">
-    function runewordsApp() {
-        return {
-            runewords: [],
-            filters: {
-                sockets: '',
-                name: '',
-                rune: '',
-                itemType: ''
-            },
-            quickSearch: '', // New quick search model
-            sortBy: '',  // Column to sort by
-            sortAsc: true, // Sort direction
-
-            // Compute filtered runewords based on the current filters and quicksearch
-            get filteredRunewords() {
-                let filtered = this.runewords.filter(runeword => {
-                    // Apply filters based on the quick search and specific filters
-                    let matchesQuickSearch = this.quickSearch === '' || (
-                        runeword.Name.toLowerCase().includes(this.quickSearch.toLowerCase()) ||
-                        runeword.ItemType.toLowerCase().includes(this.quickSearch.toLowerCase()) ||
-                        runeword.Runes.some(rune => rune.toLowerCase().includes(this.quickSearch.toLowerCase())) ||
-                        runeword.Bonuses.some(bonus => bonus.toLowerCase().includes(this.quickSearch.toLowerCase()))
-                    );
-
-                    return matchesQuickSearch &&
-                        (this.filters.sockets === '' || runeword.Sockets == this.filters.sockets) &&
-                        (this.filters.name === '' || runeword.Name.toLowerCase().includes(this.filters.name.toLowerCase())) &&
-                        (this.filters.rune === '' ||
-                            runeword.Runes.some(rune => rune.toLowerCase().includes(this.filters.rune.toLowerCase()))
-                        ) &&
-                        (this.filters.itemType === '' || runeword.ItemType.toLowerCase().includes(this.filters.itemType.toLowerCase()));
-                });
-
-                // Sort the filtered runewords
-                if (this.sortBy) {
-                    filtered.sort((a, b) => {
-                        let valA = a[this.sortBy];
-                        let valB = b[this.sortBy];
-
-                        // Handle sorting by numbers (sockets, character level)
-                        if (typeof valA === 'number' && typeof valB === 'number') {
-                            return this.sortAsc ? valA - valB : valB - valA;
-                        }
-
-                        // Default string sorting
-                        return this.sortAsc ? valA.localeCompare(valB) : valB.localeCompare(valA);
-                    });
-                }
-
-                return filtered;
-            },
-
-            // Fetch runewords from an external JSON file
-            async fetchRunewords() {
-                try {
-                    const response = await fetch('RuneWords.json'); // External JSON file path
-                    const data = await response.json();
-                    this.runewords = data.Runewords.map(runeword => {
-                        // Ensure each runeword has a 'Runes' array, filling with empty strings if fewer than 6
-                        const runes = [
-                            runeword.Rune1,
-                            runeword.Rune2,
-                            runeword.Rune3,
-                            runeword.Rune4 || '',
-                            runeword.Rune5 || '',
-                            runeword.Rune6 || ''
-                        ].filter(rune => rune);  // Remove empty entries
-                        return { ...runeword, Runes: runes };
-                    });
-                } catch (error) {
-                    console.error('Error loading the JSON file:', error);
-                }
-            },
-
-            // Toggle sorting direction and set the column to sort by
-            sortTable(column) {
-                if (this.sortBy === column) {
-                    this.sortAsc = !this.sortAsc; // Toggle sort direction
-                } else {
-                    this.sortBy = column; // Set the column to sort by
-                    this.sortAsc = true;  // Default to ascending
-                }
-            }
-        };
-    }
-</script>
 
 </html>
