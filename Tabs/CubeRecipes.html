@@ -28,11 +28,32 @@
         .saphire {
             color: lightblue !important;
         }
+
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .table-responsive-container {
+            flex-grow: 1;
+            overflow: auto;
+        }
+
+        .sticky-top {
+            position: sticky;
+            top: 0;
+            background-color: #212529;
+            /* Match dark theme */
+            z-index: 10;
+        }
     </style>
 </head>
 
-<body class="">
+<body class="d-flex flex-column h-100">
     <div class="p-4">
+        <!-- Filters -->
         <div class="row mb-3 align-items-end">
             <div class="col-md-4 mb-2">
                 <select class="form-select" x-model="selectedCategory">
@@ -49,11 +70,13 @@
             <div class="col-md-3 mb-2">
                 <button class="btn btn-secondary w-100" @click="resetFilters">Reset Filters</button>
             </div>
-
         </div>
+    </div>
 
-        <table class="table table-bordered table-striped">
-            <thead>
+    <!-- Scrollable Table Wrapper -->
+    <div class="flex-grow-1 overflow-auto px-4 pb-4">
+        <table class="table table-bordered table-striped mb-0">
+            <thead class="table-dark sticky-top">
                 <tr>
                     <th>Category</th>
                     <th>Ingredients</th>
@@ -66,7 +89,7 @@
                     <tr>
                         <td x-text="recipe.Category"></td>
                         <td>
-                            <ul>
+                            <ul class="mb-0">
                                 <template x-for="item in recipe.Ingridients" :key="item.Name">
                                     <li :class="item.Class" x-text="item.Name"></li>
                                 </template>
@@ -79,38 +102,38 @@
             </tbody>
         </table>
     </div>
-
-    <script>
-      function recipeApp() {
-    return {
-        recipes: [],
-        search: '',
-        selectedCategory: '',
-        async loadData() {
-            const res = await fetch('CubeRecipes.json');
-            const data = await res.json();
-            this.recipes = data.Recipes;
-        },
-        resetFilters() {
-            this.search = '';
-            this.selectedCategory = '';
-        },
-        get filteredRecipes() {
-            const term = this.search.toLowerCase();
-            return this.recipes.filter(recipe => {
-                const matchesCategory = this.selectedCategory === '' || recipe.Category === this.selectedCategory;
-                const matchesSearch =
-                    term === '' ||
-                    recipe.Result.toLowerCase().includes(term) ||
-                    recipe.Ingridients.some(i =>
-                        i.Name.toLowerCase().includes(term) || i.Class.toLowerCase().includes(term)
-                    );
-                return matchesCategory && matchesSearch;
-            });
-        }
-    };
-}
-    </script>
 </body>
+
+<script>
+    function recipeApp() {
+        return {
+            recipes: [],
+            search: '',
+            selectedCategory: '',
+            async loadData() {
+                const res = await fetch('CubeRecipes.json');
+                const data = await res.json();
+                this.recipes = data.Recipes;
+            },
+            resetFilters() {
+                this.search = '';
+                this.selectedCategory = '';
+            },
+            get filteredRecipes() {
+                const term = this.search.toLowerCase();
+                return this.recipes.filter(recipe => {
+                    const matchesCategory = this.selectedCategory === '' || recipe.Category === this.selectedCategory;
+                    const matchesSearch =
+                        term === '' ||
+                        recipe.Result.toLowerCase().includes(term) ||
+                        recipe.Ingridients.some(i =>
+                            i.Name.toLowerCase().includes(term) || i.Class.toLowerCase().includes(term)
+                        );
+                    return matchesCategory && matchesSearch;
+                });
+            }
+        };
+    }
+</script>
 
 </html>
