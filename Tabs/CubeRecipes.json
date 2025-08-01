@@ -1,0 +1,224 @@
+{
+    "Recipes": [
+        {
+            "Category": "Sockets",
+            "Ingridients": [
+                {
+                    "Name": "Ral",
+                    "Class": "rune"
+                },
+                {
+                    "Name": "Amn",
+                    "Class": "rune"
+                },
+                {
+                    "Name": "Perfect Amethyst",
+                    "Class": "amethyst"
+                },
+                {
+                    "Name": "Standard Regular Weapon",
+                    "Class": ""
+                }
+            ],
+            "Result": "Adds 1-6 sockets to the Weapon",
+            "Notes": ""
+        },
+        {
+            "Category": "Sockets",
+            "Ingridients": [
+                {
+                    "Name": "Tal",
+                    "Class": "rune"
+                },
+                {
+                    "Name": "Amn",
+                    "Class": "rune"
+                },
+                {
+                    "Name": "Perfect Ruby",
+                    "Class": "ruby"
+                },
+                {
+                    "Name": "Standard Regular Shield",
+                    "Class": ""
+                }
+            ],
+            "Result": "Adds 1-4 sockets to the Shield ",
+            "Notes": ""
+        },
+        {
+            "Category": "Sockets",
+            "Ingridients": [
+                {
+                    "Name": "Tal",
+                    "Class": "rune"
+                },
+                {
+                    "Name": "Thul",
+                    "Class": "rune"
+                },
+                {
+                    "Name": "Perfect Topaz",
+                    "Class": "topaz"
+                },
+                {
+                    "Name": "Standard Regular Chest",
+                    "Class": ""
+                }
+            ],
+            "Result": "Adds 1-4 sockets to the Chest",
+            "Notes": ""
+        },
+        {
+            "Category": "Sockets",
+            "Ingridients": [
+                {
+                    "Name": "Ral",
+                    "Class": "rune"
+                },
+                {
+                    "Name": "Thul",
+                    "Class": "rune"
+                },
+                {
+                    "Name": "Perfect Saphire",
+                    "Class": "saphire"
+                },
+                {
+                    "Name": "Standard Regular Helm",
+                    "Class": ""
+                }
+            ],
+            "Result": "Adds 1-3 sockets to the Helm ",
+            "Notes": ""
+        },
+        {
+            "Category": "Sockets",
+            "Ingridients": [
+                {
+                    "Name": "Hel",
+                    "Class": "rune"
+                },
+                {
+                    "Name": "Scroll of Town Portal",
+                    "Class": ""
+                },
+                {
+                    "Name": "Gemmed Item (has inserted items)",
+                    "Class": ""
+                }
+            ],
+            "Result": "Destroys inserted items (gems/runes/jewels)",
+            "Notes": ""
+        },
+        {
+            "Category": "Sockets",
+            "Ingridients": [
+                {
+                    "Name": "Larzuk's Puzzlebox",
+                    "Class": ""
+                },
+                {
+                    "Name": "Item",
+                    "Class": ""
+                }
+            ],
+            "Result": "Adds 2-4 sockets to two-handed weapons. Adds 1-2 sockets to other items ",
+            "Notes": ""
+        },
+        {
+            "Category": "Sockets",
+            "Ingridients": [
+                {
+                    "Name": "Larzuk's Puzzlepiece",
+                    "Class": ""
+                },
+                {
+                    "Name": "Non-Unique/Non-Set Item",
+                    "Class": ""
+                }
+            ],
+            "Result": "Adds 2-4 sockets to two-handed weapons. Adds 1-2 sockets to other items",
+            "Notes": ""
+        },
+        {
+            "Category": "Sockets",
+            "Ingridients": [
+                {
+                    "Name": "Larzuk's Malus",
+                    "Class": ""
+                },
+                {
+                    "Name": "Item",
+                    "Class": ""
+                }
+            ],
+            "Result": "Adds 1 socket to the Item ",
+            "Notes": ""
+        },
+        {
+            "Category": "Potions",
+            "Ingridients": [
+                {
+                    "Name": "Any 3 health potions",
+                    "Class": "ruby"
+                },
+                {
+                    "Name": "Any 3 mana potions",
+                    "Class": "saphire"
+                },
+                {
+                    "Name": "Chipped Gem",
+                    "Class": ""
+                }
+            ],
+            "Result": "Rejuvenation Potion ",
+            "Notes": ""
+        },
+        {
+            "Category": "Potions",
+            "Ingridients": [
+                {
+                    "Name": "Any 3 health potions",
+                    "Class": "ruby"
+                },
+                {
+                    "Name": "Any 3 mana potions",
+                    "Class": "saphire"
+                },
+                {
+                    "Name": "Normal Gem",
+                    "Class": ""
+                }
+            ],
+            "Result": "Full Rejuvenation Potion ",
+            "Notes": ""
+        },
+        {
+            "Category": "Potions",
+            "Ingridients": [
+                {
+                    "Name": "3 Rejuvenation Potions",
+                    "Class": "amethyst"
+                }
+            ],
+            "Result": "Full Rejuvenation Potion ",
+            "Notes": ""
+        },
+        {
+            "Category": "Portals",
+            "Ingridients": [
+                {
+                    "Name": "Wirt's Leg",
+                    "Class": ""
+                },
+                {
+                    "Name": "Tome of Town Portal",
+                    "Class": ""
+                }
+            ],
+            "Result": "Opens a portal to the Moo Moo Farm (Secret Cow Level)",
+            "Notes": "Only works in the Rogue Encampment (Act 1 town) with a character that has defeated Baal in the current difficulty "
+        }
+    ]
+}
