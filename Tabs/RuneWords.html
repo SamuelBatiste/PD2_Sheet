@@ -48,7 +48,7 @@
                     <label for="quickSearchFL">Quick Search</label>
                 </div>
                 <div class="col-auto form-floating">
-                    <input style="min-width: 100px;" type="number" min="1" max="6" x-model="filters.sockets"
+                    <input style="min-width: 100px;" type="number" min="2" max="6" x-model="filters.sockets"
                         class="form-control" id="searchSockets" placeholder="Sockets">
                     <label for="searchSockets">Sockets</label>
                 </div>
@@ -65,7 +65,13 @@
                         placeholder="Item Type">
                     <label for="itemTypeFl">ItemType</label>
                 </div>
+                <div class="col-auto d-flex align-items-end">
+                    <button style="height: 60px;" type="button" class="btn btn-secondary" @click="resetFilters">
+                        Reset
+                    </button>
+                </div>
             </div>
+
         </form>
     </div>
 
@@ -137,24 +143,28 @@
             sortBy: '',  // Column to sort by
             sortAsc: true, // Sort direction
 
+
+
             // Compute filtered runewords based on the current filters and quicksearch
             get filteredRunewords() {
                 let filtered = this.runewords.filter(runeword => {
                     // Apply filters based on the quick search and specific filters
-                    let matchesQuickSearch = this.quickSearch === '' || (
-                        runeword.Name.toLowerCase().includes(this.quickSearch.toLowerCase()) ||
-                        runeword.ItemType.toLowerCase().includes(this.quickSearch.toLowerCase()) ||
-                        runeword.Runes.some(rune => rune.toLowerCase().includes(this.quickSearch.toLowerCase())) ||
-                        runeword.Bonuses.some(bonus => bonus.toLowerCase().includes(this.quickSearch.toLowerCase()))
-                    );
+                    let searchTerms = this.quickSearch.toLowerCase().split(/\s+/).filter(Boolean);
+
+                    let matchesQuickSearch = searchTerms.length === 0 || searchTerms.every(term => {
+                        return (
+                            runeword.Name.toLowerCase().includes(term) ||
+                            runeword.ItemType.toLowerCase().includes(term) ||
+                            runeword.Runes.some(rune => rune.toLowerCase().includes(term)) ||
+                            runeword.Bonuses.some(bonus => bonus.toLowerCase().includes(term))
+                        );
+                    });
 
                     return matchesQuickSearch &&
                         (this.filters.sockets === '' || runeword.Sockets == this.filters.sockets) &&
-                        (this.filters.name === '' || runeword.Name.toLowerCase().includes(this.filters.name.toLowerCase())) &&
-                        (this.filters.rune === '' ||
-                            runeword.Runes.some(rune => rune.toLowerCase().includes(this.filters.rune.toLowerCase()))
-                        ) &&
-                        (this.filters.itemType === '' || runeword.ItemType.toLowerCase().includes(this.filters.itemType.toLowerCase()));
+                        this.splitAndMatch(this.filters.name, runeword.Name) &&
+                        this.splitAndMatch(this.filters.itemType, runeword.ItemType) &&
+                        this.splitAndMatchArray(this.filters.rune, runeword.Runes);
                 });
 
                 // Sort the filtered runewords
@@ -206,6 +216,28 @@
                     this.sortBy = column; // Set the column to sort by
                     this.sortAsc = true;  // Default to ascending
                 }
+            },
+
+            resetFilters() {
+                this.quickSearch = '';
+                this.filters = {
+                    sockets: '',
+                    name: '',
+                    rune: '',
+                    itemType: ''
+                };
+            },
+
+            splitAndMatch(input, target) {
+                const terms = input.toLowerCase().split(/\s+/).filter(Boolean);
+                return terms.length === 0 || terms.every(term => target.toLowerCase().includes(term));
+            },
+
+            splitAndMatchArray(input, targets) {
+                const terms = input.toLowerCase().split(/\s+/).filter(Boolean);
+                return terms.length === 0 || terms.every(term =>
+                    targets.some(t => t.toLowerCase().includes(term))
+                );
             }
         };
     }
