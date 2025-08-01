@@ -204,6 +204,21 @@
             ],
             "Result": "Full Rejuvenation Potion ",
             "Notes": ""
+        },
+        {
+            "Category": "Portals",
+            "Ingridients": [
+                {
+                    "Name": "Wirt's Leg",
+                    "Class": ""
+                },
+                {
+                    "Name": "Tome of Town Portal",
+                    "Class": ""
+                }
+            ],
+            "Result": "Opens a portal to the Moo Moo Farm (Secret Cow Level)",
+            "Notes": "Only works in the Rogue Encampment (Act 1 town) with a character that has defeated Baal in the current difficulty "
         }
     ]
 }
