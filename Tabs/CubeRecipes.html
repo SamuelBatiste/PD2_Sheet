@@ -1,0 +1,116 @@
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+<html data-bs-theme="dark" lang="en" x-data="recipeApp()" x-init="loadData()" class="h-100">
+
+<head>
+    <style>
+        .rune {
+            color: #FFA800 !important;
+        }
+
+        .amethyst {
+            color: #AE00FF !important;
+        }
+
+        .ruby {
+            color: #FF4D4D !important;
+        }
+
+        .topaz {
+            color: #FFFF64 !important;
+        }
+
+        .saphire {
+            color: lightblue !important;
+        }
+    </style>
+</head>
+
+<body class="">
+    <div class="p-4">
+        <div class="row mb-3 align-items-end">
+            <div class="col-md-4 mb-2">
+                <select class="form-select" x-model="selectedCategory">
+                    <option value="">All Categories</option>
+                    <option value="Sockets">Sockets</option>
+                    <option value="Potions">Potions</option>
+                </select>
+            </div>
+            <div class="col-md-5 mb-2">
+                <input type="text" class="form-control" placeholder="Search by result or ingredients..."
+                    x-model="search" />
+            </div>
+
+            <div class="col-md-3 mb-2">
+                <button class="btn btn-secondary w-100" @click="resetFilters">Reset Filters</button>
+            </div>
+
+        </div>
+
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Category</th>
+                    <th>Ingredients</th>
+                    <th>Result</th>
+                    <th>Notes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template x-for="recipe in filteredRecipes" :key="recipe.Result">
+                    <tr>
+                        <td x-text="recipe.Category"></td>
+                        <td>
+                            <ul>
+                                <template x-for="item in recipe.Ingridients" :key="item.Name">
+                                    <li :class="item.Class" x-text="item.Name"></li>
+                                </template>
+                            </ul>
+                        </td>
+                        <td x-text="recipe.Result"></td>
+                        <td x-text="recipe.Notes"></td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+
+    <script>
+      function recipeApp() {
+    return {
+        recipes: [],
+        search: '',
+        selectedCategory: '',
+        async loadData() {
+            const res = await fetch('CubeRecipes.json');
+            const data = await res.json();
+            this.recipes = data.Recipes;
+        },
+        resetFilters() {
+            this.search = '';
+            this.selectedCategory = '';
+        },
+        get filteredRecipes() {
+            const term = this.search.toLowerCase();
+            return this.recipes.filter(recipe => {
+                const matchesCategory = this.selectedCategory === '' || recipe.Category === this.selectedCategory;
+                const matchesSearch =
+                    term === '' ||
+                    recipe.Result.toLowerCase().includes(term) ||
+                    recipe.Ingridients.some(i =>
+                        i.Name.toLowerCase().includes(term) || i.Class.toLowerCase().includes(term)
+                    );
+                return matchesCategory && matchesSearch;
+            });
+        }
+    };
+}
+    </script>
+</body>
+
+</html>
