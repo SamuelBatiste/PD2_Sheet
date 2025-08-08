@@ -210,7 +210,8 @@
             "Ingridients": [
                 {
                     "Name": "Wirt's Leg",
-                    "Class": ""
+                    "Class": "",
+                    "Info":"Tristram"
                 },
                 {
                     "Name": "Tome of Town Portal",
@@ -219,6 +220,287 @@
             ],
             "Result": "Opens a portal to the Moo Moo Farm (Secret Cow Level)",
             "Notes": "Only works in the Rogue Encampment (Act 1 town) with a character that has defeated Baal in the current difficulty "
+        },
+        {
+            "Category": "Reroll",
+            "Ingridients": [
+                {
+                    "Name": "Demonic Cube",
+                    "Class": ""
+                },
+                {
+                    "Name": "Unique/Set Weapon",
+                    "Class": ""
+                }
+            ],
+            "Result": "Rerolled stats on the weapon without altering socketed items. ",
+            "Notes": ""
+        },
+        {
+            "Category": "Reroll",
+            "Ingridients": [
+                {
+                    "Name": "Demonic Cube",
+                    "Class": ""
+                },
+                {
+                    "Name": "Unique/Set Armor",
+                    "Class": ""
+                }
+            ],
+            "Result": "Rerolled stats on the armor without altering socketed items.",
+            "Notes": ""
+        },
+        {
+            "Category": "Reroll",
+            "Ingridients": [
+                {
+                    "Name": "Demonic Cube",
+                    "Class": ""
+                },
+                {
+                    "Name": "Unique/Set Accessory",
+                    "Class": ""
+                }
+            ],
+            "Result": "Rerolled stats on the accessory. ",
+            "Notes": ""
+        },
+        {
+            "Category": "Reroll",
+            "Ingridients": [
+                {
+                    "Name": "3 Magic Amulets",
+                    "Class": ""
+                }
+            ],
+            "Result": "Magic Ring (ilvl = [clvl*0.75])",
+            "Notes": ""
+        },
+        {
+            "Category": "Reroll",
+            "Ingridients": [
+                {
+                    "Name": "3 Magic Rings",
+                    "Class": ""
+                }
+            ],
+            "Result": "Magic Amulet (ilvl = [clvl*0.75])",
+            "Notes": ""
+        },
+        {
+            "Category": "Reroll",
+            "Ingridients": [
+                {
+                    "Name": "Magic Item",
+                    "Class": ""
+                },
+                {
+                    "Name": "3 Perfect Gems",
+                    "Class": ""
+                }
+            ],
+            "Result": "Magic Item of same type (same ilvl)",
+            "Notes": "cannot be used with corrupted items or maps"
+        },
+        {
+            "Category": "Reroll",
+            "Ingridients": [
+                {
+                    "Name": "Rare Item",
+                    "Class": ""
+                },
+                {
+                    "Name": "6 Perfect Skulls",
+                    "Class": ""
+                }
+            ],
+            "Result": "Rare Item of same type (ilvl = [clvl*0.4] + [ilvl*0.4])",
+            "Notes": "cannot be used with corrupted items or maps "
+        },
+        {
+            "Category": "Breakdown",
+            "Ingridients": [
+                {
+                    "Name": "1-15 Jewels",
+                    "Class": ""
+                },
+                {
+                    "Name": "Key",
+                    "Class": ""
+                }
+            ],
+            "Result": "1-15 Jewel Fragments",
+            "Notes": ""
+        },
+        {
+            "Category": "Breakdown",
+            "Ingridients": [
+                {
+                    "Name": "1-7 Hellfire Torches + Key",
+                    "Class": ""
+                },
+                {
+                    "Name": "Key",
+                    "Class": ""
+                }
+            ],
+            "Result": "1-7 Hellfire Ashes",
+            "Notes": ""
+        },
+        {
+            "Category": "Portals",
+            "Ingridients": [
+                {
+                    "Name": "Key of Terror",
+                    "Class": "",
+                    "Info": "Drops from The Countess (1:14 chance) and Blood Raven (1:9 chance)"
+                },
+                {
+                    "Name": "Key of Hate",
+                    "Class": "",
+                    "Info": "Drops from The Summoner (1:8 chance) and Bloodwitch (1:9 chance)"
+                },
+                {
+                    "Name": "Key of Destruction",
+                    "Class": "",
+                    "Info": "Drops from Nihlathak (1:8 chance) and Izual (1:9 chance)"
+                }
+            ],
+            "Result": "Opens a portal to one of the mini-uber zones (Furnace of Pain, Matron's Den, Forgotten Sands)",
+            "Notes": "Only works in Harrogath (Act 5 town) in Hell difficulty; which zone the portal opens is random, but they will not repeat if opened in the same game "
+        },
+        {
+            "Category": "Uber Bosses",
+            "Ingridients": [
+                {
+                    "Name": "Sigil of Madawc",
+                    "Class": "",
+                    "Info": "Sigil of Madawc drops from T1 map monsters (1:6400 chance)"
+                },
+                {
+                    "Name": "Sigil of Talic",
+                    "Class": "",
+                    "Info": "Drops from T2 map monsters (1:6400 chance)"
+                },
+                {
+                    "Name": "Sigil of Korlic",
+                    "Info": "Drops from T3 map monsters (1:6400 chance)"
+                }
+            ],
+            "Result": "Relic of the Ancients",
+            "Notes": "Uber Ancients"
+        },
+        {
+            "Category": "Uber Bosses",
+            "Ingridients": [
+                {
+                    "Name": "Mephisto's Brain",
+                    "Class": "",
+                    "Info": "Drops from Uber Izual in the Furnace of Pain"
+                },
+                {
+                    "Name": "Diablo's Horn",
+                    "Class": "",
+                    "Info": "Drops from Lilith (sometimes referred to as Uber Andariel) in the Matron's Den"
+                },
+                {
+                    "Name": "Baal's Eye",
+                    "Info": "Drops from Uber Duriel in the Forgotten Sands"
+                }
+            ],
+            "Result": "Pandemonium Talisman",
+            "Notes": "Uber Tristram"
+        },
+        {
+            "Category": "Uber Bosses",
+            "Ingridients": [
+                {
+                    "Name": "Prime Evil Soul",
+                    "Class": "",
+                    "Info": "Drops from Mephisto/Diablo/Baal in Hell difficulty. Diablo 1:21 chance, Baal 1:13, Mephisto odds unknown"
+                },
+                {
+                    "Name": "Black Soulstone",
+                    "Class": "",
+                    "Info": "Drops from Uber Tristram once completed (alongside Hellfire Torch)"
+                },
+                {
+                    "Name": "Pure Demonic Essence",
+                    "Class": "",
+                    "Info": "Drops from Map bosses (unconfirmed chance - was about 2%?)"
+                }
+            ],
+            "Result": "Vission of Terror",
+            "Notes": "Diablo Clone"
+        },
+        {
+            "Category": "Uber Bosses",
+            "Ingridients": [
+                {
+                    "Name": "Trang-Oul's Jawbone",
+                    "Class": "",
+                    "Info": "Drops from undead enemies (1:22.5k chance in Hell)"
+                },
+                {
+                    "Name": "Splinter of the Void",
+                    "Class": "",
+                    "Info": "Drops from Shadow of Mendeln map event (40% chance - unconfirmed)"
+                },
+                {
+                    "Name": "Hellfire Ashes or Hellfire Torch",
+                    "Class": "",
+                    "Info": "Hellfire Ashes or Hellfire Torch (the former is just a stackable ingredient version of the latter)"
+                }
+            ],
+            "Result": "Voidstone",
+            "Notes": "Rathma"
+        },
+        {
+            "Category": "Uber Bosses",
+            "Ingridients": [
+                {
+                    "Name": "Demonic Insignia",
+                    "Class": "",
+                    "Info": "Drops from enemies in \"red portal\" zones within Act 5 (Abaddon, Pit of Acheron, Infernal Pit)"
+                },
+                {
+                    "Name": "Talisman of Transgression",
+                    "Class": "",
+                    "Info": "Drops from enemies in corrupted zones"
+                },
+                {
+                    "Name": "Flesh of Malic",
+                    "Class": "Drops from demon enemies"
+                }
+            ],
+            "Result": "Shadow of Hatred",
+            "Notes": "Lucion"
+        },
+        {
+            "Category": "Respecc",
+            "Ingridients": [
+                {
+                    "Name": "Twisted Essence of Suffering",
+                    "Class": "",
+                    "Info": "Drops from Andariel/Duriel (~16.1%/~21.3% chance)"
+                },
+                {
+                    "Name": "Charged Essence of Hatred",
+                    "Class": "",
+                    "Info": "Drops from Mephisto (~8.3% chance)"
+                },
+                {
+                    "Name": "Burning Essence of Terror",
+                    "Info": "Drops from Diablo (~8.3% chance)"
+                },
+                {
+                    "Name": "Festering Essence of Destruction",
+                    "Info": "Drops from Baal (~8.3% chance)"
+                }
+            ],
+            "Result": "Token of Absolution",
+            "Notes": "Resets character skills/stats "
         }
     ]
 }

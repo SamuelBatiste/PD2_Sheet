@@ -61,6 +61,10 @@
                     <option value="Sockets">Sockets</option>
                     <option value="Potions">Potions</option>
                     <option value="Portals">Portals</option>
+                    <option value="Reroll">Reroll</option>
+                    <option value="Breakdown">Breakdown</option>
+                    <option value="Uber Bosses">Uber Bosses</option>
+                    <option value="Respecc">Respecc</option>
                 </select>
             </div>
             <div class="col-md-5 mb-2">
@@ -92,7 +96,7 @@
                         <td>
                             <ul class="mb-0">
                                 <template x-for="item in recipe.Ingridients" :key="item.Name">
-                                    <li :class="item.Class" x-text="item.Name"></li>
+                                    <li :title="item.Info" :class="item.Class" x-text="item.Name"></li>
                                 </template>
                             </ul>
                         </td>
