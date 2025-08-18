@@ -34,21 +34,305 @@
             ]
         },
         {
+            "Category": "Ring",
+            "LowRarity": [
+                "+[7-10] to Strength",
+                "+[7-10] to Dexterity",
+                "+[7-10] to Vitality",
+                "+[7-10] to Energy",
+                "Fire Resist +[10-15]%",
+                "Cold Resist +[10-15]%",
+                "Lightning Resist +[10-15]%",
+                "Poison Resist +[10-15]%"
+            ],
+            "MidRarity": [
+                "+[100-150] to Attack Rating",
+                "+[2-3] Life after each Kill",
+                "+[2-3] to Mana after each Kill",
+                "Physical Damage Taken Reduced by [4-6]",
+                "Magic Damage Taken Reduced by [4-6]",
+                "+[30-40] to Life",
+                "[40-80]% Extra Gold from Monsters",
+                "[15-20]% Better Chance of Getting Magic Items"
+            ],
+            "HighRarity": [
+                "+10% Faster Cast Rate",
+                "+10% Faster Run/Walk",
+                "10% Reduced Curse Duration",
+                "[3-4]% Mana Stolen per Hit",
+                "[3-4]% Life Stolen per Hit",
+                "+[4-6] to All Attributes",
+                "All Resistances +[4-6]",
+                "Physical Damage Taken Reduced by 3% "
+            ]
+        },
+        {
+            "Category": "Amulet",
+            "LowRarity": [
+                "+[6-12] to Strength",
+                "+[6-12] to Dexterity",
+                "+[6-12] to Vitality",
+                "+[6-12] to Energy",
+                "Fire Resist +[15-20]%",
+                "Cold Resist +[15-20]%",
+                "Lightning Resist +[15-20]%",
+                "Poison Resist +[15-20]%"
+            ],
+            "MidRarity": [
+                "+[10-20]% Chance to Pierce",
+                "+10% Faster Hit Recovery",
+                "10% Increased Chance of Blocking",
+                "+[2-3] Life after each Kill",
+                "+[2-3] to Mana after each Kill",
+                "+[6-8] to All Attributes",
+                "[60-100]% Extra Gold from Monsters",
+                "[20-30]% Better Chance of Getting Magic Items"
+            ],
+            "HighRarity": [
+                "+1 to All Skills",
+                "+10% Faster Cast Rate",
+                "+10% Faster Run/Walk",
+                "+10% Curse Resistance",
+                "+[30-40]% Enhanced Damage",
+                "Cannot Be Frozen",
+                "+2% to ALL Maximum Resistances",
+                "All Resistances +[7-10] "
+            ]
+        },
+        {
+            "Category": "Chest",
+            "LowRarity": [
+                "+[20-30]% Faster Hit Recovery",
+                "+[50-80]% Enhanced Defense",
+                "[20-30]% Better Chance of Getting Magic Items",
+                "+[30-40] Mana",
+                "Fire Resist +[30-35]%",
+                "Cold Resist +[30-35]%",
+                "Lightning Resist +[30-35]%",
+                "Poison Resist +[30-35]%"
+            ],
+            "MidRarity": [
+                "Indestructible, +[50-80]% Enhanced Defense",
+                "+10% Faster Cast Rate",
+                "+20% Faster Run/Walk",
+                "Increase Maximum Life [4-6]%",
+                "Physical Damage Taken Reduced by [6-10]",
+                "Magic Damage Taken Reduced by [6-10]",
+                "Attacker Takes Damage of [4-594] ([4-6] per Level)",
+                "Cannot Be Frozen"
+            ],
+            "HighRarity": [
+                "+1 to All Skills",
+                "+10% Curse Resistance",
+                "All Resistances +[20-25]",
+                "Physical Damage Taken Reduced by [6-8]%",
+                "+[4-5]% to Maximum Fire Resist, Fire Resist +15%",
+                "+[4-5]% to Maximum Cold Resist, Cold Resist +15%",
+                "+[4-5]% to Maximum Lightning Resist, Lightning Resist +15%",
+                "+[4-5]% to Maximum Poison Resist, Poison Resist +15%"
+            ]
+        },
+        {
+            "Category": "Weapon",
+            "LowRarity": [
+                "+[40-80]% Enhanced Damage",
+                "+[150-250] to Attack Rating",
+                "+[100-150]% Enhanced Damage to Demons, +200 to Attack Rating against Demons",
+                "+[100-150]% Enhanced Damage to Undead, +200 to Attack Rating against Undead",
+                "+10% Faster Cast Rate",
+                "+[3-6] Life after each Hit",
+                "+[3-6] Life after each Kill",
+                "+[3-5] to Mana after each Kill",
+                "[20-30]% Better Chance of Getting Magic Items",
+                "Requirements -[25-50]%"
+            ],
+            "MidRarity": [
+                "+20% Faster Cast Rate",
+                "+[30-40]% Increased Attack Speed",
+                "+[40-60]% Enhanced Damage",
+                "5% Life Stolen per Hit",
+                "-[40-60] Target Defense per Hit",
+                "[20-30]% Chance of Crushing Blow",
+                "[20-30]% Deadly Strike",
+                "-[7-10]% to Enemy Fire Resistance",
+                "-[7-10]% to Enemy Cold Resistance",
+                "-[7-10]% to Enemy Lightning Resistance",
+                "-[7-10]% to Enemy Poison Resistance"
+            ],
+            "HighRarity": [
+                "+1 to All Skills",
+                "+30% Increased Attack Speed, [20-30]% Chance of Crushing Blow",
+                "+[80-120]% Enhanced Damage, +20% Increased Attack Speed",
+                "+[80-120]% Enhanced Damage, +250 to Attack Rating",
+                "+[50-70]% Enhanced Damage, 25% Deadly Strike",
+                "+[60-80]% Enhanced Damage, Ignores Target's Defense",
+                "+10% Faster Cast Rate, +5% to Fire Skill Damage",
+                "+10% Faster Cast Rate, +5% to Cold Skill Damage",
+                "+10% Faster Cast Rate, +5% to Lightning Skill Damage",
+                "+10% Faster Cast Rate, +5% to Poison Skill Damage "
+            ]
+        },
+        {
+            "Category": "Shield",
+            "LowRarity": [
+                "+[20-30]% Faster Hit Recovery",
+                "+20% Faster Block Rate",
+                "[20-30]% Better Chance of Getting Magic Items",
+                "+[30-40] Life",
+                "Fire Resist +[35-40]%",
+                "Cold Resist +[35-40]%",
+                "Lightning Resist +[35-40]%",
+                "Poison Resist +[35-40]%"
+            ],
+            "MidRarity": [
+                "Indestructible, +[50-80]% Enhanced Defense",
+                "+10% Faster Cast Rate",
+                "+10% Faster Block Rate, [10-20]% Increased Chance of Blocking",
+                "Increase Maximum Life [4-6]%",
+                "Physical Damage Taken Reduced by [6-10]",
+                "Magic Damage Taken Reduced by [6-10]",
+                "Attacker Takes Damage of [4-594] ([4-6] per Level)",
+                "Cannot Be Frozen"
+            ],
+            "HighRarity": [
+                "+1 to All Skills",
+                "+10% Curse Resistance",
+                "All Resistances +[20-25]",
+                "Physical Damage Taken Reduced by [6-8]%",
+                "+[4-5]% to Maximum Fire Resist, Fire Resist +[15-20]%",
+                "+[4-5]% to Maximum Cold Resist, Cold Resist +[15-20]%",
+                "+[4-5]% to Maximum Lightning Resist, Lightning Resist +[15-20]%",
+                "+[4-5]% to Maximum Poison Resist, Poison Resist +[15-20]% "
+            ]
+        },
+        {
             "Category": "Boots",
             "LowRarity": [
                 "+[50-80]% Enhanced Defense",
                 "Regenerate Mana [10-15]%",
-                "[50-100]% Extra Gold from Monsters"
+                "[50-100]% Extra Gold from Monsters",
+                "[10-25]% Better Chance of Getting Magic Items",
+                "Fire Resist +[15-20]%",
+                "Cold Resist +[15-20]%",
+                "Lightning Resist +[15-20]%",
+                "Poison Resist +[15-20]%"
             ],
             "MidRarity": [
                 "Indestructible, +[50-80]% Enhanced Defense",
-                "+10% Faster Block Rate",
-                "+10% Faster Hit Recovery"
+                "+10% Faster Hit Recovery",
+                "All Resistances +[5-8]",
+                "+[2-3] Life after each Kill",
+                "+[2-3] to Mana after each Kill",
+                "Replenish Life +[15-25]"
             ],
             "HighRarity": [
-                "+15% Faster Run/Walk ",
-                "20% Reduced Curse Duration ",
+                "+15% Faster Run/Walk",
+                "20% Reduced Curse Duration",
+                "Physical Damage Taken Reduced by [3-4]%",
+                "10% Increased Chance of Blocking",
+                "+[2-3]% to Maximum Fire Resist, Fire Resist +10%",
+                "+[2-3]% to Maximum Cold Resist, Cold Resist +10%",
+                "+[2-3]% to Maximum Lightning Resist, Lightning Resist +10%",
+                "+[2-3]% to Maximum Poison Resist, Poison Resist +10% "
+            ]
+        },
+        {
+            "Category": "Gloves",
+            "LowRarity": [
+                "+[50-80]% Enhanced Defense",
+                "Regenerate Mana [20-30]%",
+                "[50-100]% Extra Gold from Monsters",
+                "[10-25]% Better Chance of Getting Magic Items",
+                "Fire Resist +[10-15]%",
+                "Cold Resist +[10-15]%",
+                "Lightning Resist +[10-15]%",
+                "Poison Resist +[10-15]%"
+            ],
+            "MidRarity": [
+                "+[10-15]% Chance to Pierce",
+                "+[10-20]% Faster Block Rate",
+                "+[100-150] to Attack Rating",
+                "[2-3]% Life Stolen per Hit",
+                "[2-3]% Mana Stolen per Hit",
+                "+[3-6] to All Attributes",
+                "+[20-40] to Life",
+                "Replenish Life +[15-20]"
+            ],
+            "HighRarity": [
+                "+10% Faster Cast Rate",
+                "+10% Increased Attack Speed",
+                "10% Increased Chance of Blocking",
+                "+[30-40]% Enhanced Damage",
+                "-[15-25]% Target Defense",
+                "10% Deadly Strike",
+                "+[3-4] to Mana after each Kill",
+                "All Resistances +[5-8] "
+            ]
+        },
+        {
+            "Category": "Belt",
+            "LowRarity": [
+                "+[7-10] to Strength",
+                "+[7-10] to Dexterity",
+                "+[7-10] to Vitality",
+                "+[7-10] to Energy",
+                "Fire Resist +[10-15]%",
+                "Cold Resist +[10-15]%",
+                "Lightning Resist +[10-15]%",
+                "Poison Resist +[10-15]%"
+            ],
+            "MidRarity": [
+                "+[10-15]% Chance to Pierce",
+                "+10% Faster Hit Recovery",
+                "+[3-6] to All Attributes",
+                "Replenish Life +[15-20]",
+                "+[100-150] to Attack Rating",
+                "Attacker Takes Damage of [2-396] ([2-4] per Level)",
+                "[60-100]% Extra Gold from Monsters",
+                "[20-30]% Better Chance of Getting Magic Items"
+            ],
+            "HighRarity": [
+                "+10% Faster Cast Rate",
+                "+10% Increased Attack Speed",
+                "+10% Faster Run/Walk",
+                "20% Reduced Curse Duration",
+                "10% Increased Chance of Blocking",
+                "+2% to ALL Maximum Resistances",
+                "All Resistances +[5-8]",
                 "Physical Damage Taken Reduced by [3-4]% "
+            ]
+        },
+        {
+            "Category": "Quiver",
+            "LowRarity": [
+                "+20% Faster Hit Recovery",
+                "+[30-40] to Life",
+                "[50-100]% Extra Gold from Monsters",
+                "[10-25]% Better Chance of Getting Magic Items",
+                "Fire Resist +[10-20]%",
+                "Cold Resist +[10-20]%",
+                "Lightning Resist +[10-20]%",
+                "Poison Resist +[10-20]%"
+            ],
+            "MidRarity": [
+                "+10% Faster Run/Walk",
+                "+[10-15]% Chance to Pierce",
+                "-[5-10]% to Enemy Fire Resistance",
+                "-[5-10]% to Enemy Cold Resistance",
+                "-[10-20]% Target Defense",
+                "+[50-100] to Attack Rating",
+                "[2-4]% Mana Stolen per Hit",
+                "[2-4]% Life Stolen per Hit"
+            ],
+            "HighRarity": [
+                "+1 to All Skills",
+                "+10% Increased Attack Speed",
+                "+10% Curse Resistance",
+                "+[30-40]% Enhanced Damage",
+                "+[10-15] to Minimum Damage",
+                "+[10-15] to Maximum Damage",
+                "Ignore Target's Defense",
+                "All Resistances +[5-10] "
             ]
         }
     ]
