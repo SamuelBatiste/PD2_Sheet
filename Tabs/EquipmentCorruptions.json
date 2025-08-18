@@ -1,0 +1,40 @@
+{
+    "Corruptions": [
+        {
+            "Category": "Helmet",
+            "LowRarity": [
+                "+[20-30]% Faster Hit Recovery",
+                "+[50-80]% Enhanced Defense",
+                "[20-30]% Better Chance of Getting Magic Items"
+            ],
+            "MidRarity": [
+                "Indestructible, +[50-80]% Enhanced Defense",
+                "+[150-250] to Attack Rating, +[2-4] to Light Radius",
+                "[3-5]% Life Stolen per Hit"
+            ],
+            "HighRarity": [
+                "+1 to All Skills",
+                "+10% Curse Resistance",
+                "All Resistances +[15-20]"
+            ]
+        },
+        {
+                 "Category": "Boots",
+            "LowRarity": [
+                "+[50-80]% Enhanced Defense",
+                "Regenerate Mana [10-15]%",
+                "[50-100]% Extra Gold from Monsters"
+            ],
+            "MidRarity": [
+                "Indestructible, +[50-80]% Enhanced Defense",
+                "+10% Faster Block Rate",
+                "+10% Faster Hit Recovery"
+            ],
+            "HighRarity": [
+                "+15% Faster Run/Walk ",
+                "20% Reduced Curse Duration ",
+                "Physical Damage Taken Reduced by [3-4]% "
+            ]
+        }
+    ]
+}

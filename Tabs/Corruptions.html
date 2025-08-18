@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark" lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Corruptions Table</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <style>
+        .filter-bar {
+            position: sticky;
+            top: 0;
+    
+            display: flex;
+
+            z-index: 10;
+        }
+
+        .table-container {
+            height: calc(100vh - 80px);
+            /* Adjust based on header height */
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body x-data="corruptionsTable" x-init="loadData()" class="p-4">
+    <!-- Filter Bar -->
+    <div class="filter-bar row align-items-end">
+
+        <div class="col-md-4 mb-2">
+            <select class="form-control" x-model="filters.category">
+                <option value="">All Categories</option>
+                <template x-for="cat in uniqueCategories" :key="cat">
+                    <option x-text="cat" :value="cat"></option>
+                </template>
+            </select>
+        </div>
+        <div class="col-md-5 mb-2">
+            <input class="form-control" type="text" placeholder="Search..." x-model="filters.search" />
+        </div>
+
+        <div class="col-md-3 mb-2">
+            <button class="btn btn-danger w-100" @click="resetFilters()">Reset</button>
+        </div>
+
+    </div>
+
+    <!-- Table -->
+    <div class="mt-2 table-container">
+        <template x-if="!loading && !error">
+            <table class="table table-bordered table-striped mb-0">
+                <thead>
+                    <tr>
+                        <th @click="toggleSort()" :class="sort.direction ? ('sort-' + sort.direction) : ''">
+                            Category
+                        </th>
+                        <th>LowRarity</th>
+                        <th>MidRarity</th>
+                        <th>HighRarity</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <template x-for="entry in filteredData" :key="entry.id">
+                        <tr>
+                            <td x-text="entry.Category"></td>
+                            <td x-text="entry.LowRarity || ''"></td>
+                            <td x-text="entry.MidRarity || ''"></td>
+                            <td x-text="entry.HighRarity || ''"></td>
+                        </tr>
+                    </template>
+                </tbody>
+            </table>
+        </template>
+
+        <template x-if="loading">
+            <p style="padding: 1rem;">Loading data...</p>
+        </template>
+
+        <template x-if="error">
+            <p style="color:red; padding: 1rem;">Failed to load JSON data.</p>
+        </template>
+    </div>
+
+    <script>
+        document.addEventListener('alpine:init', () => {
+            Alpine.data('corruptionsTable', () => ({
+                data: { Corruptions: [] },
+                flattenedData: [],
+                filteredData: [],
+                uniqueCategories: [],
+                loading: true,
+                error: false,
+
+                filters: {
+                    category: '',
+                    search: ''
+                },
+
+                sort: {
+                    direction: null // 'asc' or 'desc'
+                },
+
+                async loadData() {
+                    try {
+                        const res = await fetch('EquipmentCorruptions.json');
+                        if (!res.ok) throw new Error("HTTP error " + res.status);
+                        this.data = await res.json();
+                        this.flattenCorruptions();
+                        this.extractCategories();
+                        this.applyFilters();
+                    } catch (e) {
+                        console.error(e);
+                        this.error = true;
+                    } finally {
+                        this.loading = false;
+                    }
+                },
+
+                flattenCorruptions() {
+                    this.flattenedData = [];
+
+                    this.data.Corruptions.forEach(corruption => {
+                        const low = corruption.LowRarity || [];
+                        const mid = corruption.MidRarity || [];
+                        const high = corruption.HighRarity || [];
+
+                        const maxLength = Math.max(low.length, mid.length, high.length);
+
+                        for (let i = 0; i < maxLength; i++) {
+                            this.flattenedData.push({
+                                id: `${corruption.Category}-${i}`,
+                                Category: corruption.Category,
+                                LowRarity: low[i] || '',
+                                MidRarity: mid[i] || '',
+                                HighRarity: high[i] || ''
+                            });
+                        }
+                    });
+                },
+
+                extractCategories() {
+                    const categories = new Set(this.flattenedData.map(item => item.Category));
+                    this.uniqueCategories = Array.from(categories).sort();
+                },
+
+                applyFilters() {
+                    const cat = this.filters.category.toLowerCase();
+                    const term = this.filters.search.toLowerCase();
+
+                    let filtered = this.flattenedData;
+
+                    if (cat) {
+                        filtered = filtered.filter(item =>
+                            item.Category.toLowerCase() === cat
+                        );
+                    }
+
+                    if (term) {
+                        filtered = filtered.filter(item =>
+                            Object.values(item).some(val =>
+                                val.toLowerCase().includes(term)
+                            )
+                        );
+                    }
+
+                    // Apply sorting
+                    if (this.sort.direction) {
+                        filtered.sort((a, b) => {
+                            if (a.Category < b.Category) return this.sort.direction === 'asc' ? -1 : 1;
+                            if (a.Category > b.Category) return this.sort.direction === 'asc' ? 1 : -1;
+                            return 0;
+                        });
+                    }
+
+                    this.filteredData = filtered;
+                },
+
+                resetFilters() {
+                    this.filters.category = '';
+                    this.filters.search = '';
+                    this.sort.direction = null;
+                    this.applyFilters();
+                },
+
+                toggleSort() {
+                    if (!this.sort.direction) {
+                        this.sort.direction = 'asc';
+                    } else if (this.sort.direction === 'asc') {
+                        this.sort.direction = 'desc';
+                    } else {
+                        this.sort.direction = null;
+                    }
+                    this.applyFilters();
+                },
+
+                // Auto-watch filters
+                init() {
+                    this.$watch('filters.category', () => this.applyFilters());
+                    this.$watch('filters.search', () => this.applyFilters());
+                }
+            }));
+        });
+    </script>
+</body>
+
+</html>
