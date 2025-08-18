@@ -5,21 +5,36 @@
             "LowRarity": [
                 "+[20-30]% Faster Hit Recovery",
                 "+[50-80]% Enhanced Defense",
-                "[20-30]% Better Chance of Getting Magic Items"
+                "[20-30]% Better Chance of Getting Magic Items",
+                "Replenish Life +[20-30]",
+                "Fire Resist +[30-35]%",
+                "Cold Resist +[30-35]%",
+                "Lightning Resist +[30-35]%",
+                "Poison Resist +[30-35]%"
             ],
             "MidRarity": [
                 "Indestructible, +[50-80]% Enhanced Defense",
                 "+[150-250] to Attack Rating, +[2-4] to Light Radius",
-                "[3-5]% Life Stolen per Hit"
+                "[3-5]% Life Stolen per Hit",
+                "[3-5]% Mana Stolen per Hit",
+                "Increase Maximum Life [4-6]%",
+                "+[3-4] Life after each Kill",
+                "+[3-4] to Mana after each Kill",
+                "Cannot Be Frozen"
             ],
             "HighRarity": [
                 "+1 to All Skills",
                 "+10% Curse Resistance",
-                "All Resistances +[15-20]"
+                "All Resistances +[15-20]",
+                "Physical Damage Taken Reduced by [4-6]%",
+                "+[4-5]% to Maximum Fire Resist, Fire Resist +15%",
+                "+[4-5]% to Maximum Cold Resist,Cold Resist +15%",
+                "+[4-5]% to Maximum Lightning Resist, Lightning Resist +15%",
+                "+[4-5]% to Maximum Poison Resist, Poison Resist +15% "
             ]
         },
         {
-                 "Category": "Boots",
+            "Category": "Boots",
             "LowRarity": [
                 "+[50-80]% Enhanced Defense",
                 "Regenerate Mana [10-15]%",
