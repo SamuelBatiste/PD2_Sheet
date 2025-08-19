@@ -25,6 +25,7 @@
         }
     </style>
 </head>
+
 <body>
     <div class="" style="height: 92%;">
         <ul class="nav nav-tabs mt-2" role="tablist">
@@ -44,14 +45,20 @@
                     type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Cube
                     Recipes</button>
             </li>
-                 <li class="nav-item" role="presentation">
+            <li class="nav-item" role="presentation">
                 <button class="nav-link" id="corruptions-tab" data-bs-toggle="tab" data-bs-target="#corruptions-panel"
-                    type="button" role="tab" aria-controls="corruptions-tab-pane" aria-selected="false">Corruptions</button>
+                    type="button" role="tab" aria-controls="corruptions-tab-pane"
+                    aria-selected="false">Corruptions</button>
+            </li>
+                <li class="nav-item" role="presentation">
+                <button class="nav-link" id="uniqueWeapons-tab" data-bs-toggle="tab" data-bs-target="#uniqueWeapons-panel"
+                    type="button" role="tab" aria-controls="uniqueWeapons-tab-pane"
+                    aria-selected="false">Unique Weapons</button>
             </li>
         </ul>
         <div class="tab-content h-100" id="myTabContent">
-            <div class="tab-pane fade show active mx-2 h-100" id="runewords-panel" role="tabpanel" aria-labelledby="home-tab"
-                tabindex="0">
+            <div class="tab-pane fade show active  mx-2 h-100" id="runewords-panel" role="tabpanel"
+                aria-labelledby="home-tab" tabindex="0">
                 <iframe class="w-100" style="height: 100%;" src="./Tabs/RuneWords.html"></iframe>
             </div>
             <div class="tab-pane fade  h-100" id="cube-recipes-panel" role="tabpanel" aria-labelledby="home-tab"
@@ -62,9 +69,13 @@
                 tabindex="0">
                 <iframe class="w-100" style="height: 100%;" src="./Tabs/Crafting.html"></iframe>
             </div>
-              <div class="tab-pane fade  h-100" id="corruptions-panel" role="tabpanel" aria-labelledby="crafting-tab"
+            <div class="tab-pane fade  h-100" id="corruptions-panel" role="tabpanel" aria-labelledby="crafting-tab"
                 tabindex="0">
                 <iframe class="w-100" style="height: 100%;" src="./Tabs/Corruptions.html"></iframe>
+            </div>
+               <div class="tab-pane fade   h-100" id="uniqueWeapons-panel" role="tabpanel" aria-labelledby="uniqueWeapons-tab"
+                tabindex="0">
+                <iframe class="w-100" style="height: 100%;" src="./Tabs/UniqueWeapons.html"></iframe>
             </div>
         </div>
         <small class="ps-4">

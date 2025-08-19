@@ -1,0 +1,88 @@
+{
+    "Weapons": [
+        {
+            "Name": "The Gnasher",
+            "Type": "Axe",
+            "BaseTypeName": "Club",
+            "Hander": "One-Hand",
+            "Base-Damage": "3 to 6",
+            "Base-Speed": "0",
+            "Base-Melee Range": "2",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "Damage": "4 to [8-9]",
+            "Average Damage": "6-6.5",
+            "Bonuses": [
+                "+[40-50]% Enhanced Damage",
+                "+20% Chance of Crushing Blow",
+                "+50% Chance of Open Wounds",
+                "+2 Open Wounds Damage per Second",
+                "+8 to Strength "
+            ]
+        },
+        {
+            "Name": "Deathspade",
+            "Type": "Axe",
+            "BaseTypeName": "Club",
+            "Hander": "One-Hand",
+            "Base-Damage": "4 to 11",
+            "Base-Speed": "10",
+            "Base-Melee Range": "2",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "Damage": "14 to [17-18]",
+            "Average-Damage": "15.5-16",
+            "Bonuses": [
+                "+[60-70]% Enhanced Damage",
+                "+8 to Minimum Damage",
+                "+10% Deadly Strike",
+                "15% Bonus to Attack Rating",
+                "Hit Blinds Target",
+                "+4 to Mana after each Kill "
+            ]
+        },
+        {
+            "Name": "Felloak",
+            "Type": "Mace",
+            "BaseTypeName": "Club",
+            "Hander": "One-Hand",
+            "Base-Damage": "1 to 6",
+            "Base-Speed": "-10",
+            "Base-Melee Range": "2",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "Damage": "1 to 10",
+            "Average-Damage": "5.5",
+            "Bonuses": [
+                "+[70-80]% Enhanced Damage",
+                "Adds 6-8 Fire Damage",
+                "+[2-3] to Firestorm (Druid Only)",
+                "Knockback",
+                "Lightning Resist +[30-50]%",
+                "Fire Resist +[15-30]%",
+                "+50% Damage to Undead "
+            ]
+        },
+        {
+            "Name": "Azurewrath",
+            "Type": "Sword",
+            "BaseTypeName": "Phase Blade",
+            "Hander": "One-Hand",
+            "Base-Damage": "39 to 44",
+            "Base-Speed": "-30",
+            "Base-Melee Range": "2",
+            "Base-Maximum Sockets": "",
+            "Damage": "[148-163] to [167-184]",
+            "Average-Damage": "157.5-173.5",
+            "RequiredLevel":"85",
+            "Bonuses": [
+                "Level [10-12] Sanctuary Aura when Equipped",
+                "18% Chance to Cast Level 30 Holy Light on Striking",
+                "+2 to All Skills",
+                "+30% Increased Attack Speed",
+                "+[280-320]% Enhanced Damage",
+                "Adds 500-650 Magic Damage",
+                "Adds 250-500 Cold Damage",
+                "+[5-10] to All Attributes",
+                "+3 to Light Radius "
+            ]
+        }
+    ]
+}

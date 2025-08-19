@@ -1,0 +1,120 @@
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@2.8.2/dist/alpine.min.js" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+
+<html data-bs-theme="dark" lang="en" x-data="recipeApp()" x-init="loadData()" class="h-100">
+
+<head>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="p-4">
+        <!-- Filters -->
+        <div class="row align-items-end">
+            <div class="col-md-2 mb-2">
+                <select class="form-select" x-model="selectedCategory">
+                    <option value="">All Types</option>
+                    <option value="Axe">Axe</option>   
+                    <option value="Mace">Mace</option>
+                </select>
+            </div>
+                  <div class="col-md-2 mb-2">
+                <select class="form-select" x-model="selectedWeaponType">
+                    <option value="">All Weapon Types</option>
+                    <option value="Axe">Axe</option>   
+                    <option value="Sword">Sword</option>
+                          <option value="Mace">Mace</option>
+                </select>
+            </div>
+             <div class="col-md-2 mb-2">
+                <select class="form-select" x-model="selectedHander">
+                    <option value="">All</option>
+                    <option value="One-Hand">One-Hand</option>   
+                    <option value="Two-Hand">Two-Hand</option>
+                </select>
+            </div>
+            <div class="col-md-3 mb-2">
+                <input type="text" class="form-control" placeholder="Quick Search"
+                    x-model="search" />
+            </div>
+
+            <div class="col-md-3 mb-2">
+                <button class="btn btn-danger w-100" @click="resetFilters">Reset</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scrollable Table Wrapper -->
+    <div class="flex-grow-1 overflow-auto px-4 pb-4">
+        <table class="table table-bordered table-striped mb-0">
+            <thead class="table-dark sticky-top">
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Hander</th>
+                               <th>Req. LvL</th>
+                    <th>Bonuses</th>
+                </tr>
+            </thead>
+            <tbody>
+                <template x-for="weapon in filteredweapons">
+                    <tr>
+                        <td x-text="weapon.Name"></td>
+                        <td x-text="weapon.Type"></td>
+                        <td x-text="weapon.Hander"></td>
+                          <td x-text="weapon.RequiredLevel"></td>
+                        <td>
+                            <ul class="mb-0">
+                                <template x-for="item in weapon.Bonuses" :key="item">
+                                    <li x-text="item"></li>
+                                </template>
+                            </ul>
+                        </td>
+                    </tr>
+                </template>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<script>
+    function recipeApp() {
+        return {
+            weapons: [],
+            search: '',
+            selectedCategory: '',     
+            selectedHander: '',
+            selectedWeaponType:'',
+            async loadData() {
+                const res = await fetch('UniqueWeapons.json');
+                const data = await res.json();
+                this.weapons = data.Weapons;
+            },
+            resetFilters() {
+                this.search = '';
+                this.selectedCategory = '';
+            },
+            get filteredweapons() {
+                const term = this.search.toLowerCase();
+                return this.weapons.filter(weapon => {
+                    const matchesCategory = this.selectedCategory === '' || weapon.Type === this.selectedCategory;
+                    const matchesHander = this.selectedHander === '' || weapon.Hander === this.selectedHander;
+                    const matchesWeaponType= this.selectedWeaponType === '' || weapon.Type === this.selectedWeaponType;
+                    const matchesSearch =
+                        term === '' ||
+                        weapon.Name.toLowerCase().includes(term) ||
+                        weapon.Bonuses.some(i =>
+                            i.toLowerCase().includes(term)
+                        );
+                    return matchesCategory && matchesSearch && matchesHander && matchesWeaponType;
+                });
+            }
+        };
+    }
+</script>
+
+</html>
