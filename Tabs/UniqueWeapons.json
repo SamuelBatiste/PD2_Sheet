@@ -84,5 +84,29 @@
                 "+3 to Light Radius "
             ]
         }
+        ,
+        {
+            "Name": "Crackleshot",
+            "Type": "Bow",
+            "BaseTypeName": "Blade Bow",
+            "Hander": "One-Hand",
+            "Base-Damage": "",
+            "Base-Speed": "",
+            "Base-Melee Range": "",
+            "Base-Maximum Sockets": "",
+            "Damage": "108 to 216 @ 260%ED",
+            "Average-Damage": "",
+            "RequiredLevel":"72",
+            "Bonuses": [
+                "2% Chance To Cast Level 28 Lightning Fury on Striking",
+                 "15% Chance To Cast Level 25 Lightning Bolt on Striking",
+                 "+20% Increased Attack Speed",
+                 "+[260% - 330%] Enhanced Damage",
+                 "Adds 100-450 Lightning Damage",
+                 "+[2 - 3] to Valkyrie (Amazon only)",
+                    "+[2 - 3] to CriticalStrike (Amazon only)",
+                    "+5 To Mana After Each kill"
+            ]
+        }
     ]
 }

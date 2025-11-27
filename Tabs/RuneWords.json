@@ -2461,5 +2461,89 @@
 "Adds 258-364 Cold Damage "
       ]
     }
+    ,
+     {
+      "Name": "Ancient's Foresight",
+      "Sockets": 2,
+      "CharacterLevel": 25,
+      "Rune1": "Ral",
+      "Rune2": "Thul",
+      "Rune3": "",
+      "Rune4": "",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Quivers",
+      "Bonuses": [
+"-4% to enemy physical resistance",
+"[10%-20%] enhanced damage",
+"20 to mana",
+"Regenerate Mana 20%",
+"Cold Resist +[5% - 15%]",
+"Fire Resist +[5% -15%]%"
+      ]
+    }   ,
+     {
+      "Name": "Ancient's Scripture",
+      "Sockets": 2,
+      "CharacterLevel": 25,
+      "Rune1": "Tal",
+      "Rune2": "Ort",
+      "Rune3": "",
+      "Rune4": "",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Quivers",
+      "Bonuses": [
+"[10%-20%] enhanced damage",
+"+10 to Maximum Damage",
+"+20 to Life",
+"Heals Stamina Plus 20%",
+"Lightning Resist +[5% - 15%]",
+"Poison Resist +[5% -15%]%"
+      ]
+    }
+     ,
+     {
+      "Name": "Echo",
+      "Sockets": 2,
+      "CharacterLevel": 31,
+      "Rune1": "Sol",
+      "Rune2": "Dol",
+      "Rune3": "",
+      "Rune4": "",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Quivers",
+      "Bonuses": [
+        "[20%-30%] Chance To Pierce",
+"[20%-30%] enhanced damage",
+"+10 to Maximum Damage",
+"+50% to Attack Rating",
+"Replenish Life +30",
+"Physical Damage Taken Reduced by 9",
+"+2 Life After Each Kill"
+      ]
+    },
+     {
+      "Name": "Echo",
+      "Sockets": 2,
+      "CharacterLevel": 31,
+      "Rune1": "Sol",
+      "Rune2": "Dol",
+      "Rune3": "",
+      "Rune4": "",
+      "Rune5": "",
+      "Rune6": "",
+      "ItemType": "Quivers / Throwing Weapons / Javelins",
+      "Bonuses": [
+        "[20%-30%] Chance To Pierce",
+"[20%-30%] enhanced damage",
+"+10 to Maximum Damage",
+"+50% to Attack Rating",
+"Replenish Life +30",
+"Physical Damage Taken Reduced by 9",
+"+2 Life After Each Kill"
+      ]
+    }
   ]
 }
