@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HLL Artillery Calculator</title>
+<script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #121212;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-between;
+}
+
+.container {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    font-size: 28px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    background: #2a2a2a;
+    color: white;
+}
+
+.active {
+    border: 3px solid #4CAF50;
+}
+
+.result {
+    margin-top: 15px;
+    font-size: 22px;
+    text-align: center;
+    color: #4CAF50;
+}
+
+.keypad {
+    padding: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    background: #000;
+}
+
+.keypad button {
+    font-size: 24px;
+    padding: 18px;
+    border-radius: 12px;
+    border: none;
+    background: #1f1f1f;
+    color: white;
+}
+
+.keypad button:active {
+    background: #4CAF50;
+}
+
+.confirm {
+    grid-column: span 2;
+    background: #4CAF50;
+}
+
+.danger {
+    background: #aa3333;
+}
+
+.sign {
+    background: #3333aa;
+}
+</style>
+</head>
+
+<body x-data="calculator()">
+
+<div class="container">
+    <h1>HLL Artillery Calculator</h1>
+
+    <input 
+        type="text"
+        class="input-field"
+        :class="activeField === 'meter' ? 'active' : ''"
+        :value="meterDisplay"
+        placeholder="Target Distance (Meters)"
+        readonly
+    >
+
+    <input 
+        type="text"
+        class="input-field"
+        :class="activeField === 'elevation' ? 'active' : ''"
+        :value="elevationDisplay"
+        placeholder="Elevation Adjustment (MIL)"
+        readonly
+    >
+
+    <div class="result" x-show="result !== null">
+        Required Elevation: <span x-text="result"></span> MIL
+    </div>
+</div>
+
+<div class="keypad">
+    <template x-for="n in numbers" :key="n">
+        <button @click="append(n)" x-text="n"></button>
+    </template>
+
+    <button class="sign" @click="setSign('+')">+</button>
+    <button class="sign" @click="setSign('-')">−</button>
+
+    <button class="danger" @click="remove()">⌫</button>
+    <button class="confirm" @click="confirm()">Confirm</button>
+</div>
+
+<script>
+function calculator() {
+    return {
+        meter: '',
+        elevation: '',
+        meterSign: '+',
+        elevationSign: '+',
+        activeField: 'meter',
+        result: null,
+        justCalculated: false,
+        numbers: [1,2,3,4,5,6,7,8,9,0],
+
+        get meterDisplay() {
+            return this.meter ? this.meterSign + this.meter : '';
+        },
+
+        get elevationDisplay() {
+            return this.elevation ? this.elevationSign + this.elevation : '';
+        },
+
+        resetAll() {
+            this.meter = '';
+            this.elevation = '';
+            this.meterSign = '+';
+            this.elevationSign = '+';
+            this.result = null;
+            this.activeField = 'meter';
+            this.justCalculated = false;
+        },
+
+        append(n) {
+            if (this.justCalculated) {
+                this.resetAll();
+            }
+
+            if (this.activeField === 'meter') {
+                this.meter += n;
+            } else {
+                this.elevation += n;
+            }
+        },
+
+        remove() {
+            if (this.activeField === 'meter') {
+                this.meter = this.meter.slice(0, -1);
+            } else {
+                this.elevation = this.elevation.slice(0, -1);
+            }
+        },
+
+        setSign(sign) {
+            if (this.justCalculated) {
+                this.resetAll();
+            }
+
+            if (this.activeField === 'meter') {
+                this.meterSign = sign;
+            } else {
+                this.elevationSign = sign;
+            }
+        },
+
+        confirm() {
+            if (this.activeField === 'meter') {
+                if (this.meter !== '') {
+                    this.activeField = 'elevation';
+                }
+            } else {
+                if (this.elevation !== '') {
+                    this.calculate();
+                }
+            }
+        },
+
+        calculate() {
+            const meters = parseInt(this.meterSign + this.meter);
+            const adjustment = parseInt(this.elevationSign + this.elevation);
+
+            const baseMil = (meters / 10) + 800;
+            this.result = Math.round(baseMil + adjustment);
+            this.justCalculated = true;
+        }
+    }
+}
+</script>
+
+</body>
+</html>
