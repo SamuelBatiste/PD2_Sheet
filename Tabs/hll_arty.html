@@ -28,6 +28,17 @@ h1 {
     margin-bottom: 20px;
 }
 
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: none;
+    background: #2a2a2a;
+    color: white;
+}
+
 .input-field {
     font-size: 28px;
     padding: 15px;
@@ -45,7 +56,7 @@ h1 {
 
 .result {
     margin-top: 15px;
-    font-size: 22px;
+    font-size: 26px;
     text-align: center;
     color: #4CAF50;
 }
@@ -60,28 +71,46 @@ h1 {
 
 .keypad button {
     font-size: 24px;
-    padding: 18px;
+    padding: 20px;
     border-radius: 12px;
     border: none;
-    background: #1f1f1f;
-    color: white;
+    color: black;
 }
 
 .keypad button:active {
-    background: #4CAF50;
+    opacity: 0.7;
 }
 
-.confirm {
-    grid-column: span 2;
-    background: #4CAF50;
+.full-row {
+    grid-column: span 3;
 }
 
-.danger {
+.sign-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.sign-minus {
     background: #aa3333;
 }
 
-.sign {
-    background: #3333aa;
+.sign-plus {
+    background: #2e7d32;
+}
+
+.confirm {
+    background: #4CAF50;
+}
+
+.zero-row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+}
+
+.erase {
+    background: yellow;
 }
 </style>
 </head>
@@ -89,83 +118,91 @@ h1 {
 <body x-data="calculator()">
 
 <div class="container">
+
     <h1>HLL Artillery Calculator</h1>
 
-    <input 
-        type="text"
-        class="input-field"
-        :class="activeField === 'meter' ? 'active' : ''"
-        :value="meterDisplay"
-        placeholder="Target Distance (Meters)"
-        readonly
-    >
+    <select x-model="selectedType" @change="calculate()">
+        <option value="spa">SPA Tank</option>
+        <option value="german_usa">SA German / USA</option>
+        <option value="soviet">SA Soviet</option>
+        <option value="british">SA British</option>
+    </select>
 
-    <input 
-        type="text"
-        class="input-field"
-        :class="activeField === 'elevation' ? 'active' : ''"
-        :value="elevationDisplay"
-        placeholder="Elevation Adjustment (MIL)"
-        readonly
-    >
+    <!-- Distance -->
+    <div class="input-field"
+         :class="{ 'active': activeField === 'meter' }"
+         @click="activeField = 'meter'"
+         x-text="meter || 'Enter Distance (m)'">
+    </div>
+
+    <!-- Adjustment -->
+    <div class="input-field"
+         :class="{ 'active': activeField === 'elevation' }"
+         @click="activeField = 'elevation'"
+         x-text="elevationDisplay || 'Adjustment (± mils)'">
+    </div>
 
     <div class="result" x-show="result !== null">
-        Required Elevation: <span x-text="result"></span> MIL
+        Target Mils: <span x-text="result"></span>
     </div>
+
 </div>
 
 <div class="keypad">
-    <template x-for="n in numbers" :key="n">
+
+    <!-- 1-9 -->
+    <template x-for="n in [1,2,3,4,5,6,7,8,9]" :key="n">
         <button @click="append(n)" x-text="n"></button>
     </template>
 
-    <button class="sign" @click="setSign('+')">+</button>
-    <button class="sign" @click="setSign('-')">−</button>
+    <!-- Zero + Erase row -->
+    <div class="zero-row full-row">
+            
+        <button @click="append(0)">0</button>
+    <button class="erase" @click="remove()">⌫</button>
+    </div>
 
-    <button class="danger" @click="remove()">⌫</button>
-    <button class="confirm" @click="confirm()">Confirm</button>
+    <!-- Sign row in nested grid -->
+    <div class="sign-container full-row">
+        <button class="sign-minus" @click="setSign('-')">−</button>
+        <button class="sign-plus" @click="setSign('+')">+</button>
+    </div>
+
+    <!-- Next full row -->
+    <button class="confirm full-row" @click="next()">Next</button>
+
 </div>
 
 <script>
 function calculator() {
     return {
+
+        parameters: {
+            spa: 4.17,
+            german_usa: 4.17,
+            soviet: 4.17,
+            british: 4.17,
+        },
+
+        selectedType: 'german_usa',
+
         meter: '',
         elevation: '',
-        meterSign: '+',
         elevationSign: '+',
         activeField: 'meter',
         result: null,
-        justCalculated: false,
-        numbers: [1,2,3,4,5,6,7,8,9,0],
-
-        get meterDisplay() {
-            return this.meter ? this.meterSign + this.meter : '';
-        },
 
         get elevationDisplay() {
             return this.elevation ? this.elevationSign + this.elevation : '';
         },
 
-        resetAll() {
-            this.meter = '';
-            this.elevation = '';
-            this.meterSign = '+';
-            this.elevationSign = '+';
-            this.result = null;
-            this.activeField = 'meter';
-            this.justCalculated = false;
-        },
-
         append(n) {
-            if (this.justCalculated) {
-                this.resetAll();
-            }
-
             if (this.activeField === 'meter') {
                 this.meter += n;
             } else {
                 this.elevation += n;
             }
+            this.calculate();
         },
 
         remove() {
@@ -174,39 +211,42 @@ function calculator() {
             } else {
                 this.elevation = this.elevation.slice(0, -1);
             }
+            this.calculate();
         },
 
         setSign(sign) {
-            if (this.justCalculated) {
-                this.resetAll();
-            }
-
-            if (this.activeField === 'meter') {
-                this.meterSign = sign;
-            } else {
+            if (this.activeField === 'elevation') {
                 this.elevationSign = sign;
+                this.calculate();
             }
         },
 
-        confirm() {
+        next() {
             if (this.activeField === 'meter') {
                 if (this.meter !== '') {
                     this.activeField = 'elevation';
                 }
             } else {
-                if (this.elevation !== '') {
-                    this.calculate();
-                }
+                // Clear both fields and reset sign
+                this.meter = '';
+                this.elevation = '';
+                this.activeField = 'meter';
+                this.result = null;
             }
         },
 
         calculate() {
-            const meters = parseInt(this.meterSign + this.meter);
-            const adjustment = parseInt(this.elevationSign + this.elevation);
+            const meters = parseInt(this.meter);
+            const adjustment = parseInt(this.elevationSign + this.elevation) || 0;
+            const parameter = this.parameters[this.selectedType];
 
-            const baseMil = (meters / 10) + 800;
+            if (!meters || !parameter) {
+                this.result = null;
+                return;
+            }
+
+            const baseMil = 1000 - (meters / parameter);
             this.result = Math.round(baseMil + adjustment);
-            this.justCalculated = true;
         }
     }
 }
