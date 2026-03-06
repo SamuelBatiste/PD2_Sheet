@@ -120,7 +120,7 @@ select {
 <div class="container">
     <select x-model="selectedType" @change="calculate()">
         <option value="spa">SPA Tank</option>
-        <option value="german_usa">SA German / USA</option>
+        <option value="german_usa">SA German / USA v0.1</option>
         <option value="soviet">SA Soviet</option>
         <option value="british">SA British</option>
     </select>
@@ -226,7 +226,6 @@ function calculator() {
             } else {
                 // Clear both fields and reset sign
                 this.meter = '';
-                this.elevation = '';
                 this.activeField = 'meter';
                 this.result = null;
             }
