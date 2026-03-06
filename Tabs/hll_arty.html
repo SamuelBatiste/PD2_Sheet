@@ -22,10 +22,15 @@ body {
     padding: 20px;
 }
 
+
 h1 {
     text-align: center;
     font-size: 20px;
     margin-bottom: 20px;
+}
+
+button {
+    touch-action: manipulation;
 }
 
 select {
@@ -120,7 +125,7 @@ select {
 <div class="container">
     <select x-model="selectedType" @change="calculate()">
         <option value="spa">SPA Tank</option>
-        <option value="german_usa">SA German / USA v0.1</option>
+        <option value="german_usa">SA German / USA v0.2</option>
         <option value="soviet">SA Soviet</option>
         <option value="british">SA British</option>
     </select>
