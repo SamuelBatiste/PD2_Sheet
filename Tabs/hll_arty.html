@@ -124,8 +124,11 @@ select {
 
 <div class="container">
     <select x-model="selectedType" @change="calculate()">
-        <option value="spa">SPA Tank</option>
-        <option value="german_usa">SA German / USA v0.2</option>
+        <option value="spa_germany">SPA Germany</option>
+                <option value="spa_usa">SPA USA</option>
+                                <option value="spa_russia">SPA Russia</option>
+                                      <option value="spa_brit">SPA Brits</option>
+        <option value="german_usa">SA German / USA v0.3</option>
         <option value="soviet">SA Soviet</option>
         <option value="british">SA British</option>
     </select>
@@ -180,10 +183,87 @@ function calculator() {
     return {
 
         parameters: {
-            spa: 4.17,
             german_usa: 4.17,
             soviet: 4.17,
             british: 4.17,
+        },
+
+        // SPA lookup tables (interpolation)
+        spaTables: {
+            spa_germany: [
+                { m: 200, mil: 100 },
+                { m: 220, mil: 117 },
+                { m: 240, mil: 135 },
+                { m: 260, mil: 153 },
+                { m: 280, mil: 171 },
+                { m: 300, mil: 188 },
+                { m: 320, mil: 206 },
+                { m: 340, mil: 224 },
+                { m: 360, mil: 242 },
+                { m: 380, mil: 260 },
+                { m: 400, mil: 277 },
+                { m: 420, mil: 295 },
+                { m: 440, mil: 313 },
+                { m: 460, mil: 331 },
+                { m: 480, mil: 348 },
+                { m: 500, mil: 366 },
+            ],
+            spa_usa: [
+    { m: 200, mil: 100 },
+    { m: 225, mil: 116 },
+    { m: 250, mil: 133 },
+    { m: 275, mil: 150 },
+    { m: 300, mil: 166 },
+    { m: 325, mil: 183 },
+    { m: 350, mil: 200 },
+    { m: 375, mil: 216 },
+    { m: 400, mil: 233 },
+    { m: 425, mil: 250 },
+    { m: 450, mil: 266 },
+    { m: 475, mil: 283 },
+    { m: 500, mil: 300 },
+    { m: 525, mil: 316 },
+    { m: 550, mil: 333 },
+    { m: 575, mil: 350 },
+    { m: 600, mil: 366 },
+],
+       spa_russia: [
+    { m: 200, mil: 100 },
+    { m: 225, mil: 116 },
+    { m: 250, mil: 133 },
+    { m: 275, mil: 150 },
+    { m: 300, mil: 166 },
+    { m: 325, mil: 183 },
+    { m: 350, mil: 200 },
+    { m: 375, mil: 216 },
+    { m: 400, mil: 233 },
+    { m: 425, mil: 250 },
+    { m: 450, mil: 266 },
+    { m: 475, mil: 283 },
+    { m: 500, mil: 300 },
+    { m: 525, mil: 316 },
+    { m: 550, mil: 333 },
+    { m: 575, mil: 350 },
+    { m: 600, mil: 366 },
+],
+      spa_brit: [
+    { m: 100, mil: 100 },
+    { m: 110, mil: 110 },
+    { m: 120, mil: 120 },
+    { m: 130, mil: 131 },
+    { m: 140, mil: 141 },
+    { m: 150, mil: 152 },
+    { m: 160, mil: 162 },
+    { m: 170, mil: 173 },
+    { m: 180, mil: 183 },
+    { m: 190, mil: 194 },
+    { m: 200, mil: 204 },
+    { m: 210, mil: 215 },
+    { m: 220, mil: 225 },
+    { m: 230, mil: 235 },  // corrected
+    { m: 240, mil: 246 },
+    { m: 250, mil: 256 },
+]
         },
 
         selectedType: 'german_usa',
@@ -229,24 +309,71 @@ function calculator() {
                     this.activeField = 'elevation';
                 }
             } else {
-                // Clear both fields and reset sign
                 this.meter = '';
                 this.activeField = 'meter';
                 this.result = null;
             }
         },
 
+        // 🔥 NEW: unified base mil calculation
+ getBaseMil(meters) {
+    // SPA handling
+    if (this.selectedType.startsWith('spa')) {
+        const table = this.spaTables[this.selectedType];
+        if (!table || table.length < 2) return null; // need at least 2 points for extrapolation
+
+        // BELOW table range → linear extrapolate
+        if (meters < table[0].m) {
+            const a = table[0];
+            const b = table[1];
+            const slope = (b.mil - a.mil) / (b.m - a.m);
+            return a.mil + slope * (meters - a.m);
+        }
+
+        // ABOVE table range → linear extrapolate
+        if (meters > table[table.length - 1].m) {
+            const a = table[table.length - 2];
+            const b = table[table.length - 1];
+            const slope = (b.mil - a.mil) / (b.m - a.m);
+            return b.mil + slope * (meters - b.m);
+        }
+
+        // INTERPOLATE inside range
+        for (let i = 0; i < table.length - 1; i++) {
+            const a = table[i];
+            const b = table[i + 1];
+            if (meters >= a.m && meters <= b.m) {
+                const t = (meters - a.m) / (b.m - a.m);
+                return a.mil + t * (b.mil - a.mil);
+            }
+        }
+
+        return null;
+    }
+
+    // default artillery formula
+    const parameter = this.parameters[this.selectedType];
+    if (!parameter) return null;
+
+    return 1000 - (meters / parameter);
+},
+
         calculate() {
             const meters = parseInt(this.meter);
             const adjustment = parseInt(this.elevationSign + this.elevation) || 0;
-            const parameter = this.parameters[this.selectedType];
 
-            if (!meters || !parameter) {
+            if (!meters) {
                 this.result = null;
                 return;
             }
 
-            const baseMil = 1000 - (meters / parameter);
+            const baseMil = this.getBaseMil(meters);
+
+            if (baseMil === null) {
+                this.result = null;
+                return;
+            }
+
             this.result = Math.round(baseMil + adjustment);
         }
     }
