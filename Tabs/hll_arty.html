@@ -128,7 +128,7 @@ select {
                 <option value="spa_usa">SPA USA</option>
                                 <option value="spa_russia">SPA Russia</option>
                                       <option value="spa_brit">SPA Brits</option>
-        <option value="german_usa">SA German / USA v0.3</option>
+        <option value="german_usa">SA German / USA v0.4</option>
         <option value="soviet">SA Soviet</option>
         <option value="british">SA British</option>
     </select>
@@ -182,11 +182,62 @@ select {
 function calculator() {
     return {
 
-        parameters: {
-            german_usa: 4.17,
-            soviet: 4.17,
-            british: 4.17,
-        },
+     stationaryTables: {
+german_usa: [
+    { m: 100, mil: 987 },
+    { m: 200, mil: 954 },
+    { m: 300, mil: 930 },
+    { m: 400, mil: 907 },
+    { m: 500, mil: 883 },
+    { m: 600, mil: 859 },
+    { m: 700, mil: 836 },
+    { m: 800, mil: 812 },
+    { m: 900, mil: 788 },
+    { m: 1000, mil: 764 },
+    { m: 1100, mil: 741 },
+    { m: 1200, mil: 717 },
+    { m: 1300, mil: 693 },
+    { m: 1400, mil: 670 },
+    { m: 1500, mil: 646 },
+    { m: 1600, mil: 622 },
+],
+    soviet: [
+        { m: 100, mil: 1120 },
+        { m: 200, mil: 1099 },
+        { m: 300, mil: 1077 },
+        { m: 400, mil: 1056 },
+        { m: 500, mil: 1035 },
+        { m: 600, mil: 1013 },
+        { m: 700, mil: 992 },
+        { m: 800, mil: 971 },
+        { m: 900, mil: 949 },
+        { m: 1000, mil: 928 },
+        { m: 1100, mil: 907 },
+        { m: 1200, mil: 885 },
+        { m: 1300, mil: 864 },
+        { m: 1400, mil: 843 },
+        { m: 1500, mil: 821 },
+        { m: 1600, mil: 800 },
+    ],
+    british: [
+    { m: 100, mil: 533 },
+    { m: 200, mil: 516 },
+    { m: 300, mil: 498 },
+    { m: 400, mil: 480 },
+    { m: 500, mil: 462 },
+    { m: 600, mil: 444 },
+    { m: 700, mil: 427 },
+    { m: 800, mil: 409 },
+    { m: 900, mil: 391 },
+    { m: 1000, mil: 373 },
+    { m: 1100, mil: 356 },
+    { m: 1200, mil: 338 },
+    { m: 1300, mil: 320 },
+    { m: 1400, mil: 302 },
+    { m: 1500, mil: 284 },
+    { m: 1600, mil: 267 },
+    ],
+},
 
         // SPA lookup tables (interpolation)
         spaTables: {
@@ -316,46 +367,43 @@ function calculator() {
         },
 
         // 🔥 NEW: unified base mil calculation
- getBaseMil(meters) {
-    // SPA handling
+getBaseMil(meters) {
+    let table = null;
+
+    // SPA guns
     if (this.selectedType.startsWith('spa')) {
-        const table = this.spaTables[this.selectedType];
-        if (!table || table.length < 2) return null; // need at least 2 points for extrapolation
-
-        // BELOW table range → linear extrapolate
-        if (meters < table[0].m) {
-            const a = table[0];
-            const b = table[1];
-            const slope = (b.mil - a.mil) / (b.m - a.m);
-            return a.mil + slope * (meters - a.m);
-        }
-
-        // ABOVE table range → linear extrapolate
-        if (meters > table[table.length - 1].m) {
-            const a = table[table.length - 2];
-            const b = table[table.length - 1];
-            const slope = (b.mil - a.mil) / (b.m - a.m);
-            return b.mil + slope * (meters - b.m);
-        }
-
-        // INTERPOLATE inside range
-        for (let i = 0; i < table.length - 1; i++) {
-            const a = table[i];
-            const b = table[i + 1];
-            if (meters >= a.m && meters <= b.m) {
-                const t = (meters - a.m) / (b.m - a.m);
-                return a.mil + t * (b.mil - a.mil);
-            }
-        }
-
-        return null;
+        table = this.spaTables[this.selectedType];
+    } else {
+        // Stationary artillery
+        table = this.stationaryTables[this.selectedType];
     }
 
-    // default artillery formula
-    const parameter = this.parameters[this.selectedType];
-    if (!parameter) return null;
+    if (!table || table.length < 2) return null; // need at least 2 points
 
-    return 1000 - (meters / parameter);
+    // BELOW table range → linear extrapolate
+    if (meters < table[0].m) {
+        const a = table[0], b = table[1];
+        const slope = (b.mil - a.mil) / (b.m - a.m);
+        return a.mil + slope * (meters - a.m);
+    }
+
+    // ABOVE table range → linear extrapolate
+    if (meters > table[table.length - 1].m) {
+        const a = table[table.length - 2], b = table[table.length - 1];
+        const slope = (b.mil - a.mil) / (b.m - a.m);
+        return b.mil + slope * (meters - b.m);
+    }
+
+    // INTERPOLATE inside range
+    for (let i = 0; i < table.length - 1; i++) {
+        const a = table[i], b = table[i + 1];
+        if (meters >= a.m && meters <= b.m) {
+            const t = (meters - a.m) / (b.m - a.m);
+            return a.mil + t * (b.mil - a.mil);
+        }
+    }
+
+    return null;
 },
 
         calculate() {
