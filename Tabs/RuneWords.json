@@ -32,7 +32,7 @@
         "+2 to All Skills ",
         "+200% Damage to Demons ",
         "+200% Damage to Undead ",
-        " 8% Life Stolen per Hit ",
+        "+[8%-12%] Life Stolen per Hit ",
         "+70% Enhanced Defense",
         "+20 to Strength",
         "Replenish Life +20",
@@ -260,7 +260,7 @@
         "8% Chance to Cast Level 12 Slow Movement when Struck",
         "+1 to Amazon Skills",
         "+20% Faster Hit Recovery",
-        "+2 to Critical Strike",
+        "+2-3 to critical strike (amazon only)",
         "Cold Resist +30%",
         "Attacker Takes Damage of 20 "
       ]
@@ -559,7 +559,7 @@
       "Rune6": "",
       "ItemType": "Chest",
       "Bonuses": [
-        "75% Chance to Cast Level 25 Holy Bolt on Striking",
+        "40% Chance to Cast Level 30 Holy Bolt on Striking",
         "+2 to Paladin Skills",
         "+[100-150]% Damage to Demons",
         "+[100-150]% Damage to Undead",
@@ -888,7 +888,7 @@
       "Rune6": "",
       "ItemType": "Shield",
       "Bonuses": [
-        "20% Chance to Cast Level 40 Firestorm on Striking",
+        "33% Chance to Cast Level 40 Firestorm on Striking",
         "100% Chance to Cast Level 40 Blaze when you Level-Up",
         "Level [10-12] Redemption Aura when Equipped",
         "+[250-300]% Enhanced Damage",
@@ -1215,7 +1215,7 @@
         "[180-250]% Bonus to Attack Rating",
         "Adds 5-30 Fire Damage",
         "+75 Poison Damage over 5 Seconds",
-        "+[1-6] to Critical Strike",
+        "+15-25% critical strike chance",
         "+[10-20] to All Attributes",
         "+2 to Mana after each Kill",
         "23% Better Chance of Getting Magic Items "
@@ -1781,7 +1781,7 @@
       "Rune4": "Ist",
       "Rune5": "Ohm",
       "Rune6": "",
-      "ItemType": "Weapons",
+      "ItemType": "Weapons (NO BOWS OR CROSSBOWS)",
       "Bonuses": [
         "+1 to All Skills",
         "+40% Increased Attack Speed",
@@ -1912,7 +1912,7 @@
       "Bonuses": [
         "Level [8-10] Fanaticism Aura when Equipped",
         "+40% Increased Attack Speed",
-        "+[260-290]% Enhanced Damage",
+        "+[275-325]% Enhanced Damage",
         "+20% Chance of Crushing Blow",
         "+10% Chance of Open Wounds",
         "+120 Open Wounds Damage per Second",
@@ -1966,9 +1966,8 @@
         "15% Chance to Cast Level 20 Chain Lightning on Casting (Staves Only)",
         "Level 12 Conviction Aura when Equipped",
         "+35% Faster Run/Walk",
-        "+35% Faster Cast Rate (Staves Only)",
         "+[255-325]% Enhanced Damage",
-        "-[45-55]% to Enemy Lightning Resistance",
+        "-[40-50]% to Enemy Lightning Resistance",
         "+40% Chance of Crushing Blow",
         "Prevent Monster Heal",
         "+[0-49] to Vitality (+0.5 per Character Level)",
@@ -1996,7 +1995,7 @@
         "-25% Target Defense",
         "50% Bonus to Attack Rating",
         "6% Life Stolen per Hit",
-        "+[33-66]% Deadly Strike",
+        "+50% Deadly Strike",
         "+5 to Deep Wounds (Barbarian Only)",
         "+5 to Frenzy (Barbarian Only) "
       ]
@@ -2111,8 +2110,8 @@
       "Rune6": "",
       "ItemType": "Weapons",
       "Bonuses": [
-        "20% Chance to Cast Level 40 Firestorm on Striking (Non-Staves Only)",
-        "20% Chance to Cast Level 40 Firestorm on Casting (Staves Only)",
+        "33% Chance to Cast Level 40 Firestorm on Striking (Non-Staves Only)",
+        "33% Chance to Cast Level 40 Firestorm on Casting (Staves Only)",
         "100% Chance to Cast Level 40 Blaze when you Level-Up",
         "Level [10-12] Redemption Aura when Equipped",
         "+[400-450]% Enhanced Damage",
@@ -2165,11 +2164,11 @@
       "Rune6": "Ber",
       "ItemType": "Axes / Hammers / Swords / Staves",
       "Bonuses": [
+        "you may apply an additional curse",
         "10% Chance to Cast Level 11 Life Tap on Striking",
-        "60% Chance to Cast Level 40 Charged Bolt on Attack",
         "6% Chance to Cast Level 11 Fade when Struck",
-        "Level 19 Might Aura when Equipped",
-        "+[350-400]% Enhanced Damage",
+        "Level 20 Might Aura when Equipped",
+        "+[375-425]% Enhanced Damage",
         "Ignore Target's Defense",
         "+[60-70]% Chance of Crushing Blow",
         "Prevent Monster Heal",
@@ -2190,7 +2189,7 @@
       "ItemType": "Hammer",
       "Bonuses": [
         "14% Chance to Cast Level 46 Fissure on Striking",
-        "30% Chance to Cast Level 35 Lower Resist on Striking",
+        "47% Chance to Cast Level 35 Lower Resist on Striking",
         "20% Increased Attack Speed",
         "+[240-280]% Enhanced Damage",
         "Ignore Target's Defense",
@@ -2368,10 +2367,10 @@
       "Rune6": "Um",
       "ItemType": "Hammers / Two-Handed Swords / Polearms / Spears / Staves/ Bows / Crossbows (all two-handed weapons except axes)",
       "Bonuses": [
-        "25% Chance to cast level 40 Fist of the Heavens on Striking (Non-Staves Only)",
-        "25% Chance to cast level 40 Fist of the Heavens on Casting (Staves Only)",
+        "28% Chance to cast level 40 Fist of the Heavens on Striking (Non-Staves Only)",
+        "28% Chance to cast level 40 Fist of the Heavens on Casting (Staves Only)",
         "Level [17-20] Sanctuary Aura when Equipped",
-        "+2 to All Skills",
+        "+4 to All Skills",
         "+[285-335]% Enhanced Damage",
         "Ignore Target's Defense",
         "50% Bonus to Attack Rating",
@@ -2451,14 +2450,14 @@
       "Bonuses": [
 "Indestructible",
 "Level [10-12] Salvation Aura when Equipped",
-"+2 to All Skills",
+"+3 to All Skills",
 "+20% Faster Run/Walk",
 "+40% Increased Attack Speed",
 "+[225-300]% Enhanced Damage",
 "Ignore Target's Defense",
-"Adds 305-380 Fire Damage",
-"Adds 301-400 Lightning Damage",
-"Adds 258-364 Cold Damage "
+"430-500 Fire Damage",
+"430-500 Lightning Damage",
+"430-500 Cold Damage "
       ]
     }
     ,
@@ -2500,28 +2499,6 @@
 "Heals Stamina Plus 20%",
 "Lightning Resist +[5% - 15%]",
 "Poison Resist +[5% -15%]%"
-      ]
-    }
-     ,
-     {
-      "Name": "Echo",
-      "Sockets": 2,
-      "CharacterLevel": 31,
-      "Rune1": "Sol",
-      "Rune2": "Dol",
-      "Rune3": "",
-      "Rune4": "",
-      "Rune5": "",
-      "Rune6": "",
-      "ItemType": "Quivers",
-      "Bonuses": [
-        "[20%-30%] Chance To Pierce",
-"[20%-30%] enhanced damage",
-"+10 to Maximum Damage",
-"+50% to Attack Rating",
-"Replenish Life +30",
-"Physical Damage Taken Reduced by 9",
-"+2 Life After Each Kill"
       ]
     },
      {
