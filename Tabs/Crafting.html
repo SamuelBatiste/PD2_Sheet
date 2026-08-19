@@ -1,483 +1,249 @@
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
     crossorigin="anonymous"></script>
-
-<html data-bs-theme="dark">
-
-<style>
-    .d2-red {
-        color: #FF4D4D !important;
-    }
-
-
-    .d2-orange {
-        color: #FFA800 !important;
-    }
-
-    .d2-green {
-        color: #00FF00 !important;
-    }
-
-    .d2-gray {
-        color: #696969 !important;
-    }
-
-    .d2-yellow {
-        color: #FFFF64 !important;
-    }
-
-    .d2-white {
-        color: #FFFFFF !important;
-    }
-
-    .d2-blue {
-        color: lightblue !important;
-    }
-
-    .d2-purple {
-        color: #AE00FF !important;
-    }
-</style>
-
+  <style>
+    .d2-red { color: #FF4D4D !important; }
+    .d2-orange { color: #FFA800 !important; }
+    .d2-green { color: #00FF00 !important; }
+    .d2-gray { color: #696969 !important; }
+    .d2-yellow { color: #FFFF64 !important; }
+    .d2-white { color: #FFFFFF !important; }
+    .d2-blue { color: lightblue !important; }
+    .d2-purple { color: #AE00FF !important; }
+  </style>
+</head>
 <body class="mx-2">
-    The recipe for each craft includes a jewel and a magic/rare base item as well as the runes/gems shown below.
-    Alternatively, craft infusions can be used.
-    <div class="d-flex flex-column overflow-scroll h-100">
-        <table class="mt-2 table-bordered table-striped" style="text-align:center">
-            <tbody>
-                <tr>
-                    <th scope="col">Type
-                    </th>
-                    <th scope="col" style="min-width:230px; padding:1px">Blood
-                    </th>
-                    <th scope="col" style="min-width:230px; padding:1px">Caster
-                    </th>
-                    <th scope="col" style="min-width:230px; padding:1px">Hitpower
-                    </th>
-                    <th scope="col" style="min-width:230px; padding:1px">Safety
-                    </th>
-                    <th scope="col" style="min-width:230px; padding:1px">Vampiric
-                    </th>
-                    <th scope="col" style="min-width:230px; padding:1px">Bountiful
-                    </th>
-                    <th scope="col" style="min-width:230px; padding:1px">Brilliant
-                    </th>
-                </tr>
-                <tr>
-                    <th scope="row">Amulet <br> <span class="mw-default-size" typeof="mw:File"><a
-                                href="/wiki/File:Amulet_1.png" class="mw-file-description"><img decoding="async"
-                                    width="28" height="28" class="mw-file-element"></a></span>
-                    </th>
-                    <td><span class="d2-orange">Amn</span> + <span class="d2-red">P.Ruby</span> <br> +10% Faster
-                        Run/Walk <br>
-                        +[3-6] Life after each Kill <br> +[10-20] to Life
-                    </td>
-                    <td><span class="d2-orange">Ral</span> + <span class="d2-purple">P.Amethyst</span> <br> +[5-10]%
-                        Faster Cast
-                        Rate <br> Regenerate Mana [4-10]% <br> +[10-20] to Mana
-                    </td>
-                    <td><span class="d2-orange">Thul</span> + <span class="d2-blue">P.Sapphire</span> <br> +[150-250] to
-                        Attack
-                        Rating <br> +[10-20]% Faster Hit Recovery <br> <span style="font-size:75%;">5% Chance to Cast
-                            Level 4
-                            Frost Nova when Struck</span>
-                    </td>
-                    <td><span class="d2-orange">Thul</span> + <span class="d2-green">P.Emerald</span> <br> 10% Increased
-                        Chance
-                        of Blocking <br> Magic Damage Taken Reduced by [4-7] <br> <span style="font-size:93%;">Physical
-                            Damage
-                            Taken Reduced by [4-7]</span>
-                    </td>
-                    <td><span class="d2-orange">Dol</span> + <span class="d2-gray">P.Skull</span> <br> 
-                        [10-25]% Curse Duration Reduction <br> 
-                        [3-6]% Mana Stolen per Hit <br> 
-                        Replenish Life +[20-30]
-                    </td>
-                    <td><span class="d2-orange">Ko</span> + <span class="d2-yellow">P.Topaz</span> <br> +[10-20] to
-                        Vitality
-                        <br> <span style="font-size:75%;">[20-30]% Better Chance of Getting Magic Items</span> <br>
-                        +[1-3] to
-                        Light Radius
-                    </td>
-                    <td><span class="d2-orange">Tal</span> + <span class="d2-white">P.Diamond</span> <br> +[100-150]
-                        Defense vs.
-                        Missile <br> +[4-8] to All Attributes <br> All Resistances +[5-10]
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">
-                        Ring
-                    </th>
-                    <td><span class="d2-orange">Sol</span> + <span class="d2-red">P.Ruby</span> <br> 
-                        +[5-10] to Strength<br>
-                        [2-3]% Life Stolen per Hit <br> 
-                        +[10-20] to Life
-                    </td>
-                    <td><span class="d2-orange">Amn</span> + <span class="d2-purple">P.Amethyst</span> <br> +[5-10] to
-                        Energy
-                        <br> +[1-2] to Mana after each Kill <br> +[10-20] to Mana
-                    </td>
-                    <td><span class="d2-orange">Amn</span> + <span class="d2-blue">P.Sapphire</span> <br> +[5-10] to
-                        Dexterity
-                        <br> +[2-4] to Maximum Damage <br> <span style="font-size:75%;">5% Chance to Cast Level 4 Frost
-                            Nova
-                            when Struck</span>
-                    </td>
-                    <td><span class="d2-orange">Amn</span> + <span class="d2-green">P.Emerald</span> <br> +[5-10] to
-                        Vitality
-                        <br> Magic Damage Taken Reduced by [2-5] <br> <span style="font-size:93%;">Physical Damage Taken
-                            Reduced
-                            by [2-5]</span>
-                    </td>
-                    <td><span class="d2-orange">Hel</span> + <span class="d2-gray">P.Skull</span> <br> 
-                        [10-25]% Poison Length Reduction <br> 
-                        [2-3]% Mana Stolen per Hit <br> 
-                        2.4 to minimum damage
-                    </td>
-                    <td><span class="d2-orange">Lum</span> + <span class="d2-yellow">P.Topaz</span> <br> +[5-10] to
-                        Vitality
-                        <br> <span style="font-size:75%;">[10-20]% Better Chance of Getting Magic Items</span> <br>
-                        +[1-3] to
-                        Light Radius
-                    </td>
-                    <td><span class="d2-orange">Hel</span> + <span class="d2-white">P.Diamond</span> <br> +[50-100]
-                        Defense vs.
-                        Missile <br> All Resistances +[3-5] <br> Half Freeze Duration
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Belt <br> <span class="mw-default-size" typeof="mw:File"><a
-                                href="/wiki/File:Light_Belt.png" class="mw-file-description"><img decoding="async"
-                                    width="56" height="28" class="mw-file-element"></a></span>
-                    </th>
-                    <td><span class="d2-orange">Tal</span> + <span class="d2-red">P.Ruby</span> <br> [10-20]% Chance of
-                        Open
-                        Wounds <br> [3-6]% Life Stolen per Hit <br> +[10-20] to Life
-                    </td>
-                    <td><span class="d2-orange">Ith</span> + <span class="d2-purple">P.Amethyst</span> <br> +10% Faster
-                        Cast
-                        Rate <br> Regenerate Mana [4-10]% <br> +[10-20] to Mana
-                    </td>
-                    <td><span class="d2-orange">Tal</span> + <span class="d2-blue">P.Sapphire</span> <br> <span
-                            style="font-size:75%;">
-                            10% faster block rate</span> <br> 
-                            +[10-20]% Faster Hit Recovery <br> 
-                            <span style="font-size:75%;">5% Chance to Cast Level 4 Frost Nova when Struck</span>
-                    </td>
-                    <td><span class="d2-orange">Tal</span> + <span class="d2-green">P.Emerald</span> <br> +[10-30]%
-                        Enhanced
-                        Defense <br> Poison Resist +[10-20]% <br> Magic Damage Taken Reduced by [2-5] <br> <span
-                            style="font-size:93%;">Physical Damage Taken Reduced by [2-5]</span>
-                    </td>
-                    <td><span class="d2-orange">Eld</span> + <span class="d2-gray">P.Skull</span> <br> <span> 
-                        [15-25]% poison length reduction</span> <br> 
-                        [3-6]% Mana Stolen per Hit <br> 
-                        Replenish Life +[10-20]
-                    </td>
-                    <td><span class="d2-orange">El</span> + <span class="d2-yellow">P.Topaz</span> <br> +[25-50]%
-                        Enhanced
-                        Defense <br> <span style="font-size:75%;">[20-30]% Better Chance of Getting Magic Items</span>
-                        <br>
-                        +[1-3] to Light Radius
-                    </td>
-                    <td><span class="d2-orange">Io</span> + <span class="d2-white">P.Diamond</span> <br> +[5-10]%
-                        Increased
-                        Attack Speed <br> +[25-50]% Enhanced Defense <br> Half Freeze Duration
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Gloves <br> <span class="mw-default-size" typeof="mw:File"><a
-                                href="/wiki/File:Heavy_Gloves.png" class="mw-file-description"><img decoding="async"
-                                    width="56" height="56" class="mw-file-element"></a></span>
-                    </th>
-                    <td><span class="d2-orange">Nef</span> + <span class="d2-red">P.Ruby</span> <br> [5-10]% Chance of
-                        Crushing
-                        Blow <br> [2-4]% Life Stolen per Hit <br> +[10-20] to Life
-                    </td>
-                    <td><span class="d2-orange">Ort</span> + <span class="d2-purple">P.Amethyst</span> <br> +[5-10]%
-                        Faster Cast
-                        Rate <br> +[1-3] to Mana after each Kill <br> +[10-20] to Mana
-                    </td>
-                    <td><span class="d2-orange">Ort</span> + <span class="d2-blue">P.Sapphire</span> <br> Knockback <br>
-                        -[10-20]% Target Defense <br> <span style="font-size:75%;">5% Chance to Cast Level 4 Frost Nova
-                            when
-                            Struck</span>
-                    </td>
-                    <td><span class="d2-orange">Ral</span> + <span class="d2-green">P.Emerald</span> <br> +[10-30]%
-                        Enhanced
-                        Defense <br> Cold Resist +[10-20]% <br> Magic Damage Taken Reduced by [2-5] <br> <span
-                            style="font-size:93%;">Physical Damage Taken Reduced by [2-5]</span>
-                    </td>
-                    <td><span class="d2-orange">Io</span> + <span class="d2-gray">P.Skull</span> <br> 
-                        [5-10]% Deadly Strike <br>
-                        [2-4]% Mana Stolen per Hit <br> 
-                        Replenish Life +[10-20]
-                    </td>
-                    <td><span class="d2-orange">Hel</span> + <span class="d2-yellow">P.Topaz</span> <br> +[25-50]%
-                        Enhanced
-                        Defense <br> <span style="font-size:75%;">[15-25]% Better Chance of Getting Magic Items</span>
-                        <br>
-                        +[1-3] to Light Radius
-                    </td>
-                    <td><span class="d2-orange">Shael</span> + <span class="d2-white">P.Diamond</span> <br> +[5-10]%
-                        Increased
-                        Attack Speed <br> [10-20]% Bonus to Attack Rating <br> +[25-50]% Enhanced Defense
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Boots <br> <span class="mw-default-size" typeof="mw:File"><a
-                                href="/wiki/File:Boots.png" class="mw-file-description"><img decoding="async" width="56"
-                                    height="56" class="mw-file-element"></a></span>
-                    </th>
-                    <td><span class="d2-orange">Eth</span> + <span class="d2-red">P.Ruby</span> <br> 
-                        [5-10]% chance of open wounds <br> 
-                        [2-4]% Life Stolen per Hit <br> 
-                        +[10-20] to Life
-                    </td>
-                    <td><span class="d2-orange">Thul</span> + <span class="d2-purple">P.Amethyst</span> <br> Increase
-                        Maximum
-                        Mana [10-15]% <br> Regenerate Mana [4-10]% <br> +[10-20] to Mana
-                    </td>
-                    <td><span class="d2-orange">Ral</span> + <span class="d2-blue">P.Sapphire</span> <br> +[60-120]
-                        Defense vs.
-                        Melee <br> +[10-20]% Faster Hit Recovery <br> <span style="font-size:75%;">5% Chance to Cast
-                            Level 4
-                            Frost Nova when Struck</span>
-                    </td>
-                    <td><span class="d2-orange">Ort</span> + <span class="d2-green">P.Emerald</span> <br> +[20-60]%
-                        Enhanced
-                        Defense <br> Fire Resist +[10-20]% <br> Magic Damage Taken Reduced by [2-5] <br> <span
-                            style="font-size:93%;">Physical Damage Taken Reduced by [2-5]</span>
-                    </td>
-                    <td><span class="d2-orange">El</span> + <span class="d2-gray">P.Skull</span> <br> 
-                        [15-25]% Poison Length Reduction <br> 
-                        [2-4]% Mana Stolen per Hit 
-                        <br> Replenish Life +[10-20]
-                    </td>
-                    <td><span class="d2-orange">Io</span> + <span class="d2-yellow">P.Topaz</span> <br> +[25-50]%
-                        Enhanced
-                        Defense <br> <span style="font-size:75%;">[15-25]% Better Chance of Getting Magic Items</span>
-                        <br>
-                        +[1-3] to Light Radius
-                    </td>
-                    <td><span class="d2-orange">Ko</span> + <span class="d2-white">P.Diamond</span> <br> +[5-10]% Faster
-                        Run/Walk <br> +[100-150] Defense vs. Missile <br> Half Freeze Duration
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Helm <br> <span class="mw-default-size" typeof="mw:File"><a
-                                href="/wiki/File:Mask_D2.png" class="mw-file-description"><img decoding="async"
-                                    width="56" height="56" class="mw-file-element"></a></span>
-                    </th>
-                    <td><span class="d2-orange">Ral</span> + <span class="d2-red">P.Ruby</span> <br> 
-                        [10-15]% Chance of Crushing Blow <br> 
-                        [2-4]% Life Stolen per Hit <br> 
-                        +[10-20] to Life
-                    </td>
-                    <td><span class="d2-orange">Nef</span> + <span class="d2-purple">P.Amethyst</span> <br> 
-                        +10% Faster Cast  Rate <br> 
-                        Regenerate Mana [5-10]% <br> 
-                        +[10-20] to Energy
-                    </td>
-                    <td><span class="d2-orange">Ith</span> + <span class="d2-blue">P.Sapphire</span> <br> +[100-200] to
-                        Attack
-                        Rating <br> +[10-20]% Faster Hit Recovery <br> <span style="font-size:75%;">5% Chance to Cast
-                            Level 4
-                            Frost Nova when Struck</span>
-                    </td>
-                    <td><span class="d2-orange">Ith</span> + <span class="d2-green">P.Emerald</span> <br> 
-                        +[30-60]% Enhanced Defense <br> 
-                        +[100-150] defense vs missile <br> 
-                        <span style="font-size:87%;">Physical Damage Taken  Reduced by [4-6]%</span>
-                    </td>
-                    <td><span class="d2-orange">Lum</span> + <span class="d2-gray">P.Skull</span> <br> 
-                        [10-15]% Deadly Strike <br> 
-                        [2-4]% Mana Stolen per Hit <br> 
-                        Replenish Life +[10-20]
-                    </td>
-                    <td><span class="d2-orange">Tir</span> + <span class="d2-yellow">P.Topaz</span> <br> +[25-50]%
-                        Enhanced
-                        Defense <br> <span style="font-size:75%;">[20-30]% Better Chance of Getting Magic Items</span>
-                        <br>
-                        +[1-3] to Light Radius
-                    </td>
-                    <td><span class="d2-orange">Eld</span> + <span class="d2-white">P.Diamond</span> <br> +[5-10]%
-                        Increased
-                        Attack Speed <br> +[25-50]% Enhanced Defense <br> Half Freeze Duration
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Chest <br> <span class="mw-default-size" typeof="mw:File"><a
-                                href="/wiki/File:Light_Plate.png" class="mw-file-description"><img decoding="async"
-                                    width="56" height="84" class="mw-file-element"></a></span>
-                    </th>
-                    <td><span class="d2-orange">Thul</span> + <span class="d2-red">P.Ruby</span> <br> 
-                        +[3-6] Life after each  Kill <br> 
-                        [3-6]% Life Stolen per Hit <br> 
-                        +[20-40] to Life
-                    </td>
-                    <td><span class="d2-orange">Tal</span> + <span class="d2-purple">P.Amethyst</span> <br> 
-                        +[5-10]% Faster Cast Rate <br> 
-                        +[3-6] to Mana after each Kill <br> 
-                        +[20-30] to Mana
-                    </td>
-                    <td><span class="d2-orange">Nef</span> + <span class="d2-blue">P.Sapphire</span> <br> 
-                        +[25-50]% Enhanced  Defense <br> 
-                        +[20-40]% Faster Hit Recovery <br> 
-                        <span style="font-size:75%;">
-                            5% Chance to Cast Level 4 Frost Nova when Struck</span>
-                    </td>
-                    <td><span class="d2-orange">Eth</span> + <span class="d2-green">P.Emerald</span> <br> +[20-60]%
-                        Enhanced
-                        Defense <br> +[100-150] Defense vs. Melee <br> <span style="font-size:87%;">Physical Damage
-                            Taken
-                            Reduced by [5-10]%</span>
-                    </td>
-                    <td><span class="d2-orange">Tir</span> + <span class="d2-gray">P.Skull</span> <br> [3-6]% Mana
-                        Stolen per
-                        Hit <br> Replenish Life +[5-10] <br> [20-30]% Poison Length Reduction
-                    </td>
-                    <td><span class="d2-orange">Eld</span> + <span class="d2-yellow">P.Topaz</span> <br> +[25-50]%
-                        Enhanced
-                        Defense <br> <span style="font-size:75%;">[20-30]% Better Chance of Getting Magic Items</span>
-                        <br>
-                        +[1-3] to Light Radius
-                    </td>
-                    <td><span class="d2-orange">El</span> + <span class="d2-white">P.Diamond</span> <br> <span
-                            style="font-size:90%;">[10-20]% Increased Chance of Blocking</span> <br> +[25-50]% Enhanced
-                        Defense
-                        <br> All Resistances +[5-10]
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Shield <br> <span class="mw-default-size" typeof="mw:File"><a
-                                href="/wiki/File:Large_Shield.png" class="mw-file-description"><img decoding="async"
-                                    width="56" height="84" class="mw-file-element"></a></span>
-                    </th>
-                    <td><span class="d2-orange">Ith</span> + <span class="d2-red">P.Ruby</span> <br> <span
-                            style="font-size:90%;">[10-20]% Increased Chance of Blocking</span> <br> [3-6]% Life Stolen
-                        per Hit
-                        <br> +[10-20] to Life
-                    </td>
-                    <td><span class="d2-orange">Eth</span> + <span class="d2-purple">P.Amethyst</span> <br> <span
-                            style="font-size:90%;">[10-20]% Increased Chance of Blocking</span> <br> +[5-10]% Faster
-                        Cast Rate
-                        <br> +[20-30] to Mana
-                    </td>
-                    <td><span class="d2-orange">Eth</span> + <span class="d2-blue">P.Sapphire</span> <br> <span
-                            style="font-size:90%;">[10-20]% Increased Chance of Blocking</span> <br> +[20-30]% Faster
-                        Block Rate
-                        <br> <span style="font-size:75%;">5% Chance to Cast Level 4 Frost Nova when Struck</span>
-                    </td>
-                    <td><span class="d2-orange">Nef</span> + <span class="d2-green">P.Emerald</span> <br> +[20-60]%
-                        Enhanced
-                        Defense <br> +[100-150] Defense vs. Melee <br> <span style="font-size:87%;">Physical Damage
-                            Taken
-                            Reduced by [5-10]%</span>
-                    </td>
-                    <td><span class="d2-orange">Sol</span> + <span class="d2-gray">P.Skull</span> <br> <span
-                            style="font-size:90%;">[10-20]% Increased Chance of Blocking</span> <br> [3-6]% Mana Stolen
-                        per Hit
-                        <br> [20-30]% poison length reduction
-                    </td>
-                    <td><span class="d2-orange">Dol</span> + <span class="d2-yellow">P.Topaz</span> <br> <span
-                            style="font-size:90%;">[10-20]% Increased Chance of Blocking</span> <br> <span
-                            style="font-size:75%;">[20-30]% Better Chance of Getting Magic Items</span> <br> +[1-3] to
-                        Light
-                        Radius
-                    </td>
-                    <td><span class="d2-orange">Ort</span> + <span class="d2-white">P.Diamond</span> <br> <span
-                            style="font-size:90%;">[10-20]% Increased Chance of Blocking</span> <br> All Resistances
-                        +[5-10]
-                        <br> Half Freeze Duration
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Weapon <br> <span class="mw-default-size" typeof="mw:File"><a
-                                href="/wiki/File:Crystal_Sword.png" class="mw-file-description"><img decoding="async"
-                                    width="56" height="84" class="mw-file-element"></a></span>
-                    </th>
-                    <td><span class="d2-orange">Ort</span> + <span class="d2-red">P.Ruby</span> <br> +[50-80]% Enhanced
-                        Damage
-                        <br> [3-6]% Life Stolen per Hit <br> +[10-20] to Life
-                    </td>
-                    <td><span class="d2-orange">Tir</span> + <span class="d2-purple">P.Amethyst</span> <br> +1 to All
-                        Skills
-                        <br> +[10-20]% Faster Cast Rate <br> +[10-20] to Mana
-                    </td>
-                    <td><span class="d2-orange">Tir</span> + <span class="d2-blue">P.Sapphire</span> <br> +[50-80]%
-                        Enhanced
-                        Damage <br> -[10-20]% Target Defense <br> <span style="font-size:75%;">5% Chance to Cast Level 4
-                            Frost
-                            Nova when Struck</span>
-                    </td>
-                    <td><span class="d2-orange">Sol</span> + <span class="d2-green">P.Emerald</span> <br> +[50-80]%
-                        Enhanced
-                        Damage <br> Knockback <br> Magic Damage Taken Reduced by [2-5] <br> <span
-                            style="font-size:93%;">Physical
-                            Damage Taken Reduced by [2-5]</span>
-                    </td>
-                    <td><span class="d2-orange">Shael</span> + <span class="d2-gray">P.Skull</span> <br> +[100-140]%
-                        Damage to
-                        Demons <br> +[100-140]% Damage to Undead <br> [3-6]% Mana Stolen per Hit <br> Replenish Life
-                        +[10-15]
-                    </td>
-                    <td><span class="d2-orange">Shael</span> + <span class="d2-yellow">P.Topaz</span> <br> +1 to All
-                        Skills <br>
-                        <span style="font-size:75%;">[20-30]% Better Chance of Getting Magic Items</span> <br> +[1-3] to
-                        Light
-                        Radius
-                    </td>
-                    <td><span class="d2-orange">Sol</span> + <span class="d2-white">P.Diamond</span> <br> +20% Increased
-                        Attack
-                        Speed <br> +[20-40]% Enhanced Damage <br> +[50-100] to Attack Rating
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row">Any
-                    </th>
-                    <td>Blood Craft Infusion
-                    </td>
-                    <td>Caster Craft Infusion
-                    </td>
-                    <td>Hitpower Craft Infusion
-                    </td>
-                    <td>Safety Craft Infusion
-                    </td>
-                    <td>Vampiric Craft Infusion
-                    </td>
-                    <td>Bountiful Craft Infusion
-                    </td>
-                    <td>Brilliant Craft Infusion
-                    </td>
-                </tr>
-                <tr>
-                    <th scope="row" style="background-color:#382B1B; text-align:center; color:#EDCF8B;">Type
-                    </th>
-                    <td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Blood
-                    </td>
-                    <td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Caster
-                    </td>
-                    <td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Hitpower
-                    </td>
-                    <td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Safety
-                    </td>
-                    <td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Vampiric
-                    </td>
-                    <td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Bountiful
-                    </td>
-                    <td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Brilliant
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+  The recipe for each craft includes a jewel and a magic/rare base item as well as the runes/gems shown below.
+  Alternatively, craft infusions can be used.
+
+  <div class="d-flex flex-column overflow-scroll h-100">
+ <table class="mt-2 table-bordered table-striped" style="text-align:center">
+<tbody><tr>
+<th scope="col">Type
+</th>
+<th scope="col" style="min-width:100px; padding:1px">Blood
+</th>
+<th scope="col" style="min-width:100px; padding:1px">Caster
+</th>
+<th scope="col" style="min-width:100px; padding:1px">Hitpower
+</th>
+<th scope="col" style="min-width:100px; padding:1px">Safety
+</th>
+<th scope="col" style="min-width:100px; padding:1px">Vampiric
+</th>
+<th scope="col" style="min-width:100px; padding:1px">Bountiful
+</th>
+<th scope="col" style="min-width:100px; padding:1px">Brilliant
+</th></tr>
+<tr>
+<th scope="row">Amulet <br> <span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Amulet_1.png" class="mw-file-description"><img src="//static.wikitide.net/projectdiablo2wiki/8/87/Amulet_1.png" decoding="async" loading="lazy" width="28" height="28" class="mw-file-element"></a></span>
+</th>
+<td><span class="d2-orange">Amn</span> + <span class="d2-red">P.Ruby</span> <br> +10% Faster Run/Walk <br> +[3-6] Life after each Kill <br> +[10-20] to Life
+</td>
+<td><span class="d2-orange">Ral</span> + <span class="d2-purple">P.Amethyst</span> <br> +[5-10]% Faster Cast Rate <br> Regenerate Mana [4-10]% <br> +[10-20] to Mana
+</td>
+<td><span class="d2-orange">Thul</span> + <span class="d2-blue">P.Sapphire</span> <br> +[150-250] to Attack Rating <br> +[10-20]% Faster Hit Recovery <br> <span style="font-size:80%;">5% CtC Level 4 Frost Nova when Struck</span>
+</td>
+<td><span class="d2-orange">Thul</span> + <span class="d2-green">P.Emerald</span> <br> +10% Block Chance <br> Magic Damage Reduced by [4-7] <br> <span style="font-size:90%;">Physical Damage Reduced by [4-7]</span>
+</td>
+<td><span class="d2-orange">Dol</span> + <span class="d2-gray">P.Skull</span> <br> <span style="font-size:93%;">[15-25]% Curse Duration Reduction </span><br> [3-6]% Mana Stolen per Hit <br> Replenish Life +[20-30]
+</td>
+<td><span class="d2-orange">Ko</span> + <span class="d2-yellow">P.Topaz</span> <br> +[10-20] to Vitality <br> <span>+[20-30]% Magic Find</span> <br> +[1-3] to Light Radius
+</td>
+<td><span class="d2-orange">Tal</span> + <span class="d2-white">P.Diamond</span> <br> +[100-150] Defense vs. Missile <br> +[4-8] to All Attributes <br> All Resistances +[5-10]
+</td></tr>
+<tr>
+<th scope="row">Ring <br> <span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Ring_1.png" class="mw-file-description"><img src="//static.wikitide.net/projectdiablo2wiki/1/19/Ring_1.png" decoding="async" loading="lazy" width="28" height="28" class="mw-file-element"></a></span>
+</th>
+<td><span class="d2-orange">Sol</span> + <span class="d2-red">P.Ruby</span> <br> +[5-10] to Strength <br> [2-3]% Life Stolen per Hit <br> +[10-20] to Life
+</td>
+<td><span class="d2-orange">Amn</span> + <span class="d2-purple">P.Amethyst</span> <br> +[5-10] to Energy <br> +[1-2] Mana after each Kill <br> +[10-20] to Mana
+</td>
+<td><span class="d2-orange">Amn</span> + <span class="d2-blue">P.Sapphire</span> <br> +[5-10] to Dexterity <br> +[2-4] to Maximum Damage <br> <span style="font-size:80%;">5% CtC Level 4 Frost Nova when Struck</span>
+</td>
+<td><span class="d2-orange">Amn</span> + <span class="d2-green">P.Emerald</span> <br> +[5-10] to Vitality <br> Magic Damage Reduced by [2-5] <br> <span style="font-size:93%;">Physical Damage Reduced by [2-5]</span>
+</td>
+<td><span class="d2-orange">Hel</span> + <span class="d2-gray">P.Skull</span> <br> <span style="font-size:93%;">[15-25]% Poison Length Reduction </span><br> [2-3]% Mana Stolen per Hit <br> +[2-4] to Minimum Damage
+</td>
+<td><span class="d2-orange">Lum</span> + <span class="d2-yellow">P.Topaz</span> <br> +[5-10] to Vitality <br> <span>+[10-20]% Magic Find</span> <br> +[1-3] to Light Radius
+</td>
+<td><span class="d2-orange">Hel</span> + <span class="d2-white">P.Diamond</span> <br> +[50-100] Defense vs. Missile <br> All Resistances +[3-5] <br> Half Freeze Duration
+</td></tr>
+<tr>
+<th scope="row">Belt <br> <span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Light_Belt.png" class="mw-file-description"><img src="//static.wikitide.net/projectdiablo2wiki/1/1f/Light_Belt.png" decoding="async" loading="lazy" width="56" height="28" class="mw-file-element"></a></span>
+</th>
+<td><span class="d2-orange">Tal</span> + <span class="d2-red">P.Ruby</span> <br> [10-20]% Open Wounds <br> [3-6]% Life Stolen per Hit <br> +[10-20] to Life
+</td>
+<td><span class="d2-orange">Ith</span> + <span class="d2-purple">P.Amethyst</span> <br> +10% Faster Cast Rate <br> Regenerate Mana [4-10]% <br> +[10-20] to Mana
+</td>
+<td><span class="d2-orange">Tal</span> + <span class="d2-blue">P.Sapphire</span> <br> <span>+10% Faster Block Rate</span> <br> +[10-20]% Faster Hit Recovery <br> <span style="font-size:80%;">5% CtC Level 4 Frost Nova when Struck</span>
+</td>
+<td><span class="d2-orange">Tal</span> + <span class="d2-green">P.Emerald</span> <br> +[10-30]% Enhanced Defense <br> Poison Resist +[10-20]% <br> Magic Damage Reduced by [2-5] <br> <span style="font-size:93%;">Physical Damage Reduced by [2-5]</span>
+</td>
+<td><span class="d2-orange">Eld</span> + <span class="d2-gray">P.Skull</span> <br> <span style="font-size:93%;">[15-25]% Poison Length Reduction</span> <br> [3-6]% Mana Stolen per Hit <br> Replenish Life +[10-20]
+</td>
+<td><span class="d2-orange">El</span> + <span class="d2-yellow">P.Topaz</span> <br> +[25-50]% Enhanced Defense <br> <span>+[20-30]% Magic Find</span> <br> +[1-3] to Light Radius
+</td>
+<td><span class="d2-orange">Io</span> + <span class="d2-white">P.Diamond</span> <br> <span style="font-size:93%;">+[5-10]% Increased Attack Speed</span> <br> +[25-50]% Enhanced Defense <br> Half Freeze Duration
+</td></tr>
+<tr>
+<th scope="row">Gloves <br> <span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Heavy_Gloves.png" class="mw-file-description"><img src="//static.wikitide.net/projectdiablo2wiki/4/40/Heavy_Gloves.png" decoding="async" loading="lazy" width="56" height="56" class="mw-file-element"></a></span>
+</th>
+<td><span class="d2-orange">Nef</span> + <span class="d2-red">P.Ruby</span> <br> [5-10]% Crushing Blow <br> [2-4]% Life Stolen per Hit <br> +[10-20] to Life
+</td>
+<td><span class="d2-orange">Ort</span> + <span class="d2-purple">P.Amethyst</span> <br> +[5-10]% Faster Cast Rate <br> +[1-3] Mana after each Kill <br> +[10-20] to Mana
+</td>
+<td><span class="d2-orange">Ort</span> + <span class="d2-blue">P.Sapphire</span> <br> Knockback <br> -[10-20]% Target Defense <br> <span style="font-size:80%;">5% CtC Level 4 Frost Nova when Struck</span>
+</td>
+<td><span class="d2-orange">Ral</span> + <span class="d2-green">P.Emerald</span> <br> +[10-30]% Enhanced Defense <br> Cold Resist +[10-20]% <br> Magic Damage Reduced by [2-5] <br> <span style="font-size:93%;">Physical Damage Reduced by [2-5]</span>
+</td>
+<td><span class="d2-orange">Io</span> + <span class="d2-gray">P.Skull</span> <br> [5-10]% Deadly Strike <br> [2-4]% Mana Stolen per Hit <br> Replenish Life +[10-20]
+</td>
+<td><span class="d2-orange">Hel</span> + <span class="d2-yellow">P.Topaz</span> <br> +[25-50]% Enhanced Defense <br> <span>+[15-25]% Magic Find</span> <br> +[1-3] to Light Radius
+</td>
+<td><span class="d2-orange">Shael</span> + <span class="d2-white">P.Diamond</span> <br> <span style="font-size:93%;">+[5-10]% Increased Attack Speed</span> <br> [10-20]% Bonus Attack Rating <br> +[25-50]% Enhanced Defense
+</td></tr>
+<tr>
+<th scope="row">Boots <br> <span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Boots.png" class="mw-file-description"><img src="//static.wikitide.net/projectdiablo2wiki/5/59/Boots.png" decoding="async" loading="lazy" width="56" height="56" class="mw-file-element"></a></span>
+</th>
+<td><span class="d2-orange">Eth</span> + <span class="d2-red">P.Ruby</span> <br> [5-10]% Open Wounds <br> [2-4]% Life Stolen per Hit <br> +[10-20] to Life
+</td>
+<td><span class="d2-orange">Thul</span> + <span class="d2-purple">P.Amethyst</span> <br> <span style="font-size:80%;">Increase Maximum Mana [10-15]%</span> <br> Regenerate Mana [4-10]% <br> +[10-20] to Mana
+</td>
+<td><span class="d2-orange">Ral</span> + <span class="d2-blue">P.Sapphire</span> <br> +[60-120] Defense vs. Melee <br> +[10-20]% Faster Hit Recovery <br> <span style="font-size:80%;">5% CtC Level 4 Frost Nova when Struck</span>
+</td>
+<td><span class="d2-orange">Ort</span> + <span class="d2-green">P.Emerald</span> <br> +[20-60]% Enhanced Defense <br> Fire Resist +[10-20]% <br> Magic Damage Reduced by [2-5] <br> <span style="font-size:93%;">Physical Damage Reduced by [2-5]</span>
+</td>
+<td><span class="d2-orange">El</span> + <span class="d2-gray">P.Skull</span> <br><span style="font-size:93%;"> [15-25]% Poison Length Reduction </span><br> [2-4]% Mana Stolen per Hit <br> Replenish Life +[10-20]
+</td>
+<td><span class="d2-orange">Io</span> + <span class="d2-yellow">P.Topaz</span> <br> +[25-50]% Enhanced Defense <br> <span>+[15-25]% Magic Find</span> <br> +[1-3] to Light Radius
+</td>
+<td><span class="d2-orange">Ko</span> + <span class="d2-white">P.Diamond</span> <br> +[5-10]% Faster Run/Walk <br> +[100-150] Defense vs. Missile <br> Half Freeze Duration
+</td></tr>
+<tr>
+<th scope="row">Helm <br> <span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Mask_D2.png" class="mw-file-description"><img src="//static.wikitide.net/projectdiablo2wiki/5/51/Mask_D2.png" decoding="async" loading="lazy" width="56" height="56" class="mw-file-element"></a></span>
+</th>
+<td><span class="d2-orange">Ral</span> + <span class="d2-red">P.Ruby</span> <br> [10-15]% Crushing Blow <br> [2-4]% Life Stolen per Hit <br> +[10-20] to Life
+</td>
+<td><span class="d2-orange">Nef</span> + <span class="d2-purple">P.Amethyst</span> <br> 10% Faster Cast Rate <br> Regenerate Mana [5-10]% <br> +[10-20] to Energy
+</td>
+<td><span class="d2-orange">Ith</span> + <span class="d2-blue">P.Sapphire</span> <br> +[100-200] to Attack Rating <br> +[10-20]% Faster Hit Recovery <br> <span style="font-size:80%;">5% CtC Level 4 Frost Nova when Struck</span>
+</td>
+<td><span class="d2-orange">Ith</span> + <span class="d2-green">P.Emerald</span> <br> +[30-60]% Enhanced Defense <br> +[100-150] Defense vs. Missile <br> <span style="font-size:87%;">Physical Damage Reduced by [4-6]%</span>
+</td>
+<td><span class="d2-orange">Lum</span> + <span class="d2-gray">P.Skull</span> <br> [10-15]% Deadly Strike <br> [2-4]% Mana Stolen per Hit <br> Replenish Life +[10-15]
+</td>
+<td><span class="d2-orange">Tir</span> + <span class="d2-yellow">P.Topaz</span> <br> +[25-50]% Enhanced Defense <br> <span>+[20-30]% Magic Find</span> <br> +[1-3] to Light Radius
+</td>
+<td><span class="d2-orange">Eld</span> + <span class="d2-white">P.Diamond</span> <br> <span style="font-size:93%;">+[5-10]% Increased Attack Speed</span> <br> +[25-50]% Enhanced Defense <br> Half Freeze Duration
+</td></tr>
+<tr>
+<th scope="row">Chest <br> <span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Light_Plate.png" class="mw-file-description"><img src="//static.wikitide.net/projectdiablo2wiki/2/28/Light_Plate.png" decoding="async" loading="lazy" width="56" height="84" class="mw-file-element"></a></span>
+</th>
+<td><span class="d2-orange">Thul</span> + <span class="d2-red">P.Ruby</span> <br> +[4-6] Life after each Kill <br> <span style="font-size:90%;">+[30-50]% Enhanced Defense</span> <br> +[5-8]% to Maximum Life
+</td>
+<td><span class="d2-orange">Tal</span> + <span class="d2-purple">P.Amethyst</span> <br> +[10-15]% Faster Cast Rate <br> +[3-6] Mana after each Kill <br> +[15-25] to Energy
+</td>
+<td><span class="d2-orange">Nef</span> + <span class="d2-blue">P.Sapphire</span> <br> +[75-100]% Enhanced Defense <br> +[30-40]% Faster Hit Recovery <br> <span style="font-size:80%;">8% CtC Level 4 Frost Nova when Struck</span>
+</td>
+<td><span class="d2-orange">Eth</span> + <span class="d2-green">P.Emerald</span> <br> +[50-75]% Enhanced Defense <br> +[100-150] Defense vs. Melee <br> <span style="font-size:87%;">Physical Damage Reduced by [4-6]%</span>
+</td>
+<td><span class="d2-orange">Tir</span> + <span class="d2-gray">P.Skull</span> <br> [4-6]% Mana Stolen per Hit <br> +[30-50]% Enchanced Defence <br> <span style="font-size:93%;">[30-50]% Poison Length Reduction</span>
+</td>
+<td><span class="d2-orange">Eld</span> + <span class="d2-yellow">P.Topaz</span> <br> +[30-50]% Enhanced Defense <br> <span>+[20-30]% Magic Find</span> <br> +[30-50]% Gold Find
+</td>
+<td><span class="d2-orange">El</span> + <span class="d2-white">P.Diamond</span> <br> +[10-20]% Block Chance <br> +[25-50]% Enhanced Defense <br> All Resistances +[5-10]
+</td></tr>
+<tr>
+<th scope="row">Quiver <br> <span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Arrows.png" class="mw-file-description"><img src="//static.wikitide.net/projectdiablo2wiki/f/f0/Arrows.png" decoding="async" loading="lazy" width="28" height="84" class="mw-file-element"></a></span>
+</th>
+<td><span class="d2-orange">Ith</span> + <span class="d2-red">P.Ruby</span> <br> <span>+[10-20]% Crushing Blow</span> <br> +[10-20] Life<br> [3-6]% Life Stolen per Hit
+</td>
+<td><span class="d2-orange">Eth</span> + <span class="d2-purple">P.Amethyst</span> <br> <span>+10% Faster Cast Rate <br> +[10-20] to Mana<br> +[2-4] Mana After Each Kill
+</span></td>
+<td><span class="d2-orange">Eth</span> + <span class="d2-blue">P.Sapphire</span> <br> <span>Knockback</span><br>-[10-20]% Target Defense <br>  <span style="font-size:80%;">8% CtC Level 4 Frost Nova When Struck</span>
+</td>
+<td><span class="d2-orange">Nef</span> + <span class="d2-green">P.Emerald</span> <br> Magic Damage Reduced by [4-7] <br> <span style="font-size:93%;">Physical Damage Reduced by [4-7]</span> <br> <span>+10% Faster Run/Walk</span>
+</td>
+<td><span class="d2-orange">Sol</span> + <span class="d2-gray">P.Skull</span> <br> <span>+[3-6]% Mana Stolen per Hit</span> <br> <span style="font-size:93%;">[30-50]% Poison Length Reduction </span><br> Replenish Life +[15-25]
+</td>
+<td><span class="d2-orange">Dol</span> + <span class="d2-yellow">P.Topaz</span> <br> <span>+[5-10] Vitality</span> <br> <span>+[15-25]% Magic Find</span> <br> [20-30]% Gold Find
+</td>
+<td><span class="d2-orange">Ort</span> + <span class="d2-white">P.Diamond</span> <br> <span>All Resistances +[5-10]</span> <br> +[100-150] Defense vs. Missile <br> +10% Faster Hit Recovery
+</td></tr>
+<tr>
+<th scope="row">Shield <br> <span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Large_Shield.png" class="mw-file-description"><img src="//static.wikitide.net/projectdiablo2wiki/9/93/Large_Shield.png" decoding="async" loading="lazy" width="56" height="84" class="mw-file-element"></a></span>
+</th>
+<td><span class="d2-orange">Ith</span> + <span class="d2-red">P.Ruby</span> <br> +[10-20]% Block Chance <br> [3-6]% Life Stolen per Hit <br> +[5-8]% to Maximum Life
+</td>
+<td><span class="d2-orange">Eth</span> + <span class="d2-purple">P.Amethyst</span> <br> +[10-20]% Block Chance <br> 10% Faster Cast Rate <br> +[20-30]% to Maximum Mana
+</td>
+<td><span class="d2-orange">Eth</span> + <span class="d2-blue">P.Sapphire</span> <br> +[10-20]% Block Chance <br> +[20-30]% Faster Block Rate <br> <span style="font-size:80%;">5% CtC Level 4 Frost Nova when Struck</span>
+</td>
+<td><span class="d2-orange">Nef</span> + <span class="d2-green">P.Emerald</span> <br> +[50-75]% Enhanced Defense <br> +[100-150] Defense vs. Melee <br> <span style="font-size:87%;">Physical Damage Reduced by [4-6]%</span>
+</td>
+<td><span class="d2-orange">Sol</span> + <span class="d2-gray">P.Skull</span> <br> +[10-20]% Block Chance <br> [3-6]% Mana Stolen per Hit <br> <span style="font-size:93%;">[30-50]% Poison Length Reduction</span>
+</td>
+<td><span class="d2-orange">Dol</span> + <span class="d2-yellow">P.Topaz</span> <br> +[10-20]% Block Chance <br> <span>+[20-30]% Magic Find</span> <br> [30-50]% Gold Find
+</td>
+<td><span class="d2-orange">Ort</span> + <span class="d2-white">P.Diamond</span> <br> +[10-20]% Block Chance <br> All Resistances +[5-10] <br> Half Freeze Duration
+</td></tr>
+<tr>
+<th scope="row">Weapon <br> <span class="mw-default-size" typeof="mw:File"><a href="/wiki/File:Crystal_Sword.png" class="mw-file-description"><img src="//static.wikitide.net/projectdiablo2wiki/3/3d/Crystal_Sword.png" decoding="async" loading="lazy" width="56" height="84" class="mw-file-element"></a></span>
+</th>
+<td><span class="d2-orange">Ort</span> + <span class="d2-red">P.Ruby</span> <br> <span style="font-size:90%;">+[50-80]% Enhanced Damage</span> <br> [3-6]% Life Stolen per Hit <br> +[10-20] to Life
+</td>
+<td><span class="d2-orange">Tir</span> + <span class="d2-purple">P.Amethyst</span> <br> +1 to All Skills <br> +[10-20]% Faster Cast Rate <br> +[10-20] to Mana
+</td>
+<td><span class="d2-orange">Tir</span> + <span class="d2-blue">P.Sapphire</span> <br> +[50-80]% Enhanced Damage <br> -[10-20]% Target Defense <br> <span style="font-size:80%;">5% CtC Level 4 Frost Nova when Struck</span>
+</td>
+<td><span class="d2-orange">Sol</span> + <span class="d2-green">P.Emerald</span> <br> +[50-80]% Enhanced Damage <br> Knockback <br> Magic Damage Reduced by [2-5] <br> <span style="font-size:93%;">Physical Damage Reduced by [2-5]</span>
+</td>
+<td><span class="d2-orange">Shael</span> + <span class="d2-gray">P.Skull</span> <br> [100-140]% Damage to Demons <br> [100-140]% Damage to Undead <br> [3-6]% Mana Stolen per Hit <br> Replenish Life +[10-15]
+</td>
+<td><span class="d2-orange">Shael</span> + <span class="d2-yellow">P.Topaz</span> <br> +1 to All Skills <br> <span>+[20-30]% Magic Find</span> <br> +[1-3] to Light Radius
+</td>
+<td><span class="d2-orange">Sol</span> + <span class="d2-white">P.Diamond</span> <br><span style="font-size:93%;">+20% Increased Attack Speed</span> <br> +[20-40]% Enhanced Damage <br> +[50-100] to Attack Rating
+</td></tr>
+<tr>
+<th scope="row">Any
+</th>
+<td>Blood Craft Infusion
+</td>
+<td>Caster Craft Infusion
+</td>
+<td>Hitpower Craft Infusion
+</td>
+<td>Safety Craft Infusion
+</td>
+<td>Vampiric Craft Infusion
+</td>
+<td>Bountiful Craft Infusion
+</td>
+<td>Brilliant Craft Infusion
+</td></tr>
+<tr>
+<th scope="row" style="background-color:#382B1B; text-align:center; color:#EDCF8B;">Type
+</th>
+<td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Blood
+</td>
+<td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Caster
+</td>
+<td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Hitpower
+</td>
+<td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Safety
+</td>
+<td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Vampiric
+</td>
+<td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Bountiful
+</td>
+<td style="background-color:#382B1B; text-align:center; color:#EDCF8B; font-weight:bold;">Brilliant
+</td></tr></tbody></table>
+  </div>
 </body>
-
-
 </html>
-
-
-</table>
