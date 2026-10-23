@@ -31,8 +31,6 @@
 
   <!-- ================= Runewords ================= -->
   <section x-show="tab === 'runewords' && !loading" aria-labelledby="h-rw">
-    <h2 id="h-rw">Runewords</h2>
-    <p class="lede">Insert the runes in the order shown into a socketed item of the listed type.</p>
     <div class="filters">
       <input type="search" placeholder="Search name, rune, bonus…" x-model="rw.q" aria-label="Search runewords">
       <div class="seg" role="group" aria-label="Sockets">
@@ -75,9 +73,7 @@
 
   <!-- ================= Crafting ================= -->
   <section x-show="tab === 'crafting' && !loading" aria-labelledby="h-cr">
-    <h2 id="h-cr">Crafting</h2>
-    <p class="lede">Each craft needs a jewel and a magic or rare base item, plus the rune and gem shown. A craft infusion of the same type works as an alternative.</p>
-    <div class="filters">
+ <div class="filters">
       <input type="search" placeholder="Search stat, rune, gem…" x-model="cr.q" aria-label="Search crafts">
       <div class="seg" role="group" aria-label="Craft type">
         <button @click="cr.type = ''" :aria-pressed="cr.type === ''">All types</button>
@@ -109,9 +105,7 @@
 
   <!-- ================= Cube Recipes ================= -->
   <section x-show="tab === 'cube' && !loading" aria-labelledby="h-cu">
-    <h2 id="h-cu">Cube Recipes</h2>
-    <p class="lede">Put all ingredients into the Horadric Cube and transmute.</p>
-    <div class="filters">
+  <div class="filters">
       <input type="search" placeholder="Search result or ingredient…" x-model="cu.q" aria-label="Search recipes">
       <div class="seg" role="group" aria-label="Category">
         <button @click="cu.cat = ''" :aria-pressed="cu.cat === ''">All</button>
@@ -149,9 +143,7 @@
 
   <!-- ================= Corruptions ================= -->
   <section x-show="tab === 'corruptions' && !loading" aria-labelledby="h-co">
-    <h2 id="h-co">Corruptions</h2>
-    <p class="lede">Possible outcomes when corrupting equipment, grouped by how rare the result is.</p>
-    <div class="filters">
+ <div class="filters">
       <input type="search" placeholder="Search a modifier…" x-model="co.q" aria-label="Search corruptions">
       <div class="seg" role="group" aria-label="Category">
         <button @click="co.cat = ''" :aria-pressed="co.cat === ''">All</button>
@@ -182,9 +174,7 @@
 
   <!-- ================= Unique Weapons ================= -->
   <section x-show="tab === 'weapons' && !loading" aria-labelledby="h-uw">
-    <h2 id="h-uw">Unique Weapons</h2>
-    <p class="lede">Unique weapons with their base stats and bonuses.</p>
-    <div class="filters">
+   <div class="filters">
       <input type="search" placeholder="Search name or bonus…" x-model="uw.q" aria-label="Search weapons">
       <div class="seg" role="group" aria-label="Weapon type">
         <button @click="uw.type = ''" :aria-pressed="uw.type === ''">All types</button>
@@ -219,9 +209,7 @@
 
   <!-- ================= Uber Bosses ================= -->
   <section x-show="tab === 'bosses' && !loading" aria-labelledby="h-bo">
-    <h2 id="h-bo">Uber Bosses</h2>
-    <p class="lede">Resistances to reach before the fight.</p>
-    <div class="filters">
+   <div class="filters">
       <div class="seg" role="group" aria-label="Boss">
         <template x-for="(b, i) in bosses" :key="b.name">
           <button @click="boss = i" :aria-pressed="boss === i" x-text="b.name"></button>
