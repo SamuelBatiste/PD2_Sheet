@@ -1,0 +1,164 @@
+:root {
+  --bg: #15110d;
+  --bar: #1b1610;
+  --panel: #211b14;
+  --panel-2: #2a2218;
+  --line: #3b3124;
+  --text: #e4dac4;
+  --mute: #9a8f78;
+  --gold: #d1a954;
+  --gold-dim: #8c6f2e;
+  --magic: #a3abf0;
+
+  --red: #ff6b5e;
+  --orange: #ffa94d;
+  --yellow: #f3e27a;
+  --green: #5fdc6b;
+  --blue: #7cc4f0;
+  --purple: #c07cff;
+  --gray: #a0a0a0;
+  --white: #ffffff;
+
+  --display: "IM Fell English SC", Georgia, "Times New Roman", serif;
+  --body: "Alegreya Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-padding-top: 9rem; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 400 1.0625rem/1.45 var(--body);
+}
+a { color: var(--gold); }
+[x-cloak] { display: none !important; }
+
+/* ---------- Kopf & Navigation ---------- */
+.top {
+  position: sticky; top: 0; z-index: 20;
+  background: var(--bar);
+  border-bottom: 1px solid var(--line);
+}
+.top-inner {
+  max-width: 1240px; margin: 0 auto; padding: .6rem 1.25rem 0;
+  display: flex; align-items: flex-end; gap: 2rem; flex-wrap: wrap;
+}
+.brand {
+  font: 400 1.7rem/1 var(--display); color: var(--gold);
+  padding-bottom: .55rem; text-decoration: none; letter-spacing: .02em;
+}
+.tabs { display: flex; gap: .15rem; overflow-x: auto; scrollbar-width: none; flex: 1; }
+.tabs::-webkit-scrollbar { display: none; }
+.tabs a {
+  padding: .6rem 1rem; color: var(--mute); text-decoration: none;
+  font-weight: 500; white-space: nowrap; border-bottom: 2px solid transparent;
+}
+.tabs a:hover { color: var(--text); }
+.tabs a[aria-current="page"] { color: var(--gold); border-bottom-color: var(--gold); }
+
+/* ---------- Layout ---------- */
+main { max-width: 1240px; margin: 0 auto; padding: 1.25rem 1.25rem 3rem; }
+h2 { font: 400 1.9rem/1.1 var(--display); color: var(--gold); margin: 0 0 .2rem; }
+.lede { color: var(--mute); margin: 0 0 1rem; max-width: 70ch; }
+.foot { max-width: 1240px; margin: 0 auto; padding: 1rem 1.25rem 2rem; color: var(--mute); font-size: .9rem; }
+
+/* ---------- Filterleiste ---------- */
+.filters {
+  position: sticky; top: 3.1rem; z-index: 10;
+  display: flex; flex-wrap: wrap; gap: .6rem .9rem; align-items: center;
+  padding: .7rem 0; margin-bottom: .6rem;
+  background: var(--bg); border-bottom: 1px solid var(--line);
+}
+input[type=search], input[type=text], select {
+  background: var(--panel); color: var(--text);
+  border: 1px solid var(--line); border-radius: 3px;
+  padding: .5rem .7rem; font: inherit; min-width: 0;
+}
+input[type=search] { flex: 1 1 15rem; max-width: 26rem; }
+select { max-width: 15rem; text-overflow: ellipsis; }
+input::placeholder { color: var(--mute); }
+.seg { display: flex; flex-wrap: wrap; gap: .3rem; }
+.seg button, .btn {
+  background: var(--panel); color: var(--mute); border: 1px solid var(--line);
+  border-radius: 3px; padding: .4rem .75rem; font: inherit; cursor: pointer;
+}
+.seg button:hover, .btn:hover { color: var(--text); border-color: var(--gold-dim); }
+.seg button[aria-pressed="true"] { color: #1b1610; background: var(--gold); border-color: var(--gold); font-weight: 700; }
+.count { color: var(--mute); margin-left: auto; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+
+/* ---------- Karten ---------- */
+.grid { display: grid; gap: .9rem; grid-template-columns: repeat(auto-fill, minmax(21rem, 1fr)); }
+.card {
+  background: var(--panel); border: 1px solid var(--line);
+  border-top: 2px solid var(--gold-dim); border-radius: 3px;
+  padding: .9rem 1rem 1rem;
+}
+.card h3 { font: 400 1.35rem/1.15 var(--display); color: var(--gold); margin: 0; }
+.meta { color: var(--mute); font-size: .95rem; margin: .15rem 0 .65rem; }
+.empty { color: var(--mute); padding: 2rem 0; }
+
+/* Runen- und Edelstein-Chips */
+.chips { display: flex; flex-wrap: wrap; align-items: center; gap: .35rem; margin: 0 0 .65rem; }
+.chip {
+  font: 400 1rem/1 var(--display); padding: .4rem .6rem; border-radius: 2px;
+  background: var(--panel-2); border: 1px solid var(--gold-dim); color: var(--orange);
+}
+.chip.plain { font: 500 .95rem/1.2 var(--body); border-color: var(--line); color: var(--text); }
+.plus { color: var(--mute); }
+.c-red { color: var(--red); border-color: var(--red); }
+.c-orange, .c-rune { color: var(--orange); }
+.c-yellow, .c-topaz { color: var(--yellow); border-color: var(--yellow); }
+.c-green { color: var(--green); border-color: var(--green); }
+.c-blue, .c-saphire { color: var(--blue); border-color: var(--blue); }
+.c-purple, .c-amethyst { color: var(--purple); border-color: var(--purple); }
+.c-gray { color: var(--gray); border-color: var(--gray); }
+.c-white { color: var(--white); border-color: var(--white); }
+.c-ruby { color: var(--red); border-color: var(--red); }
+
+/* Eigenschaften in Diablo-Blau, Wertebereiche in Gold */
+.mods { list-style: none; margin: 0; padding: 0; color: var(--magic); }
+.mods li { padding: .08rem 0; }
+.range { color: var(--gold); font-weight: 700; }
+.note { color: var(--mute); font-style: italic; font-size: .95rem; margin-top: .5rem; }
+.info { color: var(--mute); font-size: .88rem; flex-basis: 100%; margin-top: -.15rem; }
+
+/* Cube */
+.ing { display: flex; flex-wrap: wrap; gap: .35rem; align-items: center; }
+.ing > div { display: inline-flex; align-items: center; gap: .35rem; }
+.result { border-top: 1px solid var(--line); margin-top: .7rem; padding-top: .6rem; }
+.result b { font-weight: 700; }
+.tag { color: var(--mute); font-size: .9rem; }
+
+/* Wertetabellen (Corruptions, Bosse) */
+.cols { display: grid; gap: 1rem; grid-template-columns: repeat(3, 1fr); }
+.cols h4 { margin: 0 0 .3rem; font: 500 .95rem var(--body); color: var(--gold); }
+.bar { height: 4px; background: var(--gold-dim); margin-bottom: .45rem; border-radius: 1px; }
+.cols.wide { grid-template-columns: 1fr; }
+
+.resists { width: 100%; max-width: 40rem; border-collapse: collapse; background: var(--panel); border: 1px solid var(--line); }
+.resists td { padding: .6rem .9rem; border-bottom: 1px solid var(--line); }
+.resists td:first-child { width: 11rem; font-weight: 700; }
+.resists tr:last-child td { border-bottom: 0; }
+
+/* Waffen */
+.stats { display: grid; grid-template-columns: auto 1fr; gap: .1rem 1rem; margin: 0 0 .7rem; font-size: .95rem; }
+.stats dt { color: var(--mute); }
+.stats dd { margin: 0; }
+
+@media (max-width: 720px) {
+  .top-inner { gap: .5rem; }
+  .filters { position: static; }
+  .grid { grid-template-columns: 1fr; }
+  .cols { grid-template-columns: 1fr; }
+  .count { margin-left: 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .seg button, .btn, .tabs a { transition: color .12s, border-color .12s, background .12s; }
+}
+
+/* Textfarben ohne Rahmen (z. B. Resistenzen) */
+.t-red { color: var(--red); } .t-gray { color: var(--gray); } .t-yellow { color: var(--yellow); }
+.t-blue { color: var(--blue); } .t-green { color: var(--green); } .t-white { color: var(--white); }
+.stats > div { display: contents; }

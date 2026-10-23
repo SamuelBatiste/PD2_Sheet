@@ -1,0 +1,103 @@
+{
+ "bosses": [
+  {
+   "name": "DClone",
+   "resists": [
+    {
+     "name": "Fire",
+     "target": "90%"
+    },
+    {
+     "name": "Phys",
+     "target": "40+%"
+    },
+    {
+     "name": "Lightning",
+     "target": "75%"
+    },
+    {
+     "name": "Cold",
+     "target": "75%"
+    },
+    {
+     "name": "Poison",
+     "target": "75%"
+    },
+    {
+     "name": "Poison-Length",
+     "target": "Not needed"
+    },
+    {
+     "name": "Overcap",
+     "target": "Not needed"
+    }
+   ]
+  },
+  {
+   "name": "Rathma",
+   "resists": [
+    {
+     "name": "Fire",
+     "target": "80+%"
+    },
+    {
+     "name": "Phys",
+     "target": "~10%"
+    },
+    {
+     "name": "Lightning",
+     "target": "75%"
+    },
+    {
+     "name": "Cold",
+     "target": "85+%, 5+% Absorb. Cannot Be Frozen"
+    },
+    {
+     "name": "Poison",
+     "target": "85+%"
+    },
+    {
+     "name": "Poison-Length",
+     "target": "Much as possible"
+    },
+    {
+     "name": "Overcap",
+     "target": "25 (T0), 29 (T1), 33 (T2)"
+    }
+   ]
+  },
+  {
+   "name": "Lucion",
+   "resists": [
+    {
+     "name": "Fire",
+     "target": "75%"
+    },
+    {
+     "name": "Phys",
+     "target": "~50%"
+    },
+    {
+     "name": "Lightning",
+     "target": "90%, +Absorb"
+    },
+    {
+     "name": "Cold",
+     "target": "75%"
+    },
+    {
+     "name": "Poison",
+     "target": "75%"
+    },
+    {
+     "name": "Poison-Length",
+     "target": "Not Needed"
+    },
+    {
+     "name": "Overcap",
+     "target": "Not needed"
+    }
+   ]
+  }
+ ]
+}
