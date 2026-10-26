@@ -1,0 +1,436 @@
+{
+    "Accessories": [
+        {
+            "Name": "Nagelring",
+            "Type": "Ring",
+            "BaseTypeName": "Ring",
+            "RequiredLevel": 7,
+            "Bonuses": [
+                "+[50-75] to Attack Rating",
+                "Magic Damage Taken Reduced by 3",
+                "+1 to Mana after each Kill",
+                "Attacker Takes Damage of 3",
+                "[15-40]% Better Chance of Getting Magic Items"
+            ]
+        },
+        {
+            "Name": "Manald Heal",
+            "Type": "Ring",
+            "BaseTypeName": "Ring",
+            "RequiredLevel": 15,
+            "Bonuses": [
+                "[4-7]% Mana Stolen per Hit",
+                "+20 to Life",
+                "Replenish Life +[5-8]",
+                "Regenerate Mana 20%"
+            ]
+        },
+        {
+            "Name": "The Stone of Jordan",
+            "Type": "Ring",
+            "BaseTypeName": "Ring",
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "+1 to All Skills",
+                "Adds 1-120 Lightning Damage",
+                "+[20-40] to Mana",
+                "Increase Maximum Mana [15-20]%"
+            ]
+        },
+        {
+            "Name": "Dwarf Star",
+            "Type": "Ring",
+            "BaseTypeName": "Ring",
+            "RequiredLevel": 45,
+            "Bonuses": [
+                "5% Increased Chance of Blocking",
+                "+[35-50] to Life",
+                "+[35-50] Maximum Stamina",
+                "Fire Absorb +[4-6]%",
+                "Magic Damage Taken Reduced by [12-15]",
+                "100% Extra Gold from Monsters"
+            ]
+        },
+        {
+            "Name": "Raven Frost",
+            "Type": "Ring",
+            "BaseTypeName": "Ring",
+            "RequiredLevel": 45,
+            "Bonuses": [
+                "+[150-250] to Attack Rating",
+                "Adds 15-45 Cold Damage",
+                "+[15-20] to Dexterity",
+                "+40 to Mana",
+                "Cold Absorb +5%",
+                "Cannot Be Frozen"
+            ]
+        },
+        {
+            "Name": "Bul-Kathos' Wedding Band",
+            "Type": "Ring",
+            "BaseTypeName": "Ring",
+            "RequiredLevel": 58,
+            "Bonuses": [
+                "+1 to All Skills",
+                "[4-6]% Life Stolen per Hit",
+                "+[0-49] to Life (+0.5 per Character Level)",
+                "+50 Maximum Stamina"
+            ]
+        },
+        {
+            "Name": "Carrion Wind",
+            "Type": "Ring",
+            "BaseTypeName": "Ring",
+            "RequiredLevel": 60,
+            "Bonuses": [
+                "8% Chance to Cast Level 30 Twister on Striking",
+                "+20% Faster Run/Walk",
+                "[6-9]% Life Stolen per Hit",
+                "+[100-160] Defense vs. Missile",
+                "Poison Resist +[40-55]%",
+                "Attacker Takes Damage of [180-300]",
+                "Level 11 Poison Creeper (35 Charges)"
+            ]
+        },
+        {
+            "Name": "Nature's Peace",
+            "Type": "Ring",
+            "BaseTypeName": "Ring",
+            "RequiredLevel": 69,
+            "Bonuses": [
+                "Prevent Monster Heal",
+                "Slain Monsters Rest in Peace",
+                "+[1-3]% to Maximum Poison Resist",
+                "+[1-3]% to Maximum Cold Resist",
+                "+[1-3]% to Maximum Lightning Resist",
+                "+[1-3]% to Maximum Fire Resist",
+                "Physical Damage Taken Reduced by [7-11]",
+                "Level 2 Oak Sage (27 Charges)"
+            ]
+        },
+        {
+            "Name": "Wisp Projector",
+            "Type": "Ring",
+            "BaseTypeName": "Ring",
+            "RequiredLevel": 76,
+            "Bonuses": [
+                "+1 to All Skills",
+                "Lightning Absorb +[4-6]%",
+                "[10-15]% Better Chance of Getting Magic Items",
+                "Level 2 Spirit of Barbs (11 Charges)",
+                "Level 2 Heart of Wolverine (13 Charges)"
+            ]
+        },
+        {
+            "Name": "Constricting Loop",
+            "Type": "Ring",
+            "BaseTypeName": "Ring",
+            "RequiredLevel": 65,
+            "Bonuses": [
+                "+20% Faster Cast Rate",
+                "Hit Causes Monsters to Flee 12%",
+                "+[12-18] to Strength",
+                "Drain Life -20",
+                "+[4-6] Life after each Kill"
+            ]
+        },
+        {
+            "Name": "Kadala's Heirloom",
+            "Type": "Ring",
+            "BaseTypeName": "Ring",
+            "RequiredLevel": 75,
+            "Bonuses": [
+                "+1 to Fire Skills, Cold Resist -[10-20]%, Fire Resist +[30-40]%",
+                "or",
+                "+1 to Cold Skills, Fire Resist -[10-20]%, Cold Resist +[30-40]%",
+                "or",
+                "+1 to Lightning Skills, Poison Resist -[10-20]%, Lightning Resist +[30-40]%",
+                "or",
+                "+1 to Poison Skills, Lightning Resist -[10-20]%, Poison Resist +[30-40]%",
+                "or",
+                "+1 to Magic Skills, All Resistances -[3-5]%, Magic Damage Taken Reduced by [9-10]",
+                "or",
+                "+30% Enhanced Damage, All Resistances -[3-5]%, Physical Damage Taken Reduced by [9-10]",
+                "and",
+                "[50-75]% Extra Gold from Monsters",
+                "[20-30]% Better Chance of Getting Magic Items",
+                "Reduces all Vendor Prices [5-10]%"
+            ]
+        },
+        {
+            "Name": "Nokozan Relic",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 10,
+            "Bonuses": [
+                "+[20-30]% Faster Hit Recovery",
+                "Adds [3-6] to [7-12] Fire Damage",
+                "+[4-8]% to Maximum Fire Resist",
+                "Fire Resist +[20-35]%",
+                "+3 to Light Radius"
+            ]
+        },
+        {
+            "Name": "The Eye of Etlich",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 15,
+            "Bonuses": [
+                "+1 to All Skills",
+                "Adds [4-6] to [12-20] Cold Damage (Cold Duration: [2-10] Seconds)",
+                "[3-7]% Life Stolen per Hit",
+                "+[10-40] Defense vs. Missile",
+                "+[1-5] to Light Radius"
+            ]
+        },
+        {
+            "Name": "The Mahim-Oak Curio",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 25,
+            "Bonuses": [
+                "+[5-10]% Faster Cast Rate",
+                "[30-50]% Bonus to Attack Rating",
+                "+[5-10]% Enhanced Defense",
+                "+[5-10] Defense",
+                "+[5-10] to All Attributes",
+                "All Resistances +[5-10]"
+            ]
+        },
+        {
+            "Name": "Saracen's Chance",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 47,
+            "Bonuses": [
+                "10% Chance to Cast Level 12 Iron Maiden when Struck",
+                "+[30-50]% Enhanced Damage",
+                "+12 to All Attributes",
+                "Curse Resistance +10%",
+                "All Resistances +[15-25]"
+            ]
+        },
+        {
+            "Name": "Crescent Moon",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 50,
+            "Bonuses": [
+                "+2 to Cold Skills",
+                "+10% Increased Attack Speed",
+                "+10% Faster Cast Rate",
+                "[4-8]% Mana Stolen per Hit",
+                "[3-6]% Life Stolen per Hit",
+                "+45 to Mana",
+                "Magic Damage Taken Reduced by [5-10]"
+            ]
+        },
+        {
+            "Name": "The Cat's Eye",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 50,
+            "Bonuses": [
+                "+[20-30]% Faster Run/Walk",
+                "+30% Increased Attack Speed",
+                "+20% Chance to Pierce",
+                "+100 Defense vs. Missile",
+                "+[25-35] to Dexterity"
+            ]
+        },
+        {
+            "Name": "Atma's Scarab",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 60,
+            "Bonuses": [
+                "8% Chance to Cast Level 15 Amplify Damage on Striking",
+                "[40-60]% Bonus to Attack Rating",
+                "+10% Chance of Open Wounds",
+                "+300 Open Wounds Damage per Second",
+                "Poison Resist +[30-60]%",
+                "Attacker Takes Damage of [300-450]",
+                "+3 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Highlord's Wrath",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 65,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+20% Increased Attack Speed",
+                "Adds 1-300 Lightning Damage",
+                "+[0-24]% Deadly Strike (+0.25% per Character Level)",
+                "Lightning Resist +[30-40]%",
+                "Attacker Takes Lightning Damage of [100-150]"
+            ]
+        },
+        {
+            "Name": "The Rising Sun",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 65,
+            "Bonuses": [
+                "4% Chance to Cast Level 23 Meteor when Struck",
+                "+[1-2] to Fire Skills",
+                "Adds [80-124] to [200-248] Fire Damage",
+                "-[4-8]% to Enemy Fire Resistance",
+                "Replenish Life +10",
+                "+4 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Seraph's Hymn",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 65,
+            "Bonuses": [
+                "+2 to All Skills",
+                "+[1-2] to Defensive Auras (Paladin Only)",
+                "+[80-120]% Damage to Demons",
+                "+[150-250] to Attack Rating against Demons",
+                "+[80-120]% Damage to Undead",
+                "+[150-250] to Attack Rating against Undead",
+                "+2 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Mara's Kaleidoscope",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 67,
+            "Bonuses": [
+                "+2 to All Skills",
+                "+[4-6] to All Attributes",
+                "All Resistances +[20-30]"
+            ]
+        },
+        {
+            "Name": "Metalgrid",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 81,
+            "Bonuses": [
+                "+[400-450] to Attack Rating",
+                "+[300-350] Defense",
+                "All Resistances +[25-35]",
+                "Attacker Takes Damage of [750-1000]",
+                "Level 12 Iron Maiden (20 Charges)",
+                "+25 to Iron Golem",
+                "+20 to Golem Mastery"
+            ]
+        },
+        {
+            "Name": "The Third Eye",
+            "Type": "Amulet",
+            "BaseTypeName": "Amulet",
+            "RequiredLevel": 90,
+            "Bonuses": [
+                "12% Chance to Cast Level 25 Bone Nova on Casting",
+                "+1 to All Skills",
+                "+20% Faster Cast Rate",
+                "+[40-50] to Energy",
+                "Cannot Be Frozen",
+                "-4 to Light Radius",
+                "Socketed (1)"
+            ]
+        },
+        {
+            "Name": "Amulet of the Viper",
+            "Type": "Amulet",
+            "Bonuses": [
+                "+10 to Life",
+                "+10 to Mana",
+                "Poison Resist +25%"
+            ],
+            "BaseTypeName": "Amulet"
+        },
+        {
+            "Name": "Gheed's Fortune",
+            "Type": "Charm",
+            "BaseTypeName": "Grand Charm",
+            "RequiredLevel": 62,
+            "Bonuses": [
+                "[80-160]% Extra Gold from Monsters",
+                "[20-40]% Better Chance of Getting Magic Items",
+                "Reduces All Vendor Prices [10-15]%"
+            ]
+        },
+        {
+            "Name": "Hellfire Torch",
+            "Type": "Charm",
+            "BaseTypeName": "Large Charm",
+            "RequiredLevel": 75,
+            "Bonuses": [
+                "+2 to [Random Class] Skills",
+                "+[30-60] to Vitality",
+                "+[10-20] to Energy",
+                "All Resistances +[10-20]",
+                "+[4-8] to Light Radius"
+            ]
+        },
+        {
+            "Name": "Annihilus",
+            "Type": "Charm",
+            "BaseTypeName": "Small Charm",
+            "RequiredLevel": 70,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+[30-60] to Vitality",
+                "+[10-20] to Energy",
+                "All Resistances +[10-20]",
+                "+[5-10]% to Experience Gained"
+            ]
+        },
+        {
+            "Name": "Rainbow Facet (Fire)",
+            "Type": "Jewel",
+            "BaseTypeName": "Jewel",
+            "RequiredLevel": 49,
+            "Bonuses": [
+                "100% Chance to Cast Level 29 Blaze when you Level-Up or 100% Chance to Cast Level 31 Meteor when you Die",
+                "Adds 17-45 Fire Damage",
+                "+[3-5]% to Fire Skill Damage",
+                "-[3-5]% to Enemy Fire Resistance"
+            ]
+        },
+        {
+            "Name": "Rainbow Facet (Cold)",
+            "Type": "Jewel",
+            "BaseTypeName": "Jewel",
+            "RequiredLevel": 49,
+            "Bonuses": [
+                "100% Chance to Cast Level 43 Frost Nova when you Level-Up or 100% Chance to Cast Level 37 Blizzard when you Die",
+                "Adds 24-38 Cold Damage",
+                "+[3-5]% to Cold Skill Damage",
+                "-[3-5]% to Enemy Cold Resistance"
+            ]
+        },
+        {
+            "Name": "Rainbow Facet (Lightning)",
+            "Type": "Jewel",
+            "BaseTypeName": "Jewel",
+            "RequiredLevel": 49,
+            "Bonuses": [
+                "100% Chance to Cast Level 41 Nova when you Level-Up or 100% Chance to Cast Level 47 Chain Lightning when you Die",
+                "Adds 1-74 Lightning Damage",
+                "+[3-5]% to Lightning Skill Damage",
+                "-[3-5]% to Enemy Lightning Resistance"
+            ]
+        },
+        {
+            "Name": "Rainbow Facet (Poison)",
+            "Type": "Jewel",
+            "BaseTypeName": "Jewel",
+            "RequiredLevel": 49,
+            "Bonuses": [
+                "100% Chance to Cast Level 23 Venom when you Level-Up or 100% Chance to Cast Level 51 Poison Nova when you Die",
+                "+37 Poison Damage over 2 Seconds",
+                "+[3-5]% to Poison Skill Damage",
+                "-[3-5]% to Enemy Poison Resistance"
+            ]
+        }
+    ]
+}

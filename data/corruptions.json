@@ -13,7 +13,7 @@
                 "Poison Resist +[30-35]%"
             ],
             "MidRarity": [
-                "Indestructible, +[50-80]% Enhanced Defense",
+                "Repairs 1 Durability Every 4 Seconds, +[50-80]% Enhanced Defense",
                 "+[150-250] to Attack Rating, +[2-4] to Light Radius",
                 "[3-5]% Life Stolen per Hit",
                 "[3-5]% Mana Stolen per Hit",
@@ -24,13 +24,18 @@
             ],
             "HighRarity": [
                 "+1 to All Skills",
-                "+10% Curse Resistance",
+                "+[10-20]% Curse Resistance",
                 "All Resistances +[15-20]",
                 "Physical Damage Taken Reduced by [4-6]%",
                 "+[4-5]% to Maximum Fire Resist, Fire Resist +15%",
-                "+[4-5]% to Maximum Cold Resist,Cold Resist +15%",
+                "+[4-5]% to Maximum Cold Resist, Cold Resist +15%",
                 "+[4-5]% to Maximum Lightning Resist, Lightning Resist +15%",
-                "+[4-5]% to Maximum Poison Resist, Poison Resist +15% "
+                "+[4-5]% to Maximum Poison Resist, Poison Resist +15%"
+            ],
+            "Chances": [
+                48,
+                32,
+                20
             ]
         },
         {
@@ -63,7 +68,12 @@
                 "[3-4]% Life Stolen per Hit",
                 "+[4-6] to All Attributes",
                 "All Resistances +[4-6]",
-                "Physical Damage Taken Reduced by 3% "
+                "Physical Damage Taken Reduced by 3%"
+            ],
+            "Chances": [
+                48,
+                32,
+                20
             ]
         },
         {
@@ -96,7 +106,12 @@
                 "+[30-40]% Enhanced Damage",
                 "Cannot Be Frozen",
                 "+2% to ALL Maximum Resistances",
-                "All Resistances +[7-10] "
+                "All Resistances +[7-10]"
+            ],
+            "Chances": [
+                48,
+                32,
+                20
             ]
         },
         {
@@ -112,8 +127,8 @@
                 "Poison Resist +[30-35]%"
             ],
             "MidRarity": [
-                "Indestructible, +[50-80]% Enhanced Defense",
-                "+10% Faster Cast Rate",
+                "Repairs 1 Durability Every 4 Seconds, +[50-80]% Enhanced Defense",
+                "+[10-20]% Curse Resistance",
                 "+20% Faster Run/Walk",
                 "Increase Maximum Life [4-6]%",
                 "Physical Damage Taken Reduced by [6-10]",
@@ -123,13 +138,18 @@
             ],
             "HighRarity": [
                 "+1 to All Skills",
-                "+10% Curse Resistance",
+                "+20% Faster Cast Rate",
                 "All Resistances +[20-25]",
                 "Physical Damage Taken Reduced by [6-8]%",
                 "+[4-5]% to Maximum Fire Resist, Fire Resist +15%",
                 "+[4-5]% to Maximum Cold Resist, Cold Resist +15%",
                 "+[4-5]% to Maximum Lightning Resist, Lightning Resist +15%",
                 "+[4-5]% to Maximum Poison Resist, Poison Resist +15%"
+            ],
+            "Chances": [
+                48,
+                32,
+                20
             ]
         },
         {
@@ -149,8 +169,7 @@
             "MidRarity": [
                 "+20% Faster Cast Rate",
                 "+[30-40]% Increased Attack Speed",
-                "+[40-60]% Enhanced Damage",
-                "5% Life Stolen per Hit",
+                "+[40-60]% Enhanced Damage, 5% Life Stolen per Hit",
                 "-[40-60] Target Defense per Hit",
                 "[20-30]% Chance of Crushing Blow",
                 "[20-30]% Deadly Strike",
@@ -169,7 +188,12 @@
                 "+10% Faster Cast Rate, +5% to Fire Skill Damage",
                 "+10% Faster Cast Rate, +5% to Cold Skill Damage",
                 "+10% Faster Cast Rate, +5% to Lightning Skill Damage",
-                "+10% Faster Cast Rate, +5% to Poison Skill Damage "
+                "+10% Faster Cast Rate, +5% to Poison Skill Damage"
+            ],
+            "Chances": [
+                50,
+                30,
+                20
             ]
         },
         {
@@ -185,7 +209,7 @@
                 "Poison Resist +[35-40]%"
             ],
             "MidRarity": [
-                "Indestructible, +[50-80]% Enhanced Defense",
+                "Repairs 1 Durability Every 4 Seconds, +[50-80]% Enhanced Defense",
                 "+10% Faster Cast Rate",
                 "+10% Faster Block Rate, [10-20]% Increased Chance of Blocking",
                 "Increase Maximum Life [4-6]%",
@@ -196,13 +220,18 @@
             ],
             "HighRarity": [
                 "+1 to All Skills",
-                "+10% Curse Resistance",
+                "+[15-25]% Curse Resistance",
                 "All Resistances +[20-25]",
                 "Physical Damage Taken Reduced by [6-8]%",
                 "+[4-5]% to Maximum Fire Resist, Fire Resist +[15-20]%",
                 "+[4-5]% to Maximum Cold Resist, Cold Resist +[15-20]%",
                 "+[4-5]% to Maximum Lightning Resist, Lightning Resist +[15-20]%",
-                "+[4-5]% to Maximum Poison Resist, Poison Resist +[15-20]% "
+                "+[4-5]% to Maximum Poison Resist, Poison Resist +[15-20]%"
+            ],
+            "Chances": [
+                48,
+                32,
+                20
             ]
         },
         {
@@ -218,12 +247,14 @@
                 "Poison Resist +[15-20]%"
             ],
             "MidRarity": [
-                "Indestructible, +[50-80]% Enhanced Defense",
+                "Repairs 1 Durability Every 4 Seconds, +[50-80]% Enhanced Defense",
+                "+10% Faster Block Rate",
                 "+10% Faster Hit Recovery",
+                "+[20-40] to Life",
                 "All Resistances +[5-8]",
                 "+[2-3] Life after each Kill",
                 "+[2-3] to Mana after each Kill",
-                "Replenish Life +[15-25]"
+                "Half Freeze Duration"
             ],
             "HighRarity": [
                 "+15% Faster Run/Walk",
@@ -233,7 +264,12 @@
                 "+[2-3]% to Maximum Fire Resist, Fire Resist +10%",
                 "+[2-3]% to Maximum Cold Resist, Cold Resist +10%",
                 "+[2-3]% to Maximum Lightning Resist, Lightning Resist +10%",
-                "+[2-3]% to Maximum Poison Resist, Poison Resist +10% "
+                "+[2-3]% to Maximum Poison Resist, Poison Resist +10%"
+            ],
+            "Chances": [
+                48,
+                32,
+                20
             ]
         },
         {
@@ -256,7 +292,7 @@
                 "[2-3]% Mana Stolen per Hit",
                 "+[3-6] to All Attributes",
                 "+[20-40] to Life",
-                "Replenish Life +[15-20]"
+                "Half Freeze Duration"
             ],
             "HighRarity": [
                 "+10% Faster Cast Rate",
@@ -266,7 +302,12 @@
                 "-[15-25]% Target Defense",
                 "10% Deadly Strike",
                 "+[3-4] to Mana after each Kill",
-                "All Resistances +[5-8] "
+                "All Resistances +[5-8]"
+            ],
+            "Chances": [
+                48,
+                32,
+                20
             ]
         },
         {
@@ -285,7 +326,7 @@
                 "+[10-15]% Chance to Pierce",
                 "+10% Faster Hit Recovery",
                 "+[3-6] to All Attributes",
-                "Replenish Life +[15-20]",
+                "Half Freeze Duration",
                 "+[100-150] to Attack Rating",
                 "Attacker Takes Damage of [2-396] ([2-4] per Level)",
                 "[60-100]% Extra Gold from Monsters",
@@ -299,7 +340,12 @@
                 "10% Increased Chance of Blocking",
                 "+2% to ALL Maximum Resistances",
                 "All Resistances +[5-8]",
-                "Physical Damage Taken Reduced by [3-4]% "
+                "Physical Damage Taken Reduced by [3-4]%"
+            ],
+            "Chances": [
+                48,
+                32,
+                20
             ]
         },
         {
@@ -332,7 +378,12 @@
                 "+[10-15] to Minimum Damage",
                 "+[10-15] to Maximum Damage",
                 "Ignore Target's Defense",
-                "All Resistances +[5-10] "
+                "All Resistances +[5-10]"
+            ],
+            "Chances": [
+                48,
+                32,
+                20
             ]
         }
     ]

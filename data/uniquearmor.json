@@ -1,0 +1,3555 @@
+{
+    "Armor": [
+        {
+            "Name": "Biggin's Bonnet",
+            "Type": "Helm",
+            "BaseTypeName": "Cap",
+            "Tier": "Normal",
+            "Defense": "17-19",
+            "Base-Defense": "3-5",
+            "RequiredLevel": 3,
+            "Bonuses": [
+                "+[30-50]% Enhanced Damage",
+                "+[30-50] to Attack Rating",
+                "+14 Defense",
+                "+15 to Life",
+                "+15 to Mana"
+            ]
+        },
+        {
+            "Name": "Tarnhelm",
+            "Type": "Helm",
+            "BaseTypeName": "Skull Cap",
+            "Tier": "Normal",
+            "Defense": "8-11",
+            "Base-Defense": "8-11",
+            "RequiredStrength": 15,
+            "RequiredLevel": 15,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+[2-3] to Mana after each Kill",
+                "75% Extra Gold from Monsters",
+                "[25-50]% Better Chance of Getting Magic Items"
+            ]
+        },
+        {
+            "Name": "Coif of Glory",
+            "Type": "Helm",
+            "BaseTypeName": "Helm",
+            "Tier": "Normal",
+            "Defense": "25-28",
+            "Base-Defense": "15-18",
+            "RequiredStrength": 26,
+            "RequiredLevel": 14,
+            "Bonuses": [
+                "Hit Blinds Target",
+                "+10 Defense",
+                "+100 Defense vs. Missile",
+                "Lightning Resist +15%",
+                "+[2-3] Life after each Kill",
+                "Attacker Takes Lightning Damage of 17"
+            ]
+        },
+        {
+            "Name": "Duskdeep",
+            "Type": "Helm",
+            "BaseTypeName": "Full Helm",
+            "Tier": "Normal",
+            "Defense": "45-60",
+            "Base-Defense": "23-26",
+            "RequiredStrength": 41,
+            "RequiredLevel": 17,
+            "Bonuses": [
+                "+[10-15] to Maximum Damage",
+                "+[30-50]% Enhanced Defense",
+                "+[10-20] Defense",
+                "All Resistances +15",
+                "Physical Damage Taken Reduced by 7",
+                "-2 to Light Radius"
+            ]
+        },
+        {
+            "Name": "The Face of Horror",
+            "Type": "Helm",
+            "BaseTypeName": "Mask",
+            "Tier": "Normal",
+            "Defense": "34-52",
+            "Base-Defense": "9-27",
+            "RequiredStrength": 23,
+            "RequiredLevel": 20,
+            "Bonuses": [
+                "+50% Damage to Undead",
+                "Hit Causes Monster to Flee +50%",
+                "+25 Defense",
+                "+20 to Strength",
+                "All Resistances +[15-20]"
+            ]
+        },
+        {
+            "Name": "Wormskull",
+            "Type": "Helm",
+            "BaseTypeName": "Bone Helm",
+            "Tier": "Normal",
+            "Defense": "33-36",
+            "Base-Defense": "33-36",
+            "Base-Maximum Sockets": "2 (3 for ilvl 41+ upgraded elite versions)",
+            "RequiredStrength": 25,
+            "RequiredLevel": 21,
+            "Bonuses": [
+                "+1 to Poison and Bone Skills (Necromancer Only)",
+                "+1 to Necromancer Skills",
+                "+60 Poison Damage over 2 Seconds",
+                "5% Life Stolen per Hit",
+                "+10 to Mana",
+                "Poison Resist +25%"
+            ]
+        },
+        {
+            "Name": "Howltusk",
+            "Type": "Helm",
+            "BaseTypeName": "Great Helm",
+            "Tier": "Normal",
+            "Defense": "64",
+            "Base-Defense": "30-35",
+            "RequiredStrength": 63,
+            "RequiredLevel": 25,
+            "Bonuses": [
+                "10% Chance to Cast Level 5 Howl on Striking",
+                "+20% Increased Attack Speed",
+                "+80% Enhanced Defense",
+                "Magic Damage Taken Reduced by 2",
+                "Attacker Takes Damage of 30",
+                "35% Damage Taken Gained as Mana when Hit"
+            ]
+        },
+        {
+            "Name": "Undead Crown",
+            "Type": "Helm",
+            "BaseTypeName": "Crown",
+            "Tier": "Normal",
+            "Defense": "65-85",
+            "Base-Defense": "25-45",
+            "RequiredStrength": 55,
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "+50% Damage to Undead",
+                "+[50-100] to Attack Rating against Undead",
+                "5% Life Stolen per Hit",
+                "+[6-8] to Skeleton Mastery",
+                "+[6-8] to Raise Skeleton Warrior",
+                "+40 Defense",
+                "Poison Resist +50%",
+                "Half Freeze Duration"
+            ]
+        },
+        {
+            "Name": "Peasant Crown",
+            "Type": "Helm",
+            "BaseTypeName": "War Hat",
+            "Tier": "Exceptional",
+            "Defense": "108",
+            "Base-Defense": "45-53",
+            "RequiredStrength": 20,
+            "RequiredLevel": 28,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+20% Faster Run/Walk",
+                "+100% Enhanced Defense",
+                "+20 to Vitality",
+                "+20 to Energy",
+                "Replenish Life +[6-12]"
+            ]
+        },
+        {
+            "Name": "Rockstopper",
+            "Type": "Helm",
+            "BaseTypeName": "Sallet",
+            "Tier": "Exceptional",
+            "Defense": "163-201",
+            "Base-Defense": "52-62",
+            "RequiredStrength": 43,
+            "RequiredLevel": 31,
+            "Bonuses": [
+                "+30% Faster Hit Recovery",
+                "+[160-220]% Enhanced Defense",
+                "+15 to Vitality",
+                "Cold Resist +[20-40]%",
+                "Lightning Resist +[20-40]%",
+                "Fire Resist +[20-50]%",
+                "Physical Damage Taken Reduced by 10%"
+            ]
+        },
+        {
+            "Name": "Stealskull",
+            "Type": "Helm",
+            "BaseTypeName": "Casque",
+            "Tier": "Exceptional",
+            "Defense": "219-248",
+            "Base-Defense": "63-72",
+            "RequiredStrength": 59,
+            "RequiredLevel": 35,
+            "Bonuses": [
+                "+20% Increased Attack Speed",
+                "+20% Faster Hit Recovery",
+                "[3-5]% Mana Stolen per Hit",
+                "[3-5]% Life Stolen per Hit",
+                "+[200-240]% Enhanced Defense",
+                "[30-50]% Better Chance of Getting Magic Items"
+            ]
+        },
+        {
+            "Name": "Darksight Helm",
+            "Type": "Helm",
+            "BaseTypeName": "Basinet",
+            "Tier": "Exceptional",
+            "Defense": "78-381",
+            "Base-Defense": "75-84",
+            "RequiredStrength": 82,
+            "RequiredLevel": 38,
+            "Bonuses": [
+                "16% Chance to Cast Level 3 Dim Vision when Struck",
+                "5% Mana Stolen per Hit",
+                "Hit Blinds Target",
+                "+[3-297] Defense (+3 per Character Level)",
+                "Fire Resist +[20-40]%",
+                "Cannot Be Frozen",
+                "-4 to Light Radius",
+                "+1 to Cloak of Shadows"
+            ]
+        },
+        {
+            "Name": "Blackhorn's Face",
+            "Type": "Helm",
+            "BaseTypeName": "Death Mask",
+            "Tier": "Exceptional",
+            "Defense": "243-278",
+            "Base-Defense": "54-86",
+            "RequiredStrength": 55,
+            "RequiredLevel": 41,
+            "Bonuses": [
+                "Prevent Monster Heal",
+                "Slows Target by 20%",
+                "+[180-220]% Enhanced Defense",
+                "+5% to Maximum Lightning Resist",
+                "Lightning Resist +[20-30]%",
+                "+[10-20] Lightning Absorb",
+                "Attacker Takes Lightning Damage of [225-325]"
+            ]
+        },
+        {
+            "Name": "Vampire Gaze",
+            "Type": "Helm",
+            "BaseTypeName": "Grim Helm",
+            "Tier": "Exceptional",
+            "Defense": "252",
+            "Base-Defense": "60-125",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 58,
+            "RequiredLevel": 41,
+            "Bonuses": [
+                "Adds 30-60 Cold Damage",
+                "[6-10]% Mana Stolen per Hit",
+                "[6-10]% Life Stolen per Hit",
+                "+100% Enhanced Defense",
+                "15% Slower Stamina Drain",
+                "Physical Damage Taken Reduced by [15-25]%",
+                "Magic Damage Taken Reduced by [10-15]"
+            ]
+        },
+        {
+            "Name": "Valkyrie Wing",
+            "Type": "Helm",
+            "BaseTypeName": "Winged Helm",
+            "Tier": "Exceptional",
+            "Defense": "247-297",
+            "Base-Defense": "85-98",
+            "RequiredStrength": 115,
+            "RequiredLevel": 44,
+            "Bonuses": [
+                "+[1-2] to Amazon Skills",
+                "+2 to Valkyrie (Amazon Only)",
+                "+30% Faster Run/Walk",
+                "+30% Faster Hit Recovery",
+                "+[40-60]% Enhanced Damage",
+                "+[150-200]% Enhanced Defense",
+                "+[3-6] to Mana after each Kill"
+            ]
+        },
+        {
+            "Name": "Crown of Thieves",
+            "Type": "Helm",
+            "BaseTypeName": "Grand Crown",
+            "Tier": "Exceptional",
+            "Defense": "296-342",
+            "Base-Defense": "78-113",
+            "RequiredStrength": 103,
+            "RequiredLevel": 49,
+            "Bonuses": [
+                "[9-12]% Life Stolen per Hit",
+                "+[160-200]% Enhanced Defense",
+                "+25 to Dexterity",
+                "+50 to Life",
+                "Fire Resist +33%",
+                "[80-100]% Extra Gold from Monsters",
+                "[40-65]% Better Chance of Getting Magic Items"
+            ]
+        },
+        {
+            "Name": "Sage's Defiance",
+            "Type": "Helm",
+            "BaseTypeName": "Giant Conch",
+            "Tier": "Elite",
+            "Defense": "247-302",
+            "Base-Defense": "110-154",
+            "RequiredStrength": 142,
+            "RequiredLevel": 58,
+            "Bonuses": [
+                "+20% Faster Cast Rate",
+                "+[125-175]% Enhanced Defense",
+                "Physical Damage Taken Reduced by [15-25]%",
+                "+[3-5] Life After Each Kill",
+                "45% Damage Taken Gained as Mana When Hit",
+                "-4 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Harlequin Crest",
+            "Type": "Helm",
+            "BaseTypeName": "Shako",
+            "Tier": "Elite",
+            "Defense": "98-141",
+            "Base-Defense": "98-141",
+            "RequiredStrength": 50,
+            "RequiredLevel": 62,
+            "Bonuses": [
+                "+2 to All Skills",
+                "+2 to All Attributes",
+                "+[1-99] to Life (+1 per Character Level)",
+                "+[1-99] to Mana (+1 per Character Level)",
+                "Physical Damage Taken Reduced by [4-6]%",
+                "[25-50]% Better Chance of Getting Magic Items"
+            ]
+        },
+        {
+            "Name": "Steel Shade",
+            "Type": "Helm",
+            "BaseTypeName": "Armet",
+            "Tier": "Elite",
+            "Defense": "300-345",
+            "Base-Defense": "105-149",
+            "RequiredStrength": 109,
+            "RequiredLevel": 62,
+            "Bonuses": [
+                "+2 to All Skills",
+                "+20% Faster Block Rate",
+                "20% Increased Chance of Blocking",
+                "[4-8]% Mana Stolen per Hit",
+                "+[100-130]% Enhanced Defense",
+                "Replenish Life +[30-48]",
+                "+[4-6] Fire Absorb",
+                "[60-80]% Extra Gold from Monsters"
+            ]
+        },
+        {
+            "Name": "Andariel's Visage",
+            "Type": "Helm",
+            "BaseTypeName": "Demonhead",
+            "Tier": "Elite",
+            "Defense": "310-387",
+            "Base-Defense": "101-154",
+            "RequiredStrength": 102,
+            "RequiredLevel": 83,
+            "Bonuses": [
+                "15% Chance to Cast Level 36 Poison Nova when Struck",
+                "+2 to All Skills",
+                "+20% Increased Attack Speed",
+                "[8-10]% Life Stolen per Hit",
+                "-[6-10]% to Enemy Poison Resistance",
+                "+[100-150]% Enhanced Defense",
+                "+[25-30] to Strength",
+                "+5% to Maximum Poison Resist",
+                "Fire Resist -20%",
+                "Poison Resist +50%"
+            ]
+        },
+        {
+            "Name": "Giant Skull",
+            "Type": "Helm",
+            "BaseTypeName": "Bone Visage",
+            "Tier": "Elite",
+            "Defense": "350-477",
+            "Base-Defense": "100-157",
+            "RequiredStrength": 106,
+            "RequiredLevel": 65,
+            "Bonuses": [
+                "+[25-35]% Chance to Pierce",
+                "+[60-80]% Enhanced Damage",
+                "+25% Chance of Crushing Blow",
+                "Knockback",
+                "+[250-320] Defense",
+                "+[25-35] to Strength"
+            ]
+        },
+        {
+            "Name": "Veil of Steel",
+            "Type": "Helm",
+            "BaseTypeName": "Spired Helm",
+            "Tier": "Elite",
+            "Defense": "556-652",
+            "Base-Defense": "114-159",
+            "RequiredStrength": 192,
+            "RequiredLevel": 73,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+[60-90]% Enhanced Damage",
+                "+[160-220]% Enhanced Defense",
+                "+140 Defense",
+                "+15 to Strength",
+                "+15 to Vitality",
+                "All Resistances +[30-40]",
+                "+20 Durability"
+            ]
+        },
+        {
+            "Name": "Nightwing's Veil",
+            "Type": "Helm",
+            "BaseTypeName": "Spired Helm",
+            "Tier": "Elite",
+            "Defense": "304-352",
+            "Base-Defense": "114-159",
+            "RequiredStrength": 96,
+            "RequiredLevel": 67,
+            "Bonuses": [
+                "+2 to All Skills",
+                "-[5-10]% to Enemy Cold Resistance",
+                "+[5-10]% to Cold Skill Damage",
+                "+[90-120]% Enhanced Defense",
+                "+[10-20] to Dexterity",
+                "+[5-9] Cold Absorb",
+                "Half Freeze Duration",
+                "Requirements -50%"
+            ]
+        },
+        {
+            "Name": "Crown of Ages",
+            "Type": "Helm",
+            "BaseTypeName": "Corona",
+            "Tier": "Elite",
+            "Defense": "349-399",
+            "Base-Defense": "111-165",
+            "RequiredStrength": 174,
+            "RequiredLevel": 82,
+            "Bonuses": [
+                "Indestructible",
+                "+30% Faster Hit Recovery",
+                "50% Reduced Curse Duration",
+                "+50% Enhanced Defense",
+                "+[100-150] Defense",
+                "All Resistances +[20-30]",
+                "Physical Damage Taken Reduced by [10-15]%",
+                "Socketed [2-3]"
+            ]
+        },
+        {
+            "Name": "Overlord's Helm",
+            "Type": "Helm",
+            "BaseTypeName": "Bone Visage",
+            "Tier": "Elite",
+            "Defense": "560-837",
+            "Base-Defense": "100-157",
+            "RequiredStrength": 106,
+            "RequiredLevel": 85,
+            "Bonuses": [
+                "-15% to Enemy Physical Resistance",
+                "[5-8]% Life Stolen per Hit",
+                "+[460-680] Defense",
+                "+[20-30] to Strength",
+                "+15 to Dexterity",
+                "+15 to Vitality",
+                "Curse Resistance -20%"
+            ]
+        },
+        {
+            "Name": "Kira's Guardian",
+            "Type": "Helm",
+            "BaseTypeName": "Tiara",
+            "Tier": "Exceptional",
+            "Defense": "90-170",
+            "Base-Defense": "40-50",
+            "RequiredLevel": 77,
+            "Bonuses": [
+                "+20% Faster Hit Recovery",
+                "-[10-15]% to Enemy Cold Resistance",
+                "-[10-15]% to Enemy Lightning Resistance",
+                "-[10-15]% to Enemy Fire Resistance",
+                "+[50-120] Defense",
+                "All Resistances +[25-40]",
+                "Half Freeze Duration"
+            ]
+        },
+        {
+            "Name": "Griffon's Eye",
+            "Type": "Helm",
+            "BaseTypeName": "Diadem",
+            "Tier": "Elite",
+            "Defense": "150-260",
+            "Base-Defense": "50-60",
+            "RequiredLevel": 76,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+25% Faster Cast Rate",
+                "+[10-15]% to Lightning Skill Damage",
+                "-[15-20]% to Enemy Lightning Resistance",
+                "+[100-200] Defense"
+            ]
+        },
+        {
+            "Name": "Cyclopean Roar",
+            "Type": "Helm",
+            "BaseTypeName": "Jawbone Visor",
+            "Tier": "Exceptional",
+            "Class": "Barbarian",
+            "Defense": "131-169",
+            "Base-Defense": "55-68",
+            "RequiredStrength": 58,
+            "RequiredLevel": 28,
+            "Bonuses": [
+                "8% Chance to Cast Level 6 Battle Cry on Striking",
+                "or",
+                "8% Chance to Cast Level 6 Battle Cry on Casting",
+                "+[2-3] to Warcries (Barbarian Only)",
+                "+20% Faster Run/Walk",
+                "+20% to Leap and Leap Attack Movement Speed",
+                "+[90-145]% Enhanced Defense",
+                "+20% Chance of Crushing Blow"
+            ]
+        },
+        {
+            "Name": "Wildspeaker",
+            "Type": "Helm",
+            "BaseTypeName": "Lion Helm",
+            "Tier": "Exceptional",
+            "Class": "Barbarian",
+            "Defense": "197-258",
+            "Base-Defense": "63-75",
+            "RequiredStrength": 73,
+            "RequiredLevel": 44,
+            "Bonuses": [
+                "+[1-2] to Barbarian Skill Levels",
+                "+20% Faster Cast Rate",
+                "+[2-3] to Grim Ward (Barbarian Only)",
+                "+[2-3] to Shout (Barbarian Only)",
+                "+[160-240]% Enhanced Defense",
+                "+[10-20] to Vitality",
+                "Increase Maximum Mana 25%",
+                "Regenerate Mana 33%",
+                "Fire Resist +50%"
+            ]
+        },
+        {
+            "Name": "Arreat's Face",
+            "Type": "Helm",
+            "BaseTypeName": "Slayer Guard",
+            "Tier": "Exceptional",
+            "Class": "Barbarian",
+            "Defense": "302-363",
+            "Base-Defense": "93-120",
+            "RequiredStrength": 118,
+            "RequiredLevel": 42,
+            "Bonuses": [
+                "+[1-2] to Combat Skills (Barbarian Only)",
+                "+2 to Barbarian Skills",
+                "+30% Faster Hit Recovery",
+                "20% Bonus to Attack Rating",
+                "[3-6]% Life Stolen per Hit",
+                "+[150-200]% Enhanced Defense",
+                "+[10-20] to Strength",
+                "+[10-20] to Dexterity",
+                "All Resistances +[20-30]"
+            ]
+        },
+        {
+            "Name": "Wolfhowl",
+            "Type": "Helm",
+            "BaseTypeName": "Fury Visor",
+            "Tier": "Elite",
+            "Class": "Barbarian",
+            "Defense": "332-377",
+            "Base-Defense": "105-150",
+            "RequiredStrength": 129,
+            "RequiredLevel": 79,
+            "Bonuses": [
+                "+[2-3] to Warcries (Barbarian Only)",
+                "+[4-6] to Feral Rage",
+                "+[4-6] to Werewolf",
+                "+[120-150]% Enhanced Defense",
+                "+[10-15] to Strength",
+                "+[10-15] to Dexterity",
+                "+[12-15] to Summon Dire Wolf"
+            ]
+        },
+        {
+            "Name": "Demonhorn's Edge",
+            "Type": "Helm",
+            "BaseTypeName": "Destroyer Helm",
+            "Tier": "Elite",
+            "Class": "Barbarian",
+            "Defense": "345-408",
+            "Base-Defense": "111-156",
+            "RequiredStrength": 151,
+            "RequiredLevel": 61,
+            "Bonuses": [
+                "+[2-3] to Barbarian Skill Levels",
+                "+2 to Deep Wounds (Barbarian Only)",
+                "+20% Chance of Open Wounds",
+                "+350 Open Wounds Damage per Second",
+                "+[120-160]% Enhanced Defense",
+                "Attacker Takes Damage of [900-1050]",
+                "Physical Damage Taken Reduced by [18-24]"
+            ]
+        },
+        {
+            "Name": "Halaberd's Reign",
+            "Type": "Helm",
+            "BaseTypeName": "Conqueror Crown",
+            "Tier": "Elite",
+            "Class": "Barbarian",
+            "Defense": "384-432",
+            "Base-Defense": "114-159",
+            "RequiredStrength": 174,
+            "RequiredLevel": 77,
+            "Bonuses": [
+                "+2 to Barbarian Skills",
+                "+20% Faster Hit Recovery",
+                "+[3-297] to Attack Rating (+3 per Character Level)",
+                "+[2-3] to Battle Orders (Barbarian Only)",
+                "+[2-3] to Battle Cry (Barbarian Only)",
+                "+[140-170]% Enhanced Defense",
+                "Physical Damage Taken Reduced by [10-15]%"
+            ]
+        },
+        {
+            "Name": "Raekor's Virtue",
+            "Type": "Helm",
+            "BaseTypeName": "Guardian Crown",
+            "Tier": "Elite",
+            "Class": "Barbarian",
+            "Defense": "405-473",
+            "Base-Defense": "117-168",
+            "RequiredStrength": 196,
+            "RequiredLevel": 78,
+            "Bonuses": [
+                "You May Apply an Additional Curse",
+                "+2 to Barbarian Skills",
+                "+[40-60]% Enhanced Damage",
+                "[5-8]% Mana Stolen per Hit",
+                "+[2-3] to Double Throw (Barbarian Only)",
+                "+[2-3] to Double Swing (Barbarian Only)",
+                "+[140-180]% Enhanced Defense",
+                "+[20-30] to Dexterity",
+                "Curse Resistance +25%"
+            ]
+        },
+        {
+            "Name": "Quetzalcoatl",
+            "Type": "Helm",
+            "BaseTypeName": "Hawk Helm",
+            "Tier": "Normal",
+            "Class": "Druid",
+            "Defense": "24-28",
+            "Base-Defense": "4-15",
+            "RequiredStrength": 20,
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "+[1-2] to Druid Skills",
+                "Gust's Cooldown is Reduced by 2 Seconds",
+                "+10% Faster Cast Rate",
+                "+[50-80]% Enhanced Defense",
+                "Cold Resist +[10-25]%",
+                "+[2-4] Life after each Kill"
+            ]
+        },
+        {
+            "Name": "Fenris",
+            "Type": "Helm",
+            "BaseTypeName": "Alpha Helm",
+            "Tier": "Exceptional",
+            "Class": "Druid",
+            "Defense": "212-282",
+            "Base-Defense": "52-62",
+            "RequiredStrength": 44,
+            "RequiredLevel": 40,
+            "Bonuses": [
+                "-[5-8]% to Enemy Physical Resistance",
+                "You May Summon 2 Additional Spirit Wolves",
+                "+[1-2] to Druid Skill Levels",
+                "-25% Target Defense",
+                "+2 to Heart of Wolverine (Druid Only)",
+                "+2 to Summon Spirit Wolf (Druid Only)",
+                "+[160-220] Defense",
+                "+[20-30] to Dexterity"
+            ]
+        },
+        {
+            "Name": "Jalal's Mane",
+            "Type": "Helm",
+            "BaseTypeName": "Totemic Mask",
+            "Tier": "Exceptional",
+            "Class": "Druid",
+            "Defense": "247-297",
+            "Base-Defense": "73-98",
+            "RequiredStrength": 65,
+            "RequiredLevel": 42,
+            "Bonuses": [
+                "+[1-2] to Shape Shifting Skills (Druid Only)",
+                "+2 to Druid Skills",
+                "+30% Faster Hit Recovery",
+                "20% Bonus to Attack Rating",
+                "+[150-200]% Enhanced Defense",
+                "+[15-20] to Strength",
+                "+[15-20] to Energy",
+                "All Resistances +25",
+                "+5 to Mana after each Kill"
+            ]
+        },
+        {
+            "Name": "Cerebus' Bite",
+            "Type": "Helm",
+            "BaseTypeName": "Blood Spirit",
+            "Tier": "Elite",
+            "Class": "Druid",
+            "Defense": "335-350",
+            "Base-Defense": "101-145",
+            "RequiredStrength": 86,
+            "RequiredLevel": 63,
+            "Bonuses": [
+                "+[3-4] to Shape Shifting Skills (Druid Only)",
+                "[120-180]% Bonus to Attack Rating",
+                "+33% Deadly Strike",
+                "+33% Chance of Open Wounds",
+                "+360 Open Wounds Damage per Second",
+                "+2 to Feral Rage (Druid Only)",
+                "+2 to Hunger (Druid Only)",
+                "+[130-140]% Enhanced Defense"
+            ]
+        },
+        {
+            "Name": "Denmother",
+            "Type": "Helm",
+            "BaseTypeName": "Sun Spirit",
+            "Tier": "Elite",
+            "Class": "Druid",
+            "Defense": "220-333",
+            "Base-Defense": "98-147",
+            "RequiredStrength": 95,
+            "RequiredLevel": 58,
+            "Bonuses": [
+                "+2 to Druid Skill Levels",
+                "You May Summon 2 Additional Grizzlies",
+                "You May No Longer Summon Wolves",
+                "+20% Faster Cast Rate",
+                "+[2-3] to Summon Grizzly (Druid Only)",
+                "+[2-3] to Maul (Druid Only)",
+                "+125% Enhanced Defense",
+                "Replenish Life +[25-35]",
+                "[50-80]% Extra Gold from Monsters",
+                "Socketed ([2-3])"
+            ]
+        },
+        {
+            "Name": "Ravenlore",
+            "Type": "Helm",
+            "BaseTypeName": "Sky Spirit",
+            "Tier": "Elite",
+            "Class": "Druid",
+            "Defense": "343-390",
+            "Base-Defense": "103-155",
+            "RequiredStrength": 113,
+            "RequiredLevel": 74,
+            "Bonuses": [
+                "+3 to Elemental Skills (Druid Only)",
+                "+7 to Raven (Druid Only)",
+                "-[10-20]% to Enemy Fire Resistance",
+                "+[120-150]% Enhanced Defense",
+                "+[20-30] to Energy",
+                "All Resistances +[15-25]"
+            ]
+        },
+        {
+            "Name": "Spirit Keeper",
+            "Type": "Helm",
+            "BaseTypeName": "Earth Spirit",
+            "Tier": "Elite",
+            "Class": "Druid",
+            "Defense": "413-443",
+            "Base-Defense": "107-152",
+            "RequiredStrength": 104,
+            "RequiredLevel": 67,
+            "Bonuses": [
+                "+2 to Druid Skills",
+                "+20% Faster Hit Recovery",
+                "+2 to [Random Druid Skill] (Druid Only)",
+                "+[170-190]% Enhanced Defense",
+                "You May Now Summon 1 Additional Spirit",
+                "+[5-8]% to Maximum Poison Resist",
+                "Fire Resist +[20-30]%",
+                "+[4-6] Lightning Absorb"
+            ]
+        },
+        {
+            "Name": "Ursa's Nightmare",
+            "Type": "Helm",
+            "BaseTypeName": "Dream Spirit",
+            "Tier": "Elite",
+            "Class": "Druid",
+            "Defense": "368-416",
+            "Base-Defense": "109-159",
+            "RequiredStrength": 118,
+            "RequiredLevel": 66,
+            "Bonuses": [
+                "You Cannot Life Steal When Above 75% Maximum Life",
+                "+[0-40]% Increased Splash Radius (Based on Missing Life)",
+                "+3 to Shape Shifting Skills (Druid Only)",
+                "+40% Faster Hit Recovery",
+                "Prevent Monster Heal",
+                "+[130-160]% Enhanced Defense",
+                "Increase Maximum Life [30-35]%",
+                "Drain Life -30"
+            ]
+        },
+        {
+            "Name": "Greyform",
+            "Type": "Chest",
+            "BaseTypeName": "Quilted Armor",
+            "Tier": "Normal",
+            "Defense": "29-31",
+            "Base-Defense": "9-11",
+            "Base-Maximum Sockets": "2 (3 for upgraded elite versions)",
+            "RequiredStrength": 12,
+            "RequiredLevel": 7,
+            "Bonuses": [
+                "5% Life Stolen per Hit",
+                "+20 Defense",
+                "+10 to Dexterity",
+                "Cold Resist +20%",
+                "Fire Resist +20%",
+                "Magic Damage Taken Reduced by 3"
+            ]
+        },
+        {
+            "Name": "Blinkbat's Form",
+            "Type": "Chest",
+            "BaseTypeName": "Leather Armor",
+            "Tier": "Normal",
+            "Defense": "40-42",
+            "Base-Defense": "15-17",
+            "Base-Maximum Sockets": "2 (3 for upgraded elite versions)",
+            "RequiredStrength": 15,
+            "RequiredLevel": 12,
+            "Bonuses": [
+                "+20% Faster Run/Walk",
+                "+40% Faster Hit Recovery",
+                "Adds 10-15 Fire Damage",
+                "+25 Defense",
+                "+50 Defense vs. Missile"
+            ]
+        },
+        {
+            "Name": "The Centurion",
+            "Type": "Chest",
+            "BaseTypeName": "Hard Leather Armor",
+            "Tier": "Normal",
+            "Defense": "53-55",
+            "Base-Defense": "23-25",
+            "Base-Maximum Sockets": "2 (3 for upgraded elite versions)",
+            "RequiredStrength": 20,
+            "RequiredLevel": 14,
+            "Bonuses": [
+                "20% Increased Chance of Blocking",
+                "+30% Enhanced Damage",
+                "+50 to Attack Rating",
+                "+30 Defense",
+                "+15 to Life",
+                "Replenish Life +[5-15]",
+                "+15 to Mana",
+                "Physical Damage Taken Reduced by 2"
+            ]
+        },
+        {
+            "Name": "Twitchthroe",
+            "Type": "Chest",
+            "BaseTypeName": "Studded Leather",
+            "Tier": "Normal",
+            "Defense": "60-62",
+            "Base-Defense": "35-37",
+            "Base-Maximum Sockets": "2 (3 for upgraded elite versions)",
+            "RequiredStrength": 27,
+            "RequiredLevel": 16,
+            "Bonuses": [
+                "+[20-40]% Increased Attack Speed",
+                "+20% Faster Hit Recovery",
+                "25% Increased Chance of Blocking",
+                "+25 Defense",
+                "+10 to Strength",
+                "+10 to Dexterity"
+            ]
+        },
+        {
+            "Name": "Darkglow",
+            "Type": "Chest",
+            "BaseTypeName": "Ring Mail",
+            "Tier": "Normal",
+            "Defense": "88-104",
+            "Base-Defense": "49-51",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 36,
+            "RequiredLevel": 14,
+            "Bonuses": [
+                "+[60-120] to Attack Rating",
+                "+[70-100]% Enhanced Defense",
+                "+50 Defense vs. Missile",
+                "+[2-5]% to Maximum Poison Resist",
+                "+[2-5]% to Maximum Cold Resist",
+                "+[2-5]% to Maximum Lightning Resist",
+                "+[2-5]% to Maximum Fire Resist",
+                "All Resistances +[10-15]",
+                "+3 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Hawkmail",
+            "Type": "Chest",
+            "BaseTypeName": "Scale Mail",
+            "Tier": "Normal",
+            "Defense": "115-128",
+            "Base-Defense": "61-63",
+            "Base-Speed Penalty": "0%",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 44,
+            "RequiredLevel": 15,
+            "Bonuses": [
+                "+25% Faster Run/Walk",
+                "+[2-3] to Raven",
+                "+[80-100]% Enhanced Defense",
+                "+5% to Maximum Cold Resist",
+                "Cold Resist +[15-30]%",
+                "Cannot Be Frozen"
+            ]
+        },
+        {
+            "Name": "Sparking Mail",
+            "Type": "Chest",
+            "BaseTypeName": "Chain Mail",
+            "Tier": "Normal",
+            "Defense": "126-133",
+            "Base-Defense": "70-71",
+            "Base-Speed Penalty": "0%",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 48,
+            "RequiredLevel": 17,
+            "Bonuses": [
+                "Adds 1-45 Lightning Damage",
+                "+[5-10]% to Lightning Skill Damage",
+                "+[75-85]% Enhanced Defense",
+                "Lightning Resist +30%",
+                "Attacker Takes Lightning Damage of [20-28]"
+            ]
+        },
+        {
+            "Name": "Venom Ward",
+            "Type": "Chest",
+            "BaseTypeName": "Breast Plate",
+            "Tier": "Normal",
+            "Defense": "94-118",
+            "Base-Defense": "56-58",
+            "RequiredStrength": 30,
+            "RequiredLevel": 20,
+            "Bonuses": [
+                "-[6-12]% to Enemy Poison Resistance",
+                "+[60-100]% Enhanced Defense",
+                "+[5-8]% to Maximum Poison Resist",
+                "Poison Resist +[40-60]%",
+                "Poison Length Reduced by 50%",
+                "+2 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Iceblink",
+            "Type": "Chest",
+            "BaseTypeName": "Splint Mail",
+            "Tier": "Normal",
+            "Defense": "144-153",
+            "Base-Defense": "81-84",
+            "Base-Speed Penalty": "0%",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 51,
+            "RequiredLevel": 22,
+            "Bonuses": [
+                "+[1-2] to Cold Skills",
+                "Freezes Target",
+                "+[70-80]% Enhanced Defense",
+                "Cold Resist +[20-35]%",
+                "Magic Damage Taken Reduced by [2-6]",
+                "+4 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Boneflesh",
+            "Type": "Chest",
+            "BaseTypeName": "Plate Mail",
+            "Tier": "Normal",
+            "Defense": "218-239",
+            "Base-Defense": "103-108",
+            "Base-Speed Penalty": "0%",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 65,
+            "RequiredLevel": 26,
+            "Bonuses": [
+                "10% Chance to Cast Level 15 Bone Armor when Struck",
+                "+235 to Attack Rating",
+                "5% Life Stolen per Hit",
+                "+25% Chance of Open Wounds",
+                "+[24-32] Open Wounds Damage per Second",
+                "+[100-120]% Enhanced Defense"
+            ]
+        },
+        {
+            "Name": "Rockfleece",
+            "Type": "Chest",
+            "BaseTypeName": "Field Plate",
+            "Tier": "Normal",
+            "Defense": "206-236",
+            "Base-Defense": "100-102",
+            "Base-Speed Penalty": "0%",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 50,
+            "RequiredLevel": 28,
+            "Bonuses": [
+                "+[100-130]% Enhanced Defense",
+                "+[10-15] to Strength",
+                "Physical Damage Taken Reduced by [10-15]%",
+                "Physical Damage Taken Reduced by [5-10]",
+                "Requirements -10%"
+            ]
+        },
+        {
+            "Name": "Rattlecage",
+            "Type": "Chest",
+            "BaseTypeName": "Gothic Plate",
+            "Tier": "Normal",
+            "Defense": "324-328",
+            "Base-Defense": "124-128",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 70,
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "+[60-90]% Enhanced Damage",
+                "+[100-145] to Attack Rating",
+                "+25% Chance of Crushing Blow",
+                "Hit Causes Monster to Flee +7%",
+                "+200 Defense"
+            ]
+        },
+        {
+            "Name": "Heavenly Garb",
+            "Type": "Chest",
+            "BaseTypeName": "Light Plate",
+            "Tier": "Normal",
+            "Defense": "200",
+            "Base-Defense": "93-99",
+            "RequiredStrength": 41,
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "Level [4-6] Sanctuary Aura when Equipped",
+                "+1 to Magic Skills",
+                "+50% Damage to Undead",
+                "+100 to Attack Rating against Undead",
+                "+100% Enhanced Defense",
+                "+15 to Energy",
+                "Regenerate Mana 25%",
+                "All Resistances +[10-20]"
+            ]
+        },
+        {
+            "Name": "Goldskin",
+            "Type": "Chest",
+            "BaseTypeName": "Full Plate Mail",
+            "Tier": "Normal",
+            "Defense": "332-377",
+            "Base-Defense": "145-150",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 80,
+            "RequiredLevel": 28,
+            "Bonuses": [
+                "+[120-150]% Enhanced Defense",
+                "All Resistances +35",
+                "Attacker Takes Damage of 40",
+                "[100-200]% Extra Gold from Monsters",
+                "+2 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Silks of the Victor",
+            "Type": "Chest",
+            "BaseTypeName": "Ancient Armor",
+            "Tier": "Normal",
+            "Defense": "372-409",
+            "Base-Defense": "178-185",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 100,
+            "RequiredLevel": 28,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+25% Faster Run/Walk",
+                "[2-5]% Mana Stolen per Hit",
+                "+[100-120]% Enhanced Defense",
+                "+[2-4] Life after each Kill",
+                "+2 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Spirit Shroud",
+            "Type": "Chest",
+            "BaseTypeName": "Ghost Armor",
+            "Tier": "Exceptional",
+            "Defense": "282",
+            "Base-Defense": "106-112",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 38,
+            "RequiredLevel": 28,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+150% Enhanced Defense",
+                "Replenish Life +[10-20]",
+                "Curse Resistance +[20-30]%",
+                "Magic Damage Taken Reduced by [7-11]",
+                "Cannot Be Frozen"
+            ]
+        },
+        {
+            "Name": "Skin of the Vipermagi",
+            "Type": "Chest",
+            "BaseTypeName": "Serpentskin Armor",
+            "Tier": "Exceptional",
+            "Defense": "270",
+            "Base-Defense": "116-122",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 43,
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+30% Faster Cast Rate",
+                "+120% Enhanced Defense",
+                "All Resistances +[20-30]",
+                "Magic Damaged Taken Reduced by [5-8]"
+            ]
+        },
+        {
+            "Name": "Skin of the Flayed One",
+            "Type": "Chest",
+            "BaseTypeName": "Demonhide Armor",
+            "Tier": "Exceptional",
+            "Defense": "337-391",
+            "Base-Defense": "128-134",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 50,
+            "RequiredLevel": 31,
+            "Bonuses": [
+                "Adds 80-135 Fire Damage",
+                "[5-7]% Life Stolen per Hit",
+                "+[150-190]% Enhanced Defense",
+                "Replenish Life +[15-25]",
+                "Fire Resist +[20-45]%",
+                "Repairs 1 Durability in 4 Seconds",
+                "+30 Durability"
+            ]
+        },
+        {
+            "Name": "Iron Pelt",
+            "Type": "Chest",
+            "BaseTypeName": "Trellised Armor",
+            "Tier": "Exceptional",
+            "Defense": "238-611",
+            "Base-Defense": "148-156",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 61,
+            "RequiredLevel": 33,
+            "Bonuses": [
+                "[20-40]% Increased Chance of Blocking",
+                "+[50-100]% Enhanced Defense",
+                "+[3-297] Defense (+3 per Character Level)",
+                "+[80-100] to Life",
+                "Physical Damage Taken Reduced by [15-20]",
+                "Magic Damage Taken Reduced by [10-16]",
+                "+125 Durability"
+            ]
+        },
+        {
+            "Name": "Spirit Forge",
+            "Type": "Chest",
+            "BaseTypeName": "Linked Mail",
+            "Tier": "Exceptional",
+            "Defense": "398-470",
+            "Base-Defense": "172-180",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 74,
+            "RequiredLevel": 35,
+            "Bonuses": [
+                "+[1-2] to Fire Skills",
+                "Adds 20-65 Fire Damage",
+                "+[120-160]% Enhanced Defense",
+                "+15 to Strength",
+                "+[1-123] to Life (+1.25 per Character Level)",
+                "Fire Resist +[20-30]%",
+                "+4 to Light Radius",
+                "Socketed (2)"
+            ]
+        },
+        {
+            "Name": "Crow Caw",
+            "Type": "Chest",
+            "BaseTypeName": "Tigulated Mail",
+            "Tier": "Exceptional",
+            "Defense": "507-568",
+            "Base-Defense": "193-202",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 86,
+            "RequiredLevel": 37,
+            "Bonuses": [
+                "+20% Increased Attack Speed",
+                "+30% Chance to Pierce",
+                "+[50-80]% Enhanced Damage",
+                "+35% Chance of Open Wounds",
+                "+140 Open Wounds Damage per Second",
+                "+[150-180]% Enhanced Defense",
+                "+[20-30] to Dexterity"
+            ]
+        },
+        {
+            "Name": "Shaftstop",
+            "Type": "Chest",
+            "BaseTypeName": "Mesh Armor",
+            "Tier": "Exceptional",
+            "Defense": "607-694",
+            "Base-Defense": "207-216",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 92,
+            "RequiredLevel": 38,
+            "Bonuses": [
+                "+[180-220]% Enhanced Defense",
+                "+250 Defense vs. Missile",
+                "+[100-140] to Life",
+                "Physical Damage Taken Reduced by [20-30]%"
+            ]
+        },
+        {
+            "Name": "Duriel's Shell",
+            "Type": "Chest",
+            "BaseTypeName": "Cuirass",
+            "Tier": "Exceptional",
+            "Defense": "461-654",
+            "Base-Defense": "170-176",
+            "RequiredStrength": 65,
+            "RequiredLevel": 41,
+            "Bonuses": [
+                "+[160-200]% Enhanced Defense",
+                "+[1-123] Defense (+1.25 per Character Level)",
+                "+15 to Strength",
+                "+[1-149] to Life (+[1.0-1.5] per Character Level)",
+                "Cold Resist +50%",
+                "Lightning Resist +20%",
+                "Fire Resist +20%",
+                "Poison Resist +20%",
+                "Cannot Be Frozen",
+                "+100 Durability"
+            ]
+        },
+        {
+            "Name": "Skullder's Ire",
+            "Type": "Chest",
+            "BaseTypeName": "Russet Armor",
+            "Tier": "Exceptional",
+            "Defense": "608-702",
+            "Base-Defense": "223-233",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 97,
+            "RequiredLevel": 42,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+[160-200]% Enhanced Defense",
+                "Magic Damage Taken Reduced by [10-15]",
+                "[1-148]% Better Chance of Getting Magic Items ([1-1.5]% per Character Level)",
+                "Repairs 1 Durability in 5 Seconds",
+                "+60 Durability"
+            ]
+        },
+        {
+            "Name": "Guardian Angel",
+            "Type": "Chest",
+            "BaseTypeName": "Templar Coat",
+            "Tier": "Exceptional",
+            "Defense": "781-837",
+            "Base-Defense": "264-278",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 118,
+            "RequiredLevel": 45,
+            "Bonuses": [
+                "+[1-2] to All Skills",
+                "+30% Faster Block Rate",
+                "20% Increased Chance of Blocking",
+                "+[7-693] to Attack Rating against Demons (+7 per Character Level)",
+                "+[180-200]% Enhanced Defense",
+                "+[4-6]% to Maximum Poison Resist",
+                "+[4-6]% to Maximum Cold Resist",
+                "+[4-6]% to Maximum Lightning Resist",
+                "+[4-6]% to Maximum Fire Resist",
+                "+4 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Toothrow",
+            "Type": "Chest",
+            "BaseTypeName": "Sharktooth Armor",
+            "Tier": "Exceptional",
+            "Defense": "705-879",
+            "Base-Defense": "246-255",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 103,
+            "RequiredLevel": 48,
+            "Bonuses": [
+                "+[15-25]% Deadly Strike",
+                "+40% Chance of Open Wounds",
+                "+[300-350] Open Wounds Damage per Second",
+                "+[160-220]% Enhanced Defense",
+                "+[40-60] Defense",
+                "+10 to Strength",
+                "Fire Resist +15%",
+                "+15 Durability"
+            ]
+        },
+        {
+            "Name": "Atma's Wail",
+            "Type": "Chest",
+            "BaseTypeName": "Embossed Plate",
+            "Tier": "Exceptional",
+            "Defense": "673-991",
+            "Base-Defense": "291-304",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 125,
+            "RequiredLevel": 41,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+20% Faster Cast Rate",
+                "+30% Faster Hit Recovery",
+                "+[120-160]% Enhanced Defense",
+                "+[2-198] Defense (+2 per Character Level)",
+                "+15 to Dexterity",
+                "Replenish Life +[20-30]",
+                "Increase Maximum Mana [20-30]%",
+                "25% Better Chance of Getting Magic Items",
+                "+50 Durability"
+            ]
+        },
+        {
+            "Name": "Que-Hegan's Wisdom",
+            "Type": "Chest",
+            "BaseTypeName": "Mage Plate",
+            "Tier": "Exceptional",
+            "Defense": "451-488",
+            "Base-Defense": "178-187",
+            "RequiredStrength": 55,
+            "RequiredLevel": 51,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+20% Faster Cast Rate",
+                "+20% Faster Hit Recovery",
+                "+[140-160]% Enhanced Defense",
+                "+[20-30] to Energy",
+                "Magic Damage Taken Reduced by [6-10]",
+                "+[8-12] to Mana after each Kill"
+            ]
+        },
+        {
+            "Name": "Black Hades",
+            "Type": "Chest",
+            "BaseTypeName": "Chaos Armor",
+            "Tier": "Exceptional",
+            "Defense": "818-1023",
+            "Base-Defense": "323-340",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 140,
+            "RequiredLevel": 53,
+            "Bonuses": [
+                "+[185-225]% Damage to Demons",
+                "+[400-450] to Attack Rating against Demons",
+                "+[140-200]% Enhanced Defense",
+                "Half Freeze Duration",
+                "-2 to Light Radius",
+                "Socketed [3-4]"
+            ]
+        },
+        {
+            "Name": "Corpsemourn",
+            "Type": "Chest",
+            "BaseTypeName": "Ornate Plate",
+            "Tier": "Exceptional",
+            "Defense": "1112-1246",
+            "Base-Defense": "423-444",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 145,
+            "RequiredLevel": 55,
+            "Bonuses": [
+                "Adds [120-160] to [300-340] Fire Damage",
+                "+[150-180]% Enhanced Defense",
+                "+8 to Strength",
+                "+10 to Vitality",
+                "Cold Resist +35%",
+                "+[30-40] to Corpse Explosion",
+                "5% Reanimate As: Returned",
+                "Requirements -15%"
+            ]
+        },
+        {
+            "Name": "Ormus' Robes",
+            "Type": "Chest",
+            "BaseTypeName": "Dusk Shroud",
+            "Tier": "Elite",
+            "Defense": "370-502",
+            "Base-Defense": "270-302",
+            "RequiredStrength": 77,
+            "RequiredLevel": 75,
+            "Bonuses": [
+                "[8/12]%3 Chance to Cast Level [22-26]4 [Random Sorceress Skill]2 on Casting",
+                "+30% Faster Cast Rate",
+                "+[10-15]% to Fire Skill Damage",
+                "+[10-15]% to Lightning Skill Damage",
+                "+[10-15]% to Cold Skill Damage",
+                "+2 to [Random Sorceress Skill]2 (Sorceress Only)",
+                "+[100-200] Defense",
+                "Regenerate Mana [20-30]%"
+            ]
+        },
+        {
+            "Name": "The Gladiator's Bane",
+            "Type": "Chest",
+            "BaseTypeName": "Wire Fleece",
+            "Tier": "Elite",
+            "Defense": "980-1176",
+            "Base-Defense": "343-391",
+            "RequiredStrength": 111,
+            "RequiredLevel": 85,
+            "Bonuses": [
+                "+40% Faster Hit Recovery",
+                "+[150-200]% Enhanced Defense",
+                "+[12-16]% Chance of Critical Strike",
+                "Physical Damage Taken Reduced by [15-25]",
+                "Magic Damage Taken Reduced by [10-20]",
+                "Cannot Be Frozen",
+                "Poison Length Reduced by 50%",
+                "Attacker Takes Damage of [600-700]",
+                "+103 Durability"
+            ]
+        },
+        {
+            "Name": "Wraithskin",
+            "Type": "Chest",
+            "BaseTypeName": "Diamond Mail",
+            "Tier": "Elite",
+            "Defense": "698-1001",
+            "Base-Defense": "388-445",
+            "RequiredStrength": 131,
+            "RequiredLevel": 54,
+            "Bonuses": [
+                "20% Increased Attack Speed",
+                "+[60-100]% Enhanced Damage",
+                "Maximum Deadly Strike +10%",
+                "+25% Deadly Strike Multiplier",
+                "+130% Enhanced Defense",
+                "Curse Resistance +[30-40]%",
+                "+[4-6] Life after each Kill"
+            ]
+        },
+        {
+            "Name": "Spectral Plate",
+            "Type": "Chest",
+            "BaseTypeName": "Great Hauberk",
+            "Tier": "Elite",
+            "Defense": "371-420",
+            "RequiredStrength": 108,
+            "RequiredLevel": 65,
+            "Bonuses": [
+                "Indestructible",
+                "Phasing When Equipped",
+                "+1 to All Skills",
+                "+[24-38] to Energy",
+                "Lightning Resist +[40-50]%",
+                "Physical Damage Taken Reduced by [8-12]%",
+                "Ethereal (Cannot be Repaired)"
+            ]
+        },
+        {
+            "Name": "Arkaine's Valor",
+            "Type": "Chest",
+            "BaseTypeName": "Balrog Skin",
+            "Tier": "Elite",
+            "Defense": "1355-1517",
+            "Base-Defense": "469-541",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 165,
+            "RequiredLevel": 85,
+            "Bonuses": [
+                "+[1-2] to All Skills",
+                "+40% Faster Hit Recovery",
+                "+[150-180]% Enhanced Defense",
+                "+[1-99] to Vitality (+1 per Character Level)",
+                "Physical Damage Taken Reduced by [10-15]"
+            ]
+        },
+        {
+            "Name": "Leviathan",
+            "Type": "Chest",
+            "BaseTypeName": "Kraken Shell",
+            "Tier": "Elite",
+            "Defense": "1657-1881",
+            "Base-Defense": "501-576",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 174,
+            "RequiredLevel": 65,
+            "Bonuses": [
+                "Indestructible",
+                "+[170-200]% Enhanced Defense",
+                "+[100-150] Defense",
+                "+[40-50] to Strength",
+                "Curse Resistance +20%",
+                "Physical Damage Taken Reduced by [15-25]%"
+            ]
+        },
+        {
+            "Name": "Purgatory",
+            "Type": "Chest",
+            "BaseTypeName": "Archon Plate",
+            "Tier": "Elite",
+            "Defense": "1305-1468",
+            "Base-Defense": "364-407",
+            "RequiredStrength": 103,
+            "RequiredLevel": 75,
+            "Bonuses": [
+                "Gains +60% Enhanced Damage per Equipped Ethereal Item",
+                "+[0-420]% Enhanced Damage (based on equipped ethereals)",
+                "+20% Faster Block Rate",
+                "20% Increased Chance of Blocking",
+                "+[220-260]% Enhanced Defense",
+                "Magic Damage Taken Reduced by [16-24]",
+                "[40-65]% Better Chance of Getting Magic Items",
+                "Repairs 1 Durability in 4 Seconds"
+            ]
+        },
+        {
+            "Name": "Steel Carapace",
+            "Type": "Chest",
+            "BaseTypeName": "Shadow Plate",
+            "Tier": "Elite",
+            "Defense": "2230-2439",
+            "Base-Defense": "599-696",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 220,
+            "RequiredLevel": 66,
+            "Bonuses": [
+                "4% Chance to Cast Level 26 Iron Maiden when Struck",
+                "+[1-2] to All Skills",
+                "+40% Faster Hit Recovery",
+                "+[250-280]% Enhanced Defense",
+                "Cold Resist +[40-60]%",
+                "Physical Damage Taken Reduced by [19-24]",
+                "Attacker Takes Damage of [1400-1600]",
+                "Repairs 1 Durability in 10 Seconds"
+            ]
+        },
+        {
+            "Name": "Templar's Might",
+            "Type": "Chest",
+            "BaseTypeName": "Sacred Armor",
+            "Tier": "Elite",
+            "Defense": "1973-2339",
+            "Base-Defense": "633-730",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 232,
+            "RequiredLevel": 74,
+            "Bonuses": [
+                "Level [6-8] Might Aura when Equipped",
+                "+20% Faster Hit Recovery",
+                "+[170-220]% Enhanced Defense",
+                "+[250-300] Defense vs. Missile",
+                "+[40-50] to Strength",
+                "+[40-50] to Vitality",
+                "+[40-50] Maximum Stamina",
+                "Curse Resistance +[20-30]%"
+            ]
+        },
+        {
+            "Name": "Tyrael's Might",
+            "Type": "Chest",
+            "BaseTypeName": "Sacred Armor",
+            "Tier": "Elite",
+            "Defense": "1608-1827",
+            "Base-Defense": "633-730",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 0,
+            "RequiredLevel": 84,
+            "Bonuses": [
+                "Indestructible",
+                "+45% Faster Run/Walk",
+                "+[200-250]% Damage to Demons",
+                "+[200-250]% Damage to Undead",
+                "+[120-150]% Enhanced Defense",
+                "+[20-30] to Strength",
+                "All Resistances +[20-30]",
+                "Cannot Be Frozen",
+                "Requirements -100%"
+            ]
+        },
+        {
+            "Name": "Dark Abyss",
+            "Type": "Chest",
+            "BaseTypeName": "Lacquered Plate",
+            "Tier": "Elite",
+            "Defense": "1662-2327",
+            "Base-Defense": "573-664",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 166,
+            "RequiredLevel": 85,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+50% Faster Cast Rate",
+                "+[150-250]% Enhanced Defense",
+                "Cold Resist +60%",
+                "Fire Resist -30%",
+                "+[4-6] to Mana after each Kill",
+                "+[4-6] Life after each Kill",
+                "Requirements -20%"
+            ]
+        },
+        {
+            "Name": "Cage of the Unsullied",
+            "Type": "Chest",
+            "BaseTypeName": "Boneweave",
+            "Tier": "Elite",
+            "Defense": "1470-1960",
+            "Base-Defense": "419-489",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 158,
+            "RequiredLevel": 90,
+            "Bonuses": [
+                "+[200-300]% Enhanced Defense",
+                "All Resistances +[15-20]",
+                "-[4-8] to Light Radius",
+                "Socketed (6)"
+            ]
+        },
+        {
+            "Name": "The Hand of Broc",
+            "Type": "Gloves",
+            "BaseTypeName": "Leather Gloves",
+            "Tier": "Normal",
+            "Defense": "14",
+            "Base-Defense": "2-3",
+            "RequiredLevel": 5,
+            "Bonuses": [
+                "Melee Attacks Deal Splash Damage",
+                "+[20-30]% Enhanced Damage",
+                "3% Mana Stolen per Hit",
+                "3% Life Stolen per Hit",
+                "+[10-20]% Enhanced Defense",
+                "+10 Defense",
+                "+20 to Mana",
+                "Poison Resist +10%"
+            ]
+        },
+        {
+            "Name": "Bloodfist",
+            "Type": "Gloves",
+            "BaseTypeName": "Heavy Gloves",
+            "Tier": "Normal",
+            "Defense": "17-18",
+            "Base-Defense": "5-6",
+            "RequiredLevel": 9,
+            "Bonuses": [
+                "Melee Attacks Deal Splash Damage",
+                "+10% Increased Attack Speed",
+                "+30% Faster Hit Recovery",
+                "+[5-10] to Maximum Damage",
+                "+[10-20]% Enhanced Defense",
+                "+10 Defense",
+                "+40 to Life"
+            ]
+        },
+        {
+            "Name": "Chance Guards",
+            "Type": "Gloves",
+            "BaseTypeName": "Chain Gloves",
+            "Tier": "Normal",
+            "Defense": "27-28",
+            "Base-Defense": "8-9",
+            "RequiredStrength": 25,
+            "RequiredLevel": 15,
+            "Bonuses": [
+                "+25 to Attack Rating",
+                "+[20-30]% Enhanced Defense",
+                "+15 Defense",
+                "+[1-2] to Mana after each Kill",
+                "200% Extra Gold from Monsters",
+                "[25-40]% Better Chance of Getting Magic Items",
+                "+2 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Magefist",
+            "Type": "Gloves",
+            "BaseTypeName": "Light Gauntlets",
+            "Tier": "Normal",
+            "Defense": "24-25",
+            "Base-Defense": "9-11",
+            "RequiredStrength": 45,
+            "RequiredLevel": 23,
+            "Bonuses": [
+                "+1 to Fire Skills",
+                "+20% Faster Cast Rate",
+                "Adds 6-36 Fire Damage",
+                "+[20-30]% Enhanced Defense",
+                "+10 Defense",
+                "Regenerate Mana [15-25]%"
+            ]
+        },
+        {
+            "Name": "Frostburn",
+            "Type": "Gloves",
+            "BaseTypeName": "Gauntlets",
+            "Tier": "Normal",
+            "Defense": "39-62",
+            "Base-Defense": "12-15",
+            "RequiredStrength": 60,
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "Adds 14-28 Fire Damage",
+                "Adds 6-22 Cold Damage",
+                "-[5-10]% to Enemy Fire Resistance",
+                "-[5-10]% to Enemy Cold Resistance",
+                "+[20-40] Defense",
+                "Increase Maximum Mana [20-40]%"
+            ]
+        },
+        {
+            "Name": "Venom Grip",
+            "Type": "Gloves",
+            "BaseTypeName": "Demonhide Gloves",
+            "Tier": "Exceptional",
+            "Defense": "97-118",
+            "Base-Defense": "28-35",
+            "RequiredStrength": 20,
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "[2-4]% Life Stolen per Hit",
+                "+[10-15]% to Poison Skill Damage",
+                "+[5-10]% Chance of Crushing Blow",
+                "+[130-160]% Enhanced Defense",
+                "+[15-25] Defense",
+                "+5% to Maximum Poison Resist",
+                "Poison Resist +30%"
+            ]
+        },
+        {
+            "Name": "Gravepalm",
+            "Type": "Gloves",
+            "BaseTypeName": "Sharkskin Gloves",
+            "Tier": "Exceptional",
+            "Defense": "96-112",
+            "Base-Defense": "33-39",
+            "RequiredStrength": 20,
+            "RequiredLevel": 32,
+            "Bonuses": [
+                "+1 to Summoning Skills (Necromancer Only)",
+                "+[100-200]% Damage to Undead",
+                "+[100-200] to Attack Rating against Undead",
+                "+[10-15]% Deadly Strike",
+                "+[140-180]% Enhanced Defense",
+                "+10 to Strength",
+                "+10 to Energy"
+            ]
+        },
+        {
+            "Name": "Ghoulhide",
+            "Type": "Gloves",
+            "BaseTypeName": "Heavy Bracers",
+            "Tier": "Exceptional",
+            "Defense": "112-130",
+            "Base-Defense": "37-44",
+            "RequiredStrength": 58,
+            "RequiredLevel": 36,
+            "Bonuses": [
+                "+20% Increased Attack Speed",
+                "+[2-198]% Damage to Undead (+2% per Character Level)",
+                "+[8-792] to Attack Rating against Undead (+8 per Character Level)",
+                "[4-5]% Mana Stolen per Hit",
+                "+[150-190]% Enhanced Defense",
+                "+[20-40] to Life"
+            ]
+        },
+        {
+            "Name": "Lava Gout",
+            "Type": "Gloves",
+            "BaseTypeName": "Battle Gauntlets",
+            "Tier": "Exceptional",
+            "Defense": "120-144",
+            "Base-Defense": "39-47",
+            "RequiredStrength": 88,
+            "RequiredLevel": 42,
+            "Bonuses": [
+                "2% Chance to Cast Level 10 Enchant Fire on Striking",
+                "+20% Increased Attack Speed",
+                "Adds 26-92 Fire Damage",
+                "+[150-200]% Enhanced Defense",
+                "+[3-5]% to Maximum Fire Resist",
+                "Fire Resist +[24-36]%",
+                "Half Freeze Duration",
+                "+20 Durability"
+            ]
+        },
+        {
+            "Name": "Hellmouth",
+            "Type": "Gloves",
+            "BaseTypeName": "War Gauntlets",
+            "Tier": "Exceptional",
+            "Defense": "135-162",
+            "Base-Defense": "43-53",
+            "RequiredStrength": 110,
+            "RequiredLevel": 47,
+            "Bonuses": [
+                "8% Chance to Cast level 22 Molten Boulder on Attack",
+                "4% Chance to Cast level 34 Meteor on Striking",
+                "Adds 30-144 Fire Damage",
+                "-[5-10]% to Enemy Fire Resistance",
+                "+[150-200]% Enhanced Defense",
+                "Attacker Takes Damage of [250-400]",
+                "+15 Durability"
+            ]
+        },
+        {
+            "Name": "Titan's Grip",
+            "Type": "Gloves",
+            "BaseTypeName": "Bramble Mitts",
+            "Tier": "Elite",
+            "Defense": "129-176",
+            "Base-Defense": "54-62",
+            "RequiredStrength": 50,
+            "RequiredLevel": 42,
+            "Bonuses": [
+                "+20% Faster Block Rate",
+                "[15-20]% Increased Chance of Blocking",
+                "+[140-185]% Enhanced Defense",
+                "+120 Defense vs. Missile",
+                "Lightning Resist +[25-35]%",
+                "Half Freeze Duration"
+            ]
+        },
+        {
+            "Name": "Dracul's Grasp",
+            "Type": "Gloves",
+            "BaseTypeName": "Vampirebone Gloves",
+            "Tier": "Elite",
+            "Defense": "125-145",
+            "Base-Defense": "56-65",
+            "RequiredStrength": 50,
+            "RequiredLevel": 76,
+            "Bonuses": [
+                "[8-12]% Life Stolen per Hit",
+                "+25% Chance of Open Wounds",
+                "+[240-320] Open Wounds Damage per Second",
+                "+[90-120]% Enhanced Defense",
+                "+[20-30] to Strength",
+                "+[5-10] Life after each Kill"
+            ]
+        },
+        {
+            "Name": "Soul Drainer",
+            "Type": "Gloves",
+            "BaseTypeName": "Vambraces",
+            "Tier": "Elite",
+            "Defense": "129-149",
+            "Base-Defense": "59-67",
+            "RequiredStrength": 106,
+            "RequiredLevel": 74,
+            "Bonuses": [
+                "-[3-4]% to Enemy Physical Resistance",
+                "[2-3]% Mana Stolen per Hit",
+                "[2-3]% Life Stolen per Hit",
+                "-50 to Monster Defense per Hit",
+                "+[90-120]% Enhanced Defense",
+                "Drain Life -30"
+            ]
+        },
+        {
+            "Name": "Occultist",
+            "Type": "Gloves",
+            "BaseTypeName": "Crusader Gauntlets",
+            "Tier": "Elite",
+            "Defense": "124-138",
+            "Base-Defense": "59-68",
+            "RequiredStrength": 151,
+            "RequiredLevel": 70,
+            "Bonuses": [
+                "+20% Faster Cast Rate",
+                "[25-35]% Reduced Curse Duration",
+                "Hit Blinds Target",
+                "[80-100]% Enhanced Defense",
+                "Increase Maximum Mana [25-35]%"
+            ]
+        },
+        {
+            "Name": "Steelrend",
+            "Type": "Gloves",
+            "BaseTypeName": "Ogre Gauntlets",
+            "Tier": "Elite",
+            "Defense": "232-281",
+            "Base-Defense": "62-71",
+            "RequiredStrength": 185,
+            "RequiredLevel": 70,
+            "Bonuses": [
+                "Melee Attacks Deal Splash Damage",
+                "+[60-80]% Enhanced Damage",
+                "+[10-20]% Chance of Crushing Blow",
+                "+[10-20]% Crushing Blow Efficiency",
+                "+[170-210] Defense",
+                "+[15-20] to Strength"
+            ]
+        },
+        {
+            "Name": "Hotspur",
+            "Type": "Boots",
+            "BaseTypeName": "Boots",
+            "Tier": "Normal",
+            "Defense": "10",
+            "Base-Defense": "2-3",
+            "Base-Kick Damage": "3 to 8, Avg 5.5",
+            "RequiredLevel": 5,
+            "Bonuses": [
+                "Adds 3-6 Fire Damage",
+                "+[10-20]% Enhanced Defense",
+                "+6 Defense",
+                "+15 to Life",
+                "+[4-6]% to Maximum Fire Resist",
+                "Fire Resist +[20-30]%"
+            ]
+        },
+        {
+            "Name": "Gorefoot",
+            "Type": "Boots",
+            "BaseTypeName": "Heavy Boots",
+            "Tier": "Normal",
+            "Defense": "8-9",
+            "Base-Defense": "5-6",
+            "Base-Kick Damage": "4 to 12, Avg 8",
+            "RequiredStrength": 18,
+            "RequiredLevel": 12,
+            "Bonuses": [
+                "+25% Faster Run/Walk",
+                "+[20-30]% Leap and Leap Attack Movement Speed",
+                "+2 to Leap (Barbarian Only)",
+                "[2-4]% Mana Stolen per Hit",
+                "+[20-30]% Enhanced Defense"
+            ]
+        },
+        {
+            "Name": "Treads of Cthon",
+            "Type": "Boots",
+            "BaseTypeName": "Chain Boots",
+            "Tier": "Normal",
+            "Defense": "25-26",
+            "Base-Defense": "8-9",
+            "Base-Kick Damage": "6 to 14, Avg 10",
+            "RequiredStrength": 30,
+            "RequiredLevel": 15,
+            "Bonuses": [
+                "+30% Faster Run/Walk",
+                "+20% Chance to Pierce",
+                "+[30-40]% Enhanced Defense",
+                "+12 Defense",
+                "+50 Defense vs. Missile",
+                "+[10-30] to Life",
+                "50% Slower Stamina Drain"
+            ]
+        },
+        {
+            "Name": "Goblin Toe",
+            "Type": "Boots",
+            "BaseTypeName": "Light Plated Boots",
+            "Tier": "Normal",
+            "Defense": "33-34",
+            "Base-Defense": "9-11",
+            "Base-Kick Damage": "8 to 18, Avg 13",
+            "RequiredStrength": 50,
+            "RequiredLevel": 22,
+            "Bonuses": [
+                "+20% Faster Run/Walk",
+                "+[20-30]% Enhanced Damage",
+                "+[15-25]% Chance of Crushing Blow",
+                "+[50-60]% Enhanced Defense",
+                "+15 Defense",
+                "Physical Damage Taken Reduced by [3-5]",
+                "Magic Damage Taken Reduced by [3-5]"
+            ]
+        },
+        {
+            "Name": "Tearhaunch",
+            "Type": "Boots",
+            "BaseTypeName": "Greaves",
+            "Tier": "Normal",
+            "Defense": "60-63",
+            "Base-Defense": "12-15",
+            "Base-Kick Damage": "10 to 20, Avg 15",
+            "RequiredStrength": 70,
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "+2 to Defensive Auras (Paladin Only)",
+                "+20% Faster Run/Walk",
+                "+[1-2] to Vigor (Paladin Only)",
+                "+[60-80]% Enhanced Defense",
+                "+35 Defense",
+                "+[5-10] to Strength",
+                "+[5-10] to Dexterity",
+                "All Resistances +10"
+            ]
+        },
+        {
+            "Name": "Infernostride",
+            "Type": "Boots",
+            "BaseTypeName": "Demonhide Boots",
+            "Tier": "Exceptional",
+            "Defense": "94-105",
+            "Base-Defense": "28-35",
+            "Base-Kick Damage": "30 to 64, Avg 47",
+            "RequiredStrength": 20,
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "18% Chance to Cast Level 16 Blaze when Struck",
+                "+30% Faster Run/Walk",
+                "Adds 24-66 Fire Damage",
+                "+[120-150]% Enhanced Defense",
+                "+15 Defense",
+                "+5% to Maximum Fire Resist",
+                "Fire Resist +30%",
+                "[40-70]% Extra Gold from Monsters",
+                "+2 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Waterwalk",
+            "Type": "Boots",
+            "BaseTypeName": "Sharkskin Boots",
+            "Tier": "Exceptional",
+            "Defense": "112-124",
+            "Base-Defense": "33-39",
+            "Base-Kick Damage": "32 to 72, Avg 52",
+            "RequiredStrength": 47,
+            "RequiredLevel": 32,
+            "Bonuses": [
+                "+30% Faster Run/Walk",
+                "+20% Faster Block Rate",
+                "+[180-210]% Enhanced Defense",
+                "+15 to Dexterity",
+                "+[45-65] to Life",
+                "+40 Maximum Stamina",
+                "Heal Stamina Plus 50%",
+                "+5% to Maximum Fire Resist"
+            ]
+        },
+        {
+            "Name": "Silkweave",
+            "Type": "Boots",
+            "BaseTypeName": "Mesh Boots",
+            "Tier": "Exceptional",
+            "Defense": "112-130",
+            "Base-Defense": "37-44",
+            "Base-Kick Damage": "35 to 78, Avg 56.5",
+            "RequiredStrength": 65,
+            "RequiredLevel": 36,
+            "Bonuses": [
+                "+30% Faster Run/Walk",
+                "+[150-190]% Enhanced Defense",
+                "+200 Defense vs. Missile",
+                "Increase Maximum Mana [10-20]%",
+                "+5 to Mana after each Kill"
+            ]
+        },
+        {
+            "Name": "War Traveler",
+            "Type": "Boots",
+            "BaseTypeName": "Battle Boots",
+            "Tier": "Exceptional",
+            "Defense": "120-139",
+            "Base-Defense": "39-47",
+            "Base-Kick Damage": "42 to 84, Avg 63",
+            "RequiredStrength": 95,
+            "RequiredLevel": 42,
+            "Bonuses": [
+                "+25% Faster Run/Walk",
+                "Adds 15-25 Damage",
+                "+[150-190]% Enhanced Defense",
+                "+10 to Strength",
+                "+10 to Vitality",
+                "40% Slower Stamina Drain",
+                "Attacker Takes Damage of [5-10]",
+                "[30-50]% Better Chance of Getting Magic Items",
+                "+30 Durability"
+            ]
+        },
+        {
+            "Name": "Gore Rider",
+            "Type": "Boots",
+            "BaseTypeName": "War Boots",
+            "Tier": "Exceptional",
+            "Defense": "140-162",
+            "Base-Defense": "43-53",
+            "Base-Kick Damage": "45 to 90, Avg 67.5",
+            "RequiredStrength": 94,
+            "RequiredLevel": 47,
+            "Bonuses": [
+                "+30% Faster Run/Walk",
+                "+15% Chance of Crushing Blow",
+                "+[15-20]% Deadly Strike",
+                "+10% Chance of Open Wounds",
+                "+[140-200] Open Wounds Damage per Second",
+                "+[160-200]% Enhanced Defense",
+                "Requirements -25%",
+                "+10 Durability"
+            ]
+        },
+        {
+            "Name": "Merman's Sprocket",
+            "Type": "Boots",
+            "BaseTypeName": "Wyrmhide Boots",
+            "Tier": "Elite",
+            "Defense": "104-162",
+            "Base-Defense": "54-62",
+            "Base-Kick Damage": "75 to 100, Avg 87.5",
+            "RequiredStrength": 50,
+            "RequiredLevel": 45,
+            "Bonuses": [
+                "+60% Faster Run/Walk",
+                "Adds 40-80 Cold Damage",
+                "+[50-100] Defense",
+                "Regenerate Mana [10-20]%",
+                "+[50-100] Maximum Stamina",
+                "50% Slower Stamina Drain"
+            ]
+        },
+        {
+            "Name": "Sandstorm Trek",
+            "Type": "Boots",
+            "BaseTypeName": "Scarabshell Boots",
+            "Tier": "Elite",
+            "Defense": "158-178",
+            "Base-Defense": "56-65",
+            "Base-Kick Damage": "70 to 110, Avg 90",
+            "RequiredStrength": 91,
+            "RequiredLevel": 64,
+            "Bonuses": [
+                "+30% Faster Run/Walk",
+                "+20% Faster Hit Recovery",
+                "+[140-170]% Enhanced Defense",
+                "+[10-15] to Strength",
+                "+[10-15] to Vitality",
+                "50% Slower Stamina Drain",
+                "Poison Resist +[30-50]%",
+                "+4% to Maximum Poison Resist",
+                "Attacker Takes Damage of [480-540]",
+                "Repairs 1 Durability in 10 Seconds"
+            ]
+        },
+        {
+            "Name": "Marrowwalk",
+            "Type": "Boots",
+            "BaseTypeName": "Boneweave Boots",
+            "Tier": "Elite",
+            "Defense": "183-204",
+            "Base-Defense": "59-67",
+            "Base-Kick Damage": "80 to 125, Avg 102.5",
+            "RequiredStrength": 118,
+            "RequiredLevel": 66,
+            "Bonuses": [
+                "+20% Faster Run/Walk",
+                "+[1-2] to Skeleton Mastery",
+                "+[170-200]% Enhanced Defense",
+                "+[10-20] to Strength",
+                "+17 to Dexterity",
+                "Regenerate Mana [10-20]%",
+                "Heal Stamina Plus 10%",
+                "Cannot Be Frozen"
+            ]
+        },
+        {
+            "Name": "Shadow Dancer",
+            "Type": "Boots",
+            "BaseTypeName": "Myrmidon Greaves",
+            "Tier": "Elite",
+            "Defense": "122-144",
+            "Base-Defense": "62-71",
+            "Base-Kick Damage": "83 to 155, Avg 119",
+            "RequiredStrength": 156,
+            "RequiredLevel": 71,
+            "Bonuses": [
+                "+[1-2] to Shadow Disciplines",
+                "+30% Faster Run/Walk",
+                "+30% Faster Hit Recovery",
+                "+[70-100]% Enhanced Defense",
+                "+[20-30] to Dexterity",
+                "Curse Resistance +20%",
+                "Requirements -25%"
+            ]
+        },
+        {
+            "Name": "Itherael's Path",
+            "Type": "Boots",
+            "BaseTypeName": "Mirrored Boots",
+            "Tier": "Elite",
+            "Defense": "99-128",
+            "Base-Defense": "59-68",
+            "Base-Kick Damage": "69 to 147, Avg 108",
+            "RequiredStrength": 163,
+            "RequiredLevel": 85,
+            "Bonuses": [
+                "+20% Faster Run/Walk",
+                "+20% Faster Cast Rate",
+                "+20% Faster Hit Recovery",
+                "+[40-60] Defense",
+                "+[10-15] to Dexterity",
+                "+[10-15] to Vitality"
+            ]
+        },
+        {
+            "Name": "Lenymo",
+            "Type": "Belt",
+            "BaseTypeName": "Sash",
+            "Tier": "Normal",
+            "Defense": "2",
+            "Base-Defense": "2",
+            "Base-Potion Rows": "2",
+            "RequiredLevel": 7,
+            "Bonuses": [
+                "+10% Faster Cast Rate",
+                "+15 to Mana",
+                "Regenerate Mana [20-30]%",
+                "All Resistances +5",
+                "+1 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Snakecord",
+            "Type": "Belt",
+            "BaseTypeName": "Light Belt",
+            "Tier": "Normal",
+            "Defense": "14-15",
+            "Base-Defense": "3",
+            "Base-Potion Rows": "2",
+            "RequiredLevel": 12,
+            "Bonuses": [
+                "+[4-6]% to Poison Skill Damage",
+                "+[20-30]% Enhanced Defense",
+                "+10 Defense",
+                "Replenish Life +[5-15]",
+                "Poison Resist +25%",
+                "Poison Length Reduced by 50%"
+            ]
+        },
+        {
+            "Name": "Nightsmoke",
+            "Type": "Belt",
+            "BaseTypeName": "Belt",
+            "Tier": "Normal",
+            "Defense": "22-24",
+            "Base-Defense": "5",
+            "Base-Potion Rows": "3",
+            "RequiredStrength": 25,
+            "RequiredLevel": 20,
+            "Bonuses": [
+                "+[30-50]% Enhanced Defense",
+                "+15 Defense",
+                "+20 to Mana",
+                "All Resistances +10",
+                "Physical Damage Taken Reduced by 2",
+                "50% Damage Taken Gained as Mana when Hit"
+            ]
+        },
+        {
+            "Name": "Goldwrap",
+            "Type": "Belt",
+            "BaseTypeName": "Heavy Belt",
+            "Tier": "Normal",
+            "Defense": "34-36",
+            "Base-Defense": "6",
+            "Base-Potion Rows": "3",
+            "RequiredStrength": 45,
+            "RequiredLevel": 27,
+            "Bonuses": [
+                "+20% Increased Attack Speed",
+                "+[40-60]% Enhanced Defense",
+                "+25 Defense",
+                "[50-80]% Extra Gold from Monsters",
+                "[20-40]% Better Chance of Getting Magic Items",
+                "+2 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Bladebuckle",
+            "Type": "Belt",
+            "BaseTypeName": "Plated Belt",
+            "Tier": "Normal",
+            "Defense": "51-54",
+            "Base-Defense": "8-11",
+            "Base-Potion Rows": "4",
+            "RequiredStrength": 60,
+            "RequiredLevel": 39,
+            "Bonuses": [
+                "+[20-30]% Faster Hit Recovery",
+                "+[80-100]% Enhanced Defense",
+                "+30 Defense",
+                "+5 to Strength",
+                "+10 to Dexterity",
+                "Physical Damage Taken Reduced by [4-7]",
+                "Attacker Takes Damage of [420-480]"
+            ]
+        },
+        {
+            "Name": "String of Ears",
+            "Type": "Belt",
+            "BaseTypeName": "Demonhide Sash",
+            "Tier": "Exceptional",
+            "Defense": "102-113",
+            "Base-Defense": "29-34",
+            "Base-Potion Rows": "4",
+            "RequiredStrength": 20,
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "[6-8]% Life Stolen per Hit",
+                "+[150-180]% Enhanced Defense",
+                "+15 Defense",
+                "Physical Damage Taken Reduced by [10-15]%",
+                "Magic Damage Taken Reduced by [10-15]",
+                "+10 Durability"
+            ]
+        },
+        {
+            "Name": "Razortail",
+            "Type": "Belt",
+            "BaseTypeName": "Sharkskin Belt",
+            "Tier": "Exceptional",
+            "Defense": "96-107",
+            "Base-Defense": "31-36",
+            "Base-Potion Rows": "4",
+            "RequiredStrength": 20,
+            "RequiredLevel": 32,
+            "Bonuses": [
+                "+33% Chance to Pierce",
+                "+[10-20] to Maximum Damage",
+                "+[120-150]% Enhance Defense",
+                "+50 Defense",
+                "+[15-20] to Dexterity",
+                "Attacker Takes Damage of [1-99] (1 per Character Level)"
+            ]
+        },
+        {
+            "Name": "Gloom's Trap",
+            "Type": "Belt",
+            "BaseTypeName": "Mesh Belt",
+            "Tier": "Exceptional",
+            "Defense": "90-102",
+            "Base-Defense": "35-40",
+            "Base-Potion Rows": "4",
+            "RequiredStrength": 58,
+            "RequiredLevel": 36,
+            "Bonuses": [
+                "+[10-20]% Faster Cast Rate",
+                "5% Mana Stolen per Hit",
+                "+[120-150]% Enhanced Defense",
+                "+15 to Vitality",
+                "Increase Maximum Mana 15%",
+                "Regenerate Mana 15%",
+                "-3 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Snowclash",
+            "Type": "Belt",
+            "BaseTypeName": "Battle Belt",
+            "Tier": "Exceptional",
+            "Defense": "98-116",
+            "Base-Defense": "37-42",
+            "Base-Potion Rows": "4",
+            "RequiredStrength": 88,
+            "RequiredLevel": 42,
+            "Bonuses": [
+                "5% Chance to Cast Level [7-20] Blizzard when Struck",
+                "+[1-2] to Cold Skills",
+                "Adds 39-63 Cold Damage",
+                "+[130-170]% Enhanced Defense",
+                "+[5-8]% to Maximum Cold Resist",
+                "Cold Resist +[30-45]%",
+                "Half Freeze Duration"
+            ]
+        },
+        {
+            "Name": "Thundergod's Vigor",
+            "Type": "Belt",
+            "BaseTypeName": "War Belt",
+            "Tier": "Exceptional",
+            "Defense": "137-159",
+            "Base-Defense": "41-52",
+            "Base-Potion Rows": "4",
+            "RequiredStrength": 110,
+            "RequiredLevel": 47,
+            "Bonuses": [
+                "5% Chance to Cast Level 17 Fist of the Heavens when Struck",
+                "+2 to Lightning Skills",
+                "Adds 1 to [150-250] Lightning Damage",
+                "+[160-200]% Enhanced Defense",
+                "+[10-15] to Strength",
+                "+[10-15] to Vitality",
+                "+[5-8]% to Maximum Lightning Resist"
+            ]
+        },
+        {
+            "Name": "Arachnid Mesh",
+            "Type": "Belt",
+            "BaseTypeName": "Spiderweb Sash",
+            "Tier": "Elite",
+            "Defense": "119-138",
+            "Base-Defense": "55-62",
+            "Base-Potion Rows": "4",
+            "RequiredStrength": 50,
+            "RequiredLevel": 80,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+10% Faster Cast Rate",
+                "Slows Target by 20%",
+                "+[90-120]% Enhanced Defense",
+                "Increase Maximum Mana [5-10]%",
+                "Level 3 Venom (31 Charges)"
+            ]
+        },
+        {
+            "Name": "Nosferatu's Coil",
+            "Type": "Belt",
+            "BaseTypeName": "Vampirefang Belt",
+            "Tier": "Elite",
+            "Defense": "56-63",
+            "Base-Defense": "56-63",
+            "Base-Potion Rows": "4",
+            "RequiredStrength": 50,
+            "RequiredLevel": 51,
+            "Bonuses": [
+                "+20% Increased Attack Speed",
+                "[3-6]% Life Stolen per Hit",
+                "+10% Deadly Strike",
+                "Slows Target by 10%",
+                "+[10-15] to Strength",
+                "+2 to Mana after each Kill"
+            ]
+        },
+        {
+            "Name": "Verdungo's Hearty Cord",
+            "Type": "Belt",
+            "BaseTypeName": "Mithril Coil",
+            "Tier": "Elite",
+            "Defense": "125-158",
+            "Base-Defense": "58-65",
+            "Base-Potion Rows": "4",
+            "RequiredStrength": 106,
+            "RequiredLevel": 63,
+            "Bonuses": [
+                "+10% Faster Hit Recovery",
+                "+[90-140]% Enhanced Defense",
+                "+[30-40] to Vitality",
+                "Replenish Life +[10-13]",
+                "+[100-120] Maximum Stamina",
+                "Physical Damage Taken Reduced by [10-15]%"
+            ]
+        },
+        {
+            "Name": "Siggard's Staunch",
+            "Type": "Belt",
+            "BaseTypeName": "Colossus Girdle",
+            "Tier": "Elite",
+            "Defense": "288-360",
+            "Base-Defense": "61-71",
+            "Base-Potion Rows": "4",
+            "RequiredStrength": 185,
+            "RequiredLevel": 72,
+            "Bonuses": [
+                "+20% Chance of Crushing Blow",
+                "+[4-6] to Iron Skin",
+                "+[300-400]% Enhanced Defense",
+                "Increase Maximum Life [5-8]%",
+                "50% Slower Stamina Drain",
+                "Repairs 1 Durability in 4 Seconds"
+            ]
+        },
+        {
+            "Name": "Band of Skulls",
+            "Type": "Belt",
+            "BaseTypeName": "Troll Belt",
+            "Tier": "Elite",
+            "Defense": "134-167",
+            "Base-Defense": "59-66",
+            "Base-Potion Rows": "4",
+            "RequiredStrength": 151,
+            "RequiredLevel": 90,
+            "Bonuses": [
+                "6% Chance to Cast Level 28 Bone Armor when Struck",
+                "+[100-150]% Enhanced Defense",
+                "Physical Damage Taken Reduced by 10%",
+                "+[25-30]% Better Chance of Getting Magic Items",
+                "-4 to Light Radius",
+                "Socketed (1)"
+            ]
+        },
+        {
+            "Name": "Pelta Lunata",
+            "Type": "Shield",
+            "BaseTypeName": "Buckler",
+            "Tier": "Normal",
+            "Defense": "39",
+            "Base-Defense": "4-6",
+            "Block": "40% (Dru/Nec/Sor), 45% (Ama/Ass/Bar), 50% (Pal)",
+            "Base-Block": "0%",
+            "Base-Smite Damage": "1 to 3, Avg 2",
+            "Base-Maximum Sockets": "1 (2 for upgraded elite versions)",
+            "RequiredStrength": 12,
+            "RequiredLevel": 2,
+            "Bonuses": [
+                "+40% Faster Block Rate",
+                "20% Increased Chance of Blocking",
+                "+[30-40]% Enhanced Defense",
+                "+30 Defense",
+                "+2 to Strength",
+                "+10 to Vitality",
+                "+10 to Energy",
+                "+[8-12] Durability"
+            ]
+        },
+        {
+            "Name": "Umbral Disk",
+            "Type": "Shield",
+            "BaseTypeName": "Small Shield",
+            "Tier": "Normal",
+            "Defense": "45-46",
+            "Base-Defense": "8-10",
+            "Block": "55% (Dru/Nec/Sor), 60% (Ama/Ass/Bar), 65% (Pal)",
+            "Base-Block": "5%",
+            "Base-Smite Damage": "2 to 3, Avg 2.5",
+            "RequiredStrength": 22,
+            "RequiredLevel": 9,
+            "Bonuses": [
+                "30% Increased Chance of Blocking",
+                "Adds 4-8 Damage",
+                "Hit Blinds Target",
+                "+[40-50]% Enhanced Defense",
+                "+30 Defense",
+                "+10 to Dexterity",
+                "+20 to Life",
+                "+[10-15] Durability"
+            ]
+        },
+        {
+            "Name": "Stormguild",
+            "Type": "Shield",
+            "BaseTypeName": "Large Shield",
+            "Tier": "Normal",
+            "Defense": "52-54",
+            "Base-Defense": "12-14",
+            "Block": "62% (Dru/Nec/Sor), 67% (Ama/Ass/Bar), 72% (Pal)",
+            "Base-Block": "12%",
+            "Base-Smite Damage": "3 to 6, Avg 4.5",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 34,
+            "RequiredLevel": 13,
+            "Bonuses": [
+                "30% Increased Chance of Blocking",
+                "Adds 1-18 Lightning Damage",
+                "+[50-60]% Enhanced Defense",
+                "+30 Defense",
+                "Lightning Resist +25%",
+                "Magic Damage Taken Reduced by [1-3]",
+                "Attacker Takes Lightning Damage of 9",
+                "+[10-15] Durability"
+            ]
+        },
+        {
+            "Name": "Swordback Hold",
+            "Type": "Shield",
+            "BaseTypeName": "Spiked Shield",
+            "Tier": "Normal",
+            "Defense": "43-51",
+            "Base-Defense": "15-25",
+            "Block": "50% (Dru/Nec/Sor), 55% (Ama/Ass/Bar), 60% (Pal)",
+            "Base-Block": "10%",
+            "Base-Smite Damage": "9 to 16, Avg 12.5",
+            "Base-Maximum Sockets": "2 (3 for upgraded elite versions)",
+            "RequiredStrength": 30,
+            "RequiredLevel": 15,
+            "Bonuses": [
+                "20% Increased Chance of Blocking",
+                "+50% Chance of Open Wounds",
+                "+8 Open Wounds Damage per Second",
+                "+[30-60]% Enhanced Defense",
+                "+10 Defense",
+                "Attacker Takes Damage of [25-32]"
+            ]
+        },
+        {
+            "Name": "Steelclash",
+            "Type": "Shield",
+            "BaseTypeName": "Kite Shield",
+            "Tier": "Normal",
+            "Defense": "50-58",
+            "Base-Defense": "16-18",
+            "Block": "53% (Dru/Nec/Sor), 58% (Ama/Ass/Bar), 63% (Pal)",
+            "Base-Block": "8%",
+            "Base-Smite Damage": "4 to 11, Avg 7.5",
+            "RequiredStrength": 47,
+            "RequiredLevel": 17,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+20% Faster Block Rate",
+                "25% Increased Chance of Blocking",
+                "+[60-100]% Enhanced Defense",
+                "+20 Defense",
+                "All Resistances +[5-10]",
+                "+3 to Light Radius",
+                "+[15-20] Durability"
+            ]
+        },
+        {
+            "Name": "Wall of the Eyeless",
+            "Type": "Shield",
+            "BaseTypeName": "Bone Shield",
+            "Tier": "Normal",
+            "Defense": "50-53",
+            "Base-Defense": "10-30",
+            "Block": "40% (Dru/Nec/Sor), 45% (Ama/Ass/Bar), 50% (Pal)",
+            "Base-Block": "20%",
+            "Base-Smite Damage": "5 to 10, Avg 7.5",
+            "Base-Maximum Sockets": "2 (3 for upgraded elite versions)",
+            "RequiredStrength": 25,
+            "RequiredLevel": 20,
+            "Bonuses": [
+                "+20% Faster Cast Rate",
+                "3% Mana Stolen per Hit",
+                "+[30-40]% Enhanced Defense",
+                "+10 Defense",
+                "Cold Resist +20%",
+                "Fire Resist +20%",
+                "Poison Resist +20%",
+                "+[3-5] to Mana after each Kill"
+            ]
+        },
+        {
+            "Name": "Bverrit Keep",
+            "Type": "Shield",
+            "BaseTypeName": "Tower Shield",
+            "Tier": "Normal",
+            "Defense": "76-87",
+            "Base-Defense": "22-25",
+            "Block": "54% (Dru/Nec/Sor), 59% (Ama/Ass/Bar), 64% (Pal)",
+            "Base-Block": "24%",
+            "Base-Smite Damage": "5 to 23, Avg 14",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 75,
+            "RequiredLevel": 19,
+            "Bonuses": [
+                "10% Increased Chance of Blocking",
+                "+[80-120]% Enhanced Defense",
+                "+30 Defense",
+                "+[5-15] to Strength",
+                "Fire Resist +[30-50]%",
+                "Physical Damage Taken Reduced by [5-10]%",
+                "Magic Damage Taken Reduced by 5",
+                "+[80-100] Durability"
+            ]
+        },
+        {
+            "Name": "The Ward",
+            "Type": "Shield",
+            "BaseTypeName": "Gothic Shield",
+            "Tier": "Normal",
+            "Defense": "112",
+            "Base-Defense": "30-35",
+            "Block": "46% (Dru/Nec/Sor), 51% (Ama/Ass/Bar), 56% (Pal)",
+            "Base-Block": "16%",
+            "Base-Smite Damage": "4 to 11, Avg 7.5",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 60,
+            "RequiredLevel": 26,
+            "Bonuses": [
+                "10% Increased Chance of Blocking",
+                "+100% Enhanced Defense",
+                "+40 Defense",
+                "+10 to Strength",
+                "All Resistances +[30-50]",
+                "Magic Damage Taken Reduced by 2"
+            ]
+        },
+        {
+            "Name": "Visceratuant",
+            "Type": "Shield",
+            "BaseTypeName": "Defender",
+            "Tier": "Exceptional",
+            "Defense": "100-125",
+            "Base-Defense": "41-49",
+            "Block": "60% (Dru/Nec/Sor), 65% (Ama/Ass/Bar), 70% (Pal)",
+            "Base-Block": "10%",
+            "Base-Smite Damage": "10 to 15, Avg 12.5",
+            "Base-Maximum Sockets": "1 (2 for upgraded versions)",
+            "RequiredStrength": 38,
+            "RequiredLevel": 28,
+            "Bonuses": [
+                "+1 to Sorceress Skills",
+                "+30% Faster Block Rate",
+                "30% Increased Chance of Blocking",
+                "+[5-10]% to Lightning Skill Damage",
+                "+[100-150]% Enhanced Defense",
+                "Attacker Takes Lightning Damage of [35-50]"
+            ]
+        },
+        {
+            "Name": "Moser's Blessed Circle",
+            "Type": "Shield",
+            "BaseTypeName": "Round Shield",
+            "Tier": "Exceptional",
+            "Defense": "156-179",
+            "Base-Defense": "47-55",
+            "Block": "57% (Dru/Nec/Sor), 62% (Ama/Ass/Bar), 67% (Pal)",
+            "Base-Block": "12%",
+            "Base-Smite Damage": "11 to 23, Avg 17",
+            "RequiredStrength": 53,
+            "RequiredLevel": 31,
+            "Bonuses": [
+                "+30% Faster Block Rate",
+                "25% Increased Chance of Blocking",
+                "+[180-220]% Enhanced Defense",
+                "Curse Resistance +10%",
+                "All Resistances +20",
+                "Socketed (2)"
+            ]
+        },
+        {
+            "Name": "Stormchaser",
+            "Type": "Shield",
+            "BaseTypeName": "Scutum",
+            "Tier": "Exceptional",
+            "Defense": "161-198",
+            "Base-Defense": "53-61",
+            "Block": "54% (Dru/Nec/Sor), 59% (Ama/Ass/Bar), 64% (Pal)",
+            "Base-Block": "14%",
+            "Base-Smite Damage": "16 to 22, Avg 19",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 71,
+            "RequiredLevel": 35,
+            "Bonuses": [
+                "8% Chance to Cast Level 15 Tornado when Struck",
+                "8% Chance to Cast Level 9 Blizzard when Struck",
+                "+[20-30]% Faster Run/Walk",
+                "20% Increased Chance of Blocking",
+                "+[150-250] to Attack Rating",
+                "Adds 1-270 Lightning Damage",
+                "+[160-220]% Enhanced Defense",
+                "Lightning Resist +50%",
+                "Cannot Be Frozen"
+            ]
+        },
+        {
+            "Name": "Lance Guard",
+            "Type": "Shield",
+            "BaseTypeName": "Barbed Shield",
+            "Tier": "Exceptional",
+            "Defense": "134-173",
+            "Base-Defense": "58-78",
+            "Block": "37% (Dru/Nec/Sor), 42% (Ama/Ass/Bar), 47% (Pal)",
+            "Base-Block": "17%",
+            "Base-Smite Damage": "18 to 35, Avg 26.5",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 65,
+            "RequiredLevel": 35,
+            "Bonuses": [
+                "+30% Faster Hit Recovery",
+                "+25% Deadly Strike Multiplier",
+                "+[25-35]% Deadly Strike",
+                "+[70-120]% Enhanced Defense",
+                "+[12-16] to Dexterity",
+                "+[2-247] to Life (+2.5 per Character Level)",
+                "Attacker Takes Damage of [165-265]"
+            ]
+        },
+        {
+            "Name": "Tiamat's Rebuke",
+            "Type": "Shield",
+            "BaseTypeName": "Dragon Shield",
+            "Tier": "Exceptional",
+            "Defense": "163-204",
+            "Base-Defense": "59-67",
+            "Block": "38% (Dru/Nec/Sor), 43% (Ama/Ass/Bar), 48% (Pal)",
+            "Base-Block": "18%",
+            "Base-Smite Damage": "17 to 28, Avg 22.5",
+            "RequiredStrength": 91,
+            "RequiredLevel": 38,
+            "Bonuses": [
+                "15% chance to cast level 12 Hydra when struck",
+                "15% Chance to Cast Level 17 Nova when Struck",
+                "15% Chance to Cast Level 19 Frost Nova when Struck",
+                "Adds 53-142 Fire Damage",
+                "Adds 1-180 Lightning Damage",
+                "Adds 40-80 Cold Damage",
+                "+[140-200]% Enhanced Defense",
+                "All Resistances +[25-35]",
+                "+40 Durability"
+            ]
+        },
+        {
+            "Name": "Lidless Wall",
+            "Type": "Shield",
+            "BaseTypeName": "Grim Shield",
+            "Tier": "Exceptional",
+            "Defense": "271-347",
+            "Base-Defense": "50-150",
+            "Block": "40% (Dru/Nec/Sor), 45% (Ama/Ass/Bar), 50% (Pal)",
+            "Base-Block": "20%",
+            "Base-Smite Damage": "19 to 28, Avg 23.5",
+            "Base-Maximum Sockets": "2 (3 for upgraded versions)",
+            "RequiredStrength": 58,
+            "RequiredLevel": 41,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+40% Faster Cast Rate",
+                "+[80-130]% Enhanced Defense",
+                "+10 to Energy",
+                "Increase Maximum Mana 10%",
+                "+[4-6] to Mana after each Kill",
+                "+1 to Light Radius"
+            ]
+        },
+        {
+            "Name": "Gerke's Sanctuary",
+            "Type": "Shield",
+            "BaseTypeName": "Pavise",
+            "Tier": "Exceptional",
+            "Defense": "221-268",
+            "Base-Defense": "68-78",
+            "Block": "74% (Dru/Nec/Sor), 79% (Ama/Ass/Bar), 84% (Pal)",
+            "Base-Block": "24%",
+            "Base-Smite Damage": "24 to 32, Avg 28",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 133,
+            "RequiredLevel": 44,
+            "Bonuses": [
+                "+1 to All Skills",
+                "+20% Faster Block Rate",
+                "30% Increased Chance of Blocking",
+                "+[180-240]% Enhanced Defense",
+                "Replenish Life +25",
+                "All Resistances +[20-30]",
+                "Physical Damage Taken Reduced by [14-18]",
+                "Magic Damage Taken Reduced by [14-18]",
+                "+100 Durability"
+            ]
+        },
+        {
+            "Name": "Radament's Sphere",
+            "Type": "Shield",
+            "BaseTypeName": "Ancient Shield",
+            "Tier": "Exceptional",
+            "Defense": "244-282",
+            "Base-Defense": "80-93",
+            "Block": "56% (Dru/Nec/Sor), 61% (Ama/Ass/Bar), 66% (Pal)",
+            "Base-Block": "16%",
+            "Base-Smite Damage": "18 to 30, Avg 24",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 110,
+            "RequiredLevel": 50,
+            "Bonuses": [
+                "12% Chance to Cast Level 35 Poison Nova when Struck",
+                "+[1-2] to Poison Skills",
+                "+30% Faster Cast Rate",
+                "+20% Faster Block Rate",
+                "35% Increased Chance of Blocking",
+                "+[160-200]% Enhanced Defense",
+                "Poison Resist +[50-75]%",
+                "+240 Poison Damage over 2 Seconds",
+                "+20 Durability"
+            ]
+        },
+        {
+            "Name": "Warriv's Warder",
+            "Type": "Shield",
+            "BaseTypeName": "Heater",
+            "Tier": "Elite",
+            "Defense": "195-260",
+            "Base-Defense": "95-110",
+            "Block": "-58% (Dru/Nec/Sor), -53% (Ama/Ass/Bar), -48% (Pal)",
+            "Base-Block": "22%",
+            "Base-Smite Damage": "29 to 54, Avg 41.5",
+            "RequiredStrength": 77,
+            "RequiredLevel": 43,
+            "Bonuses": [
+                "+[6-8] to Dodge",
+                "+[20-30]% Faster Run/Walk",
+                "-100% Increased Chance of Blocking",
+                "+20% Chance of Crushing Blow",
+                "+[100-150] Defense",
+                "Heal Stamina +75%",
+                "All Resistances +35%",
+                "+5 Lightning Absorb"
+            ]
+        },
+        {
+            "Name": "Blackoak Shield",
+            "Type": "Shield",
+            "BaseTypeName": "Luna",
+            "Tier": "Elite",
+            "Defense": "322-372",
+            "Base-Defense": "108-123",
+            "Block": "40% (Dru/Nec/Sor), 45% (Ama/Ass/Bar), 50% (Pal)",
+            "Base-Block": "20%",
+            "Base-Smite Damage": "31 to 53, Avg 42",
+            "RequiredStrength": 100,
+            "RequiredLevel": 61,
+            "Bonuses": [
+                "Level 11 Chilling Armor When Equipped",
+                "+50% Faster Block Rate",
+                "+[6-10]% to Maximum Cold Resist",
+                "-[10-20]% to Enemy Cold Resistance",
+                "+[160-200]% Enhanced Defense",
+                "+[0-49] to Dexterity (+0.5 per Character Level)",
+                "+[1-123] to Life (+1.25 per Character Level)",
+                "Cannot Be Frozen",
+                "+45 Durability"
+            ]
+        },
+        {
+            "Name": "Twilight's Reflection",
+            "Type": "Shield",
+            "BaseTypeName": "Hyperion",
+            "Tier": "Elite",
+            "Defense": "285-378",
+            "Base-Defense": "119-135",
+            "Block": "44% (Dru/Nec/Sor), 49% (Ama/Ass/Bar), 54% (Pal)",
+            "Base-Block": "24%",
+            "Base-Smite Damage": "26 to 59, Avg 42.5",
+            "RequiredStrength": 127,
+            "RequiredLevel": 48,
+            "Bonuses": [
+                "6% Chance to Cast Level 14 Cloak of Shadows on Block",
+                "-10% to Enemy Physical Resistance",
+                "20% Increased Chance of Blocking",
+                "[20-30]% Reduced Curse Duration",
+                "+[140-180]% Enhanced Defense",
+                "Curse Resistance +[20-30]%",
+                "Lightning Resist +35%"
+            ]
+        },
+        {
+            "Name": "Spike Thorn",
+            "Type": "Shield",
+            "BaseTypeName": "Blade Barrier",
+            "Tier": "Elite",
+            "Defense": "360-410",
+            "Base-Defense": "147-163",
+            "Block": "40% (Dru/Nec/Sor), 45% (Ama/Ass/Bar), 50% (Pal)",
+            "Base-Block": "20%",
+            "Base-Smite Damage": "40 to 60, Avg 50",
+            "RequiredStrength": 118,
+            "RequiredLevel": 70,
+            "Bonuses": [
+                "+30% Faster Hit Recovery",
+                "Adds 50-80 Damage",
+                "+[120-150]% Enhanced Defense",
+                "Physical Damage Taken Reduced by [15-25]%",
+                "Attacker Takes Damage of [30-2970] (30 per Character Level)",
+                "+250 Durability"
+            ]
+        },
+        {
+            "Name": "Stormshield",
+            "Type": "Shield",
+            "BaseTypeName": "Monarch",
+            "Tier": "Elite",
+            "Defense": "136-519",
+            "Base-Defense": "133-148",
+            "Block": "67% (Dru/Nec/Sor), 72% (Ama/Ass/Bar), 77% (Pal)",
+            "Base-Block": "22%",
+            "Base-Smite Damage": "12 to 34, Avg 23",
+            "RequiredStrength": 156,
+            "RequiredLevel": 73,
+            "Bonuses": [
+                "Indestructible",
+                "+35% Faster Block Rate",
+                "25% Increased Chance of Blocking",
+                "+[3-371] Defense (+3.75 per Character Level)",
+                "+[20-30] to Strength",
+                "Cold Resist +[40-50]%",
+                "Lightning Resist +25%",
+                "Physical Damage Taken Reduced by [20-30]%",
+                "Attacker Takes Lightning Damage of [150-250]"
+            ]
+        },
+        {
+            "Name": "Head Hunter's Glory",
+            "Type": "Shield",
+            "BaseTypeName": "Troll Nest",
+            "Tier": "Elite",
+            "Defense": "478-593",
+            "Base-Defense": "158-173",
+            "Block": "40% (Dru/Nec/Sor), 45% (Ama/Ass/Bar), 50% (Pal)",
+            "Base-Block": "20%",
+            "Base-Smite Damage": "24 to 38, Avg 31",
+            "RequiredStrength": 106,
+            "RequiredLevel": 75,
+            "Bonuses": [
+                "12% Chance to Cast Level 31 Amplify Damage on Striking",
+                "+[320-420] Defense",
+                "+[300-350] Defense vs. Missile",
+                "Curse Resistance +[20-30]%",
+                "Fire Resist +[20-30]%",
+                "Poison Resist +[30-40]%",
+                "+[5-7] Life after each Kill",
+                "Socketed [1-3]"
+            ]
+        },
+        {
+            "Name": "Medusa's Gaze",
+            "Type": "Shield",
+            "BaseTypeName": "Aegis",
+            "Tier": "Elite",
+            "Defense": "605-677",
+            "Base-Defense": "215-241",
+            "Block": "66% (Dru/Nec/Sor), 71% (Ama/Ass/Bar), 76% (Pal)",
+            "Base-Block": "46%",
+            "Base-Smite Damage": "37 to 57, Avg 47",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 165,
+            "RequiredLevel": 76,
+            "Bonuses": [
+                "10% Chance to Cast Level 14 Lower Resist when Struck",
+                "+2 to Cold Skills",
+                "+[30-40]% Faster Cast Rate",
+                "[5-9]% Life Stolen per Hit",
+                "Slows Target by 20%",
+                "+[150-180]% Enhanced Defense",
+                "Cold Resist +[40-80]%",
+                "Requirements -25%"
+            ]
+        },
+        {
+            "Name": "Spirit Ward",
+            "Type": "Shield",
+            "BaseTypeName": "Ward",
+            "Tier": "Elite",
+            "Defense": "478-582",
+            "Base-Defense": "183-207",
+            "Block": "[72-82]% (Dru/Nec/Sor), [77-87]% (Ama/Ass/Bar), [82-92]% (Pal)",
+            "Base-Block": "32%",
+            "Base-Smite Damage": "21 to 68, Avg 44.5",
+            "Base-Speed Penalty": "0%",
+            "RequiredStrength": 185,
+            "RequiredLevel": 68,
+            "Bonuses": [
+                "35% Chance to Cast Level 10 Lesser Fade when Struck",
+                "+2 to [Random Class] Skills",
+                "+25% Faster Block Rate",
+                "[20-30]% Increased Chance of Blocking",
+                "+[130-180]% Enhanced Defense",
+                "All Resistances +[20-30]",
+                "+[6-11] Cold Absorb"
+            ]
+        },
+        {
+            "Name": "Kalan's Legacy",
+            "Type": "Shield",
+            "BaseTypeName": "Mummified Trophy",
+            "Tier": "Exceptional",
+            "Class": "Necromancer",
+            "Defense": "78-123",
+            "Base-Defense": "38-48",
+            "Block": "43%",
+            "Base-Block": "23% (Necromancer)",
+            "RequiredStrength": 38,
+            "RequiredLevel": 26,
+            "Bonuses": [
+                "Level [4-6] Vigor Aura when Equipped",
+                "+1 to Necromancer Skills",
+                "+20% Faster Block Rate",
+                "20% Increased Chance of Blocking",
+                "+[40-75] Defense",
+                "Socketed [1-2]"
+            ]
+        },
+        {
+            "Name": "Homunculus",
+            "Type": "Shield",
+            "BaseTypeName": "Hierophant Trophy",
+            "Tier": "Exceptional",
+            "Class": "Necromancer",
+            "Defense": "177-213",
+            "Base-Defense": "58-70",
+            "Block": "72%",
+            "Base-Block": "32% (Necromancer)",
+            "Base-Maximum Sockets": "3",
+            "RequiredStrength": 58,
+            "RequiredLevel": 42,
+            "Bonuses": [
+                "+2 to Necromancer Skills",
+                "+30% Faster Block Rate",
+                "40% Increased Chance of Blocking",
+                "+[150-200]% Enhanced Defense",
+                "+20 to Energy",
+                "Regenerate Mana 33%",
+                "All Resistances +[30-40]",
+                "+5 to Mana after each Kill"
+            ]
+        },
+        {
+            "Name": "Boneflame",
+            "Type": "Shield",
+            "BaseTypeName": "Succubus Skull",
+            "Tier": "Elite",
+            "Class": "Necromancer",
+            "Defense": "323-367",
+            "Base-Defense": "100-146",
+            "Block": "30%",
+            "Base-Block": "30% (Necromancer)",
+            "Base-Maximum Sockets": "3",
+            "RequiredStrength": 95,
+            "RequiredLevel": 72,
+            "Bonuses": [
+                "5% Chance to Cast Level 3 Terror when Struck",
+                "+2 to Necromancer Skills",
+                "+30% Faster Run/Walk",
+                "+[120-150]% Enhanced Defense",
+                "All Resistances +[20-30]",
+                "Physical Damage Taken Reduced by [10-20]%",
+                "+[4-8] Life after each Kill"
+            ]
+        },
+        {
+            "Name": "Darkforce Spawn",
+            "Type": "Shield",
+            "BaseTypeName": "Bloodlord Skull",
+            "Tier": "Elite",
+            "Class": "Necromancer",
+            "Defense": "357-417",
+            "Base-Defense": "103-148",
+            "Block": "32%",
+            "Base-Block": "32% (Necromancer)",
+            "Base-Maximum Sockets": "3",
+            "RequiredStrength": 106,
+            "RequiredLevel": 65,
+            "Bonuses": [
+                "You May Apply an Additional Curse",
+                "+[2-3] to Poison and Bone Skills (Necromancer Only)",
+                "+[2-3] to Summoning Skills (Necromancer Only)",
+                "+[2-3] to Curses (Necromancer Only)",
+                "+30% Faster Cast Rate",
+                "+[140-180]% Enhanced Defense",
+                "Increase Maximum Mana [40-50]%",
+                "Fire Resist +50%",
+                "5% Reanimate As: Oblivion Knight"
+            ]
+        },
+        {
+            "Name": "Sacred Totem",
+            "Type": "Shield",
+            "BaseTypeName": "Hellspawn Skull",
+            "Tier": "Elite",
+            "Class": "Necromancer",
+            "Defense": "355-390",
+            "Base-Defense": "96-141",
+            "Block": "28%",
+            "Base-Block": "25% (Necromancer)",
+            "Base-Maximum Sockets": "3",
+            "RequiredStrength": 82,
+            "RequiredLevel": 64,
+            "Bonuses": [
+                "66% Chance to Cast Level 50 Charged Bolt when Struck",
+                "+[2-3] to Necromancer Skill Levels",
+                "+2 to Lower Resist (Necromancer Only)",
+                "+2 to Amplify Damage (Necromancer Only)",
+                "+[150-175]% Enhanced Defense",
+                "You May Summon 4 Additional Revives",
+                "Lightning Resist +45%",
+                "[2-3]% Reanimate as: Fallen Shaman",
+                "[4-6]% Reanimate as: Fallen"
+            ]
+        },
+        {
+            "Name": "Martyrdom",
+            "Type": "Shield",
+            "BaseTypeName": "Overseer Skull",
+            "Tier": "Elite",
+            "Class": "Necromancer",
+            "Defense": "371-429",
+            "Base-Defense": "98-142",
+            "Block": "28%",
+            "Base-Block": "28% (Necromancer)",
+            "Base-Maximum Sockets": "3",
+            "RequiredStrength": 91,
+            "RequiredLevel": 68,
+            "Bonuses": [
+                "15% Chance to Cast Level 35 Bone Armor on Striking",
+                "+[2-3] to Necromancer Skills",
+                "+35% Faster Hit Recovery",
+                "35% Increased Chance of Blocking",
+                "Adds 300-350 Poison Damage over 2 Seconds",
+                "+2 to Poison Strike (Necromancer Only)",
+                "+[160-200]% Enhanced Defense",
+                "Curse Resistance +[20-30]%",
+                "Magic Damage Taken Reduced by [18-24]"
+            ]
+        },
+        {
+            "Name": "Sankekur's Fall",
+            "Type": "Shield",
+            "BaseTypeName": "Heraldic Shield",
+            "Tier": "Normal",
+            "Class": "Paladin",
+            "Defense": "59-71",
+            "Base-Defense": "16-26",
+            "Block": "50%",
+            "Base-Block": "50% (Paladin)",
+            "Base-Smite Damage": "3 to 9, Avg 6",
+            "RequiredStrength": 40,
+            "RequiredLevel": 29,
+            "Bonuses": [
+                "Ignore Target's Defense",
+                "Adds 40-120 Fire Damage",
+                "Adds 1-185 Lightning Damage",
+                "Adds 55-90 Cold Damage",
+                "+[120-165]% Enhanced Defense",
+                "Magic Damage Taken Reduced by [2-5]",
+                "+[2-4] Life after each Kill"
+            ]
+        },
+        {
+            "Name": "Herald of Zakarum",
+            "Type": "Shield",
+            "BaseTypeName": "Gilded Shield",
+            "Tier": "Exceptional",
+            "Class": "Paladin",
+            "Defense": "422-507",
+            "Base-Defense": "144-168",
+            "Block": "82%",
+            "Base-Block": "52% (Paladin)",
+            "Base-Smite Damage": "20 to 28, Avg 24",
+            "RequiredStrength": 89,
+            "RequiredLevel": 42,
+            "Bonuses": [
+                "+[1-2] to Combat Skills (Paladin Only)",
+                "+2 to All Skills",
+                "+30% Faster Block Rate",
+                "30% Increased Chance of Blocking",
+                "30% Bonus to Attack Rating",
+                "+[150-200]% Enhanced Defense",
+                "+[15-25] to Strength",
+                "+[15-25] to Vitality",
+                "All Resistances +40"
+            ]
+        },
+        {
+            "Name": "Ephemeral",
+            "Type": "Shield",
+            "BaseTypeName": "Sacred Targe",
+            "Tier": "Elite",
+            "Class": "Paladin",
+            "Defense": "272-476",
+            "Base-Defense": "109-136",
+            "Block": "95%",
+            "Base-Block": "55% (Paladin)",
+            "Base-Smite Damage": "22 to 70, Avg 46",
+            "RequiredStrength": 86,
+            "RequiredLevel": 72,
+            "Bonuses": [
+                "12% Chance to Cast Level 16 Slow Movement on Block",
+                "+[3-4] to Combat Skills (Paladin Only)",
+                "+20% Faster Cast Rate",
+                "40% Increased Chance of Blocking",
+                "+2 to Holy Shield (Paladin Only)",
+                "+[150-250]% Enhanced Defense",
+                "+[12-18] to All Attributes",
+                "Half Freeze Duration"
+            ]
+        },
+        {
+            "Name": "Alma Negra",
+            "Type": "Shield",
+            "BaseTypeName": "Sacred Rondache",
+            "Tier": "Elite",
+            "Class": "Paladin",
+            "Defense": "462-511",
+            "Base-Defense": "138-164",
+            "Block": "78%",
+            "Base-Block": "58% (Paladin)",
+            "Base-Smite Damage": "35 to 58, Avg 46.5",
+            "RequiredStrength": 109,
+            "RequiredLevel": 77,
+            "Bonuses": [
+                "+2 to All Skills",
+                "Joust's Cooldown is Reduced by 0.5 Seconds",
+                "+30% Faster Block Rate",
+                "20% Increased Chance of Blocking",
+                "+[160-200]% Enhanced Damage",
+                "[100-150]% Bonus to Attack Rating",
+                "+[180-210]% Enhanced Defense",
+                "Magic Damage Taken Reduced by [10-18]"
+            ]
+        },
+        {
+            "Name": "Dragonscale",
+            "Type": "Shield",
+            "BaseTypeName": "Zakarum Shield",
+            "Tier": "Elite",
+            "Class": "Paladin",
+            "Defense": "523-582",
+            "Base-Defense": "169-193",
+            "Block": "52%",
+            "Base-Block": "52% (Paladin)",
+            "Base-Smite Damage": "46",
+            "RequiredStrength": 142,
+            "RequiredLevel": 80,
+            "Bonuses": [
+                "24% Chance to Cast Level 45 Hydra on Block",
+                "20% Increased Chance of Blocking",
+                "Adds 211-371 Fire Damage",
+                "+[15-20]% to Fire Skill Damage",
+                "+[170-200]% Enhanced Defense",
+                "+[25] to Strength",
+                "+[4-6]% to Maximum Fire Resist",
+                "Physical Damage Taken Reduced by [15-25]%"
+            ]
+        },
+        {
+            "Name": "Skywarden",
+            "Type": "Shield",
+            "BaseTypeName": "Vortex Shield",
+            "Tier": "Elite",
+            "Class": "Paladin",
+            "Defense": "573-658",
+            "Base-Defense": "205-243",
+            "Block": "92%",
+            "Base-Block": "62% (Paladin)",
+            "Base-Smite Damage": "5 to 87, Avg 46",
+            "RequiredStrength": 148,
+            "RequiredLevel": 77,
+            "Bonuses": [
+                "16% Chance to Cast Level 35 Cyclone Armor on Block",
+                "+[1-2] to Offensive Auras (Paladin Only)",
+                "+2 to Paladin Skill Levels",
+                "30% Increased Chance of Blocking",
+                "+20% Chance of Crushing Blow",
+                "+[135-170]% Enhanced Defense",
+                "+[15-25] to Dexterity",
+                "Cold Resist +75%",
+                "Lightning Resist +50%"
+            ]
+        },
+        {
+            "Name": "Balefire",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "Blunt Arrows",
+            "Tier": "Normal",
+            "RequiredLevel": 14,
+            "Bonuses": [
+                "+2 Maximum Damage",
+                "Adds 6-10 Fire Damage",
+                "-[5-8]% Enemy Fire Resistance",
+                "+[2-3]% Life Stolen Her Hit",
+                "+[20-45] Defense vs. Missile",
+                "+[18-32]% Better Chance of Getting Magic Items"
+            ]
+        },
+        {
+            "Name": "Swiftwind Needle",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "Sharp Arrows",
+            "Tier": "Exceptional",
+            "RequiredLevel": 32,
+            "Bonuses": [
+                "+[20-40]% Faster Run/Walk",
+                "Adds 12-14 Damage",
+                "-25 Monster Defense Per Hit",
+                "+[25-35] to Dexterity",
+                "+50% Cold Resist",
+                "-25% Lightning Resist"
+            ]
+        },
+        {
+            "Name": "Tombsong",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "Sharp Arrows",
+            "Tier": "Exceptional",
+            "RequiredLevel": 36,
+            "Bonuses": [
+                "You May Summon 4 Additional Skeleton Archers",
+                "+[20-40]% Chance to Pierce",
+                "+10 Maximum Damage",
+                "+[50-100]% Damage to Undead",
+                "+[125-175] to Attack Rating Against Undead",
+                "+12 to Raise Skeleton Archer",
+                "Curse Resistance +20%"
+            ]
+        },
+        {
+            "Name": "Aetherwing",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "Razor Arrows",
+            "Tier": "Elite",
+            "RequiredLevel": 55,
+            "Bonuses": [
+                "35% Chance to Cast Level 40 Static Field When Struck",
+                "+40% Increased Attack Speed",
+                "+18 to Maximum Damage",
+                "+[2-396] to Attack Rating (+[2-4] per Character Level)",
+                "Adds 1-775 Lightning Damage",
+                "-[15-25]% to Enemy Lightning Resistance",
+                "+[4-6]% to Maximum Lightning Resist",
+                "+[20-35]% Lightning Resist"
+            ]
+        },
+        {
+            "Name": "Basilisk's Quill",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "Razor Arrows",
+            "Tier": "Elite",
+            "RequiredLevel": 62,
+            "Bonuses": [
+                "+2 to Amazon Skill Levels",
+                "+[30-40] to Minimum Damage",
+                "Adds 540-640 Poison Damage Over 2 Seconds",
+                "-[20-30]% to Enemy Poison Resistance",
+                "+5% to Maximum Poison Resist",
+                "Poison Resist +45%",
+                "+[5-8] Life After Each Kill",
+                "+[75-125]% Extra Gold From Monsters"
+            ]
+        },
+        {
+            "Name": "Doom's Finger",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "Razor Arrows",
+            "Tier": "Elite",
+            "RequiredLevel": 68,
+            "Bonuses": [
+                "+2 to Passive and Magic Skills (Amazon Only)",
+                "+[40-60] to Maximum Damage",
+                "+[80-100]% Damage to Demons",
+                "Maximum Deadly Strike +10%",
+                "+[25-35]% Deadly Strike",
+                "Magic Damage Taken Reduced by 12",
+                "Half Freeze Duration"
+            ]
+        },
+        {
+            "Name": "Ramfodder",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "Light Bolts",
+            "Tier": "Normal",
+            "RequiredLevel": 8,
+            "Bonuses": [
+                "-2% to Enemy Physical Resistance",
+                "+10% Increased Attack Speed",
+                "+20% Faster Hit Recovery",
+                "Knockback",
+                "+[10-25] to Life",
+                "Heal Stamina Plus 20%"
+            ]
+        },
+        {
+            "Name": "Anvilguard Strap",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "Heavy Bolts",
+            "Tier": "Exceptional",
+            "RequiredLevel": 34,
+            "Bonuses": [
+                "10% Chance to Cast Level 31 Amplify Damage When Struck",
+                "-4% to Enemy Physical Resistance",
+                "+20% Chance to Pierce",
+                "Prevent Monster Heal",
+                "Physical Damage Taken Reduced by [10-18]%",
+                "Attacker Takes Damage of [400-500]",
+                "+[2-4] to Light Radius"
+            ]
+        },
+        {
+            "Name": "Shatterhead",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "Heavy Bolts",
+            "Tier": "Exceptional",
+            "RequiredLevel": 47,
+            "Bonuses": [
+                "-4% to Enemy Physical Resistance",
+                "+2 to Bow and Crossbow Skills (Amazon Only)",
+                "+[30-40]% Enhanced Damage",
+                "+[15-25]% Crushing Blow Efficiency",
+                "+[20-30]% Chance of Crushing Blow",
+                "+145 Defense",
+                "+[10-20] to Strength"
+            ]
+        },
+        {
+            "Name": "Abyssal Ward",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "War Bolts",
+            "Tier": "Elite",
+            "RequiredLevel": 60,
+            "Bonuses": [
+                "-[10-14]% to Enemy Physical Resistance",
+                "-20% Increased Attack Speed",
+                "Hit Causes Monster to Flee 6%",
+                "+[4-5]% to Maximum Poison Resist",
+                "+[4-5]% to Maximum Cold Resist",
+                "+[4-5]% to Maximum Lightning Resist",
+                "+[4-5]% to Maximum FireResist",
+                "All Resistances +[15-25]"
+            ]
+        },
+        {
+            "Name": "Bannerlord's Call",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "War Bolts",
+            "Tier": "Elite",
+            "RequiredLevel": 65,
+            "Bonuses": [
+                "+2 to All Skills",
+                "-6% to Enemy Physical Resistance",
+                "+20% Faster Cast Rate",
+                "[20-30]% Reduced Curse Duration",
+                "+[2-3] to Slow Movement",
+                "+[2-3] to Inner Sight",
+                "+[8-14] to All Attributes",
+                "+18% Damage Taken Gained as Mana When Hit"
+            ]
+        },
+        {
+            "Name": "Frozen Sorrow",
+            "Type": "Bolts/Quivers",
+            "BaseTypeName": "War Bolts",
+            "Tier": "Elite",
+            "RequiredLevel": 72,
+            "Bonuses": [
+                "+3 to Cold Skills",
+                "Cold Arrow Fires [3-4] Additional Arrows",
+                "[4-5]% Mana Stolen Per Hit",
+                "-6% to Enemy Cold Resistance",
+                "+[15-25]% Deadly Strike",
+                "Slows Target by 25%",
+                "+28 to Energy",
+                "Fire Resist +[40-50]%"
+            ]
+        }
+    ]
+}

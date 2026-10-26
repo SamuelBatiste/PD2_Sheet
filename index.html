@@ -7,12 +7,13 @@
   <title>PD2 Sheet</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;500;700&family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+  <!-- Alle wählbaren Schriften; der Browser lädt nur die Dateien der gerade genutzten -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Cinzel:wght@600&family=Atkinson+Hyperlegible:wght@400;700&family=Source+Sans+3:wght@400;500;600;700&family=Alegreya+Sans:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
   <script src="assets/app.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
 </head>
-<body x-data="app()">
+<body x-data="app()" :style="{ '--body': fontStack }">
 
 <header class="top">
   <div class="top-inner">
@@ -22,10 +23,34 @@
         <a :href="'#' + t[0]" x-text="t[1]" :aria-current="tab === t[0] ? 'page' : null"></a>
       </template>
     </nav>
+    <!-- Ansichts-Einstellungen als aufklappbares Menü, damit die Tabs genug Platz haben -->
+    <details class="settings" @click.outside="$el.open = false">
+      <summary title="Display settings">
+        <svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h9M17 6h3M4 12h3M11 12h9M4 18h11M19 18h1"/><circle cx="15" cy="6" r="2"/><circle cx="9" cy="12" r="2"/><circle cx="17" cy="18" r="2"/></svg>
+        <span>Display</span>
+      </summary>
+      <div class="settings-pop">
+        <label class="set-row" title="Double-click to reset" @dblclick="scale = 100">
+          <span>Size</span>
+          <input type="range" min="60" max="140" step="5" x-model.number="scale" aria-label="Content size">
+          <output x-text="scale + '%'"></output>
+        </label>
+        <label class="set-row">
+          <span>Font</span>
+          <select x-model="font" aria-label="Font">
+            <option>Inter</option>
+            <option>Atkinson Hyperlegible</option>
+            <option>Source Sans 3</option>
+            <option>Alegreya Sans</option>
+            <option>System</option>
+          </select>
+        </label>
+      </div>
+    </details>
   </div>
 </header>
 
-<main x-cloak>
+<main x-cloak :style="{ zoom: scale / 100, '--zoom': scale / 100 }">
   <p x-show="loading" class="empty">Loading data…</p>
   <p x-show="error" x-text="error" class="empty t-red"></p>
 
@@ -41,30 +66,44 @@
         </template>
       </div>
       <input type="text" placeholder="Rune, e.g. Ber" x-model="rw.rune" size="12" aria-label="Filter by rune">
-      <select x-model="rw.type" aria-label="Item type">
-        <option value="">All item types</option>
-        <template x-for="t in rwTypes" :key="t"><option :value="t" x-text="t"></option></template>
+      <select x-model="rw.type" aria-label="Fits my item">
+        <option value="">Fits: any item</option>
+        <template x-for="g in RW_GROUPS" :key="g[0]">
+          <optgroup :label="g[0]">
+            <template x-for="c in g[1]" :key="c"><option :value="c" x-text="'Fits: ' + c"></option></template>
+          </optgroup>
+        </template>
       </select>
       <select x-model="rw.sort" aria-label="Sort by">
+        <option value="level">Sort: Required level</option>
         <option value="default">Sort: Wiki order</option>
         <option value="name">Sort: Name</option>
-        <option value="level">Sort: Required level</option>
         <option value="sockets">Sort: Sockets</option>
       </select>
       <button class="btn" @click="resetRw()">Reset</button>
       <span class="count" x-text="rwList.length + ' of ' + runewords.length"></span>
     </div>
     <div class="grid">
-      <template x-for="r in rwList" :key="r.Name">
-        <article class="card">
-          <h3 x-text="r.Name"></h3>
-          <p class="meta" x-text="r.ItemType + ' · ' + r.Sockets + ' sockets · clvl ' + r.CharacterLevel"></p>
-          <div class="chips">
-            <template x-for="(rune, i) in r.Runes" :key="i"><span class="chip" x-text="rune"></span></template>
+      <template x-for="r in rwList" :key="r.Name + r.ItemType">
+        <article class="card zoned">
+          <div class="zone-head head-row">
+            <h3 x-text="r.Name"></h3>
+            <span class="type-icon" role="img" :aria-label="r.ItemType" :title="r.ItemType" x-html="icon(r.Icon)"></span>
           </div>
-          <ul class="mods">
-            <template x-for="(b, i) in r.Bonuses" :key="i"><li x-html="fmt(b)"></li></template>
-          </ul>
+          <div class="zone zone-in">
+            <div class="chips">
+              <template x-for="(rune, i) in r.Runes" :key="i"><span class="chip" x-text="rune"></span></template>
+            </div>
+          </div>
+          <div class="zone">
+            <ul class="mods">
+              <template x-for="(b, i) in r.Bonuses" :key="i"><li class="mod" x-html="fmtMod(b)"></li></template>
+            </ul>
+          </div>
+          <footer class="zone-foot">
+            <span x-text="r.ItemType"></span>
+            <span class="lvl" x-text="'Required level ' + r.CharacterLevel"></span>
+          </footer>
         </article>
       </template>
     </div>
@@ -75,28 +114,32 @@
   <section x-show="tab === 'crafting' && !loading" aria-labelledby="h-cr">
  <div class="filters">
       <input type="search" placeholder="Search stat, rune, gem…" x-model="cr.q" aria-label="Search crafts">
-      <div class="seg" role="group" aria-label="Craft type">
-        <button @click="cr.type = ''" :aria-pressed="cr.type === ''">All types</button>
-        <template x-for="t in craft.types" :key="t">
-          <button @click="cr.type = t" :aria-pressed="cr.type === t" x-text="t"></button>
+      <div class="seg" role="group" aria-label="Item slot">
+        <button @click="cr.slot = ''" :aria-pressed="cr.slot === ''">All items</button>
+        <template x-for="s in craft.slots" :key="s.slot">
+          <button @click="cr.slot = s.slot" :aria-pressed="cr.slot === s.slot" x-text="s.slot"></button>
         </template>
       </div>
-      <select x-model="cr.slot" aria-label="Item slot">
-        <option value="">All slots</option>
-        <template x-for="s in craft.slots" :key="s.slot"><option :value="s.slot" x-text="s.slot"></option></template>
+      <select x-model="cr.type" aria-label="Craft type">
+        <option value="">All craft types</option>
+        <template x-for="t in craft.types" :key="t"><option :value="t" x-text="t"></option></template>
       </select>
       <button class="btn" @click="cr = { q: '', type: '', slot: '' }">Reset</button>
       <span class="count" x-text="crList.length + ' crafts'"></span>
     </div>
     <div class="grid">
       <template x-for="c in crList" :key="c.type + c.slot">
-        <article class="card">
-          <h3 x-text="c.type + ' ' + c.slot"></h3>
-          <div class="chips" style="margin-top: .6rem">
-            <span class="chip c-orange" x-text="c.rune"></span><span class="plus">+</span>
-            <span class="chip" :class="'c-' + c.gemColor" x-text="c.gem"></span>
+        <article class="card zoned">
+          <h3 class="zone-head"><span x-text="c.type"></span> <span class="slot" x-text="c.slot"></span></h3>
+          <div class="zone zone-in">
+            <div class="chips">
+              <span class="chip c-orange" x-text="c.rune"></span><span class="plus">+</span>
+              <span class="chip" :class="'c-' + c.gemColor" x-text="c.gem"></span>
+            </div>
           </div>
-          <ul class="mods"><template x-for="(m, i) in c.mods" :key="i"><li x-html="fmt(m)"></li></template></ul>
+          <div class="zone">
+            <ul class="mods"><template x-for="(m, i) in c.mods" :key="i"><li class="mod" x-html="fmtMod(m)"></li></template></ul>
+          </div>
         </article>
       </template>
     </div>
@@ -105,40 +148,51 @@
 
   <!-- ================= Cube Recipes ================= -->
   <section x-show="tab === 'cube' && !loading" aria-labelledby="h-cu">
-  <div class="filters">
+    <div class="filters">
       <input type="search" placeholder="Search result or ingredient…" x-model="cu.q" aria-label="Search recipes">
-      <div class="seg" role="group" aria-label="Category">
-        <button @click="cu.cat = ''" :aria-pressed="cu.cat === ''">All</button>
-        <template x-for="c in cuCats" :key="c">
-          <button @click="cu.cat = c" :aria-pressed="cu.cat === c" x-text="c"></button>
+      <!-- Sprungmarken per Button, weil der URL-Hash schon für die Tabs genutzt wird -->
+      <nav class="jump" aria-label="Jump to category">
+        <template x-for="g in cuGroups" :key="g.id">
+          <button type="button" @click="jumpTo(g.id)"><span x-text="g.name"></span> <span class="n" x-text="g.rows.length"></span></button>
         </template>
-      </div>
-      <button class="btn" @click="cu = { q: '', cat: '' }">Reset</button>
+      </nav>
+      <button class="btn" @click="cu = { q: '' }">Reset</button>
       <span class="count" x-text="cuList.length + ' recipes'"></span>
     </div>
-    <div class="grid">
-      <template x-for="(r, n) in cuList" :key="r.Category + n">
-        <article class="card">
-          <p class="tag" x-text="r.Category" style="margin: 0 0 .5rem"></p>
-          <div class="ing">
-            <template x-for="(i, k) in r.Ingridients" :key="k">
-              <div>
-                <span class="plus" x-show="k > 0">+</span>
-                <span class="chip plain" :class="i.cls && 'c-' + i.cls" x-text="i.name"></span>
+    <template x-for="g in cuGroups" :key="g.id">
+      <section class="cube-group" :id="g.id">
+        <h3 class="cube-title"><span x-text="g.name"></span> <span class="n" x-text="g.rows.length"></span></h3>
+        <div class="cube-list">
+          <template x-for="(r, n) in g.rows" :key="n">
+            <div class="cube-row">
+              <div class="cube-in">
+                <template x-for="(i, k) in r.Ingridients" :key="k">
+                  <span class="cube-ing">
+                    <span class="plus" x-show="k > 0" aria-hidden="true">+</span>
+                    <span class="chip" :class="i.info ? 'quest' : i.cls ? 'c-' + i.cls : 'plain'" :title="i.info || null" x-text="i.name"></span>
+                  </span>
+                </template>
               </div>
-            </template>
-          </div>
-          <template x-for="(i, k) in r.Ingridients.filter(x => x.info)" :key="k">
-            <p class="info" style="margin: .35rem 0 0"><b x-text="i.name + ': '"></b><span x-text="i.info"></span></p>
+              <svg class="cube-arrow" aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+              <div class="cube-out">
+                <p class="cube-result" x-html="fmtResult(r.Result)"></p>
+                <p class="cube-note" x-show="r.Notes" x-text="r.Notes"></p>
+                <!-- Drop-Quellen: per Hover am Chip, zusätzlich aufklappbar (Hover gibt es auf dem Handy nicht) -->
+                <details class="cube-src" x-show="r.Ingridients.some(i => i.info)">
+                  <summary x-text="'Where to find (' + r.Ingridients.filter(i => i.info).length + ')'"></summary>
+                  <ul>
+                    <template x-for="(i, k) in r.Ingridients.filter(i => i.info)" :key="k">
+                      <li><b x-text="i.name"></b> · <span x-text="i.info"></span></li>
+                    </template>
+                  </ul>
+                </details>
+              </div>
+            </div>
           </template>
-          <div class="result">
-            <b x-text="r.Result"></b>
-            <p class="note" x-show="r.Notes" x-text="r.Notes"></p>
-          </div>
-        </article>
-      </template>
-    </div>
-    <p class="empty" x-show="!cuList.length">No recipe matches these filters.</p>
+        </div>
+      </section>
+    </template>
+    <p class="empty" x-show="!cuList.length">No recipe matches this search.</p>
   </section>
 
   <!-- ================= Corruptions ================= -->
@@ -160,8 +214,8 @@
           <div class="cols">
             <template x-for="col in c.cols" :key="col[0]">
               <div>
-                <h4 x-text="col[0] + ' (' + col[1] + ')'"></h4>
-                <div class="bar" :style="'width:' + (col[1] === '~50%' ? 100 : col[1] === '~30%' ? 60 : 40) + '%'"></div>
+                <h4 x-text="col[0] + ' (' + col[1] + '%)'"></h4>
+                <div class="bar" :style="'width:' + col[1] * 2 + '%'"></div>
                 <ul class="mods"><template x-for="(m, i) in col[2]" :key="i"><li x-html="fmt(m)"></li></template></ul>
               </div>
             </template>
@@ -187,24 +241,132 @@
           <button @click="uw.hand = uw.hand === h ? '' : h" :aria-pressed="uw.hand === h" x-text="h"></button>
         </template>
       </div>
-      <button class="btn" @click="uw = { q: '', type: '', hand: '' }">Reset</button>
+      <select x-model="uw.sort" aria-label="Sort by">
+        <option value="level">Sort: Required level</option>
+        <option value="default">Sort: Wiki order</option>
+        <option value="name">Sort: Name</option>
+        <option value="damage">Sort: Avg. damage (high first)</option>
+      </select>
+      <div class="seg"><button @click="showBase = !showBase" :aria-pressed="showBase">Base stats</button></div>
+      <button class="btn" @click="resetUw()">Reset</button>
       <span class="count" x-text="uwList.length + ' of ' + weapons.length"></span>
     </div>
     <div class="grid">
       <template x-for="w in uwList" :key="w.Name">
-        <article class="card">
-          <h3 x-text="w.Name"></h3>
-          <p class="meta" x-text="w.Type + (w.RequiredLevel ? ' · req. level ' + w.RequiredLevel : '')"></p>
-          <dl class="stats">
-            <template x-for="s in uwStats(w)" :key="s[0]">
-              <div><dt x-text="s[0]"></dt><dd x-text="s[1]"></dd></div>
-            </template>
-          </dl>
-          <ul class="mods"><template x-for="(b, i) in w.Bonuses" :key="i"><li x-html="fmt(b)"></li></template></ul>
+        <article class="card zoned">
+          <div class="zone-head head-row">
+            <h3 x-text="w.Name"></h3>
+            <span class="type-icon" role="img" :aria-label="w.BaseTypeName || w.Type" :title="w.BaseTypeName || w.Type" x-html="icon(w.Icon)"></span>
+          </div>
+          <div class="zone zone-in" x-show="showBase">
+            <dl class="stats">
+              <template x-for="s in uwStats(w)" :key="s[0]">
+                <div><dt x-text="s[0]"></dt><dd x-text="s[1]"></dd></div>
+              </template>
+            </dl>
+          </div>
+          <div class="zone">
+            <ul class="mods"><template x-for="(b, i) in w.Bonuses" :key="i"><li class="mod" x-html="fmtMod(b)"></li></template></ul>
+          </div>
+          <footer class="zone-foot">
+            <span x-text="(w.Hander === 'Two-Hand' ? '2-H ' : '') + w.Type"></span>
+            <span class="lvl" x-show="w.RequiredLevel" x-text="'Required level ' + w.RequiredLevel"></span>
+          </footer>
         </article>
       </template>
     </div>
     <p class="empty" x-show="!uwList.length">No weapon matches these filters.</p>
+  </section>
+
+  <!-- ================= Unique Armor ================= -->
+  <section x-show="tab === 'armor' && !loading" aria-labelledby="h-ua">
+    <div class="filters">
+      <input type="search" placeholder="Search name, class or bonus…" x-model="ua.q" aria-label="Search armor">
+      <div class="seg" role="group" aria-label="Armor type">
+        <button @click="ua.type = ''" :aria-pressed="ua.type === ''">All types</button>
+        <template x-for="t in uaTypes" :key="t">
+          <button @click="ua.type = t" :aria-pressed="ua.type === t" x-text="t"></button>
+        </template>
+      </div>
+      <div class="seg" role="group" aria-label="Tier">
+        <template x-for="t in ['Normal', 'Exceptional', 'Elite']" :key="t">
+          <button @click="ua.tier = ua.tier === t ? '' : t" :aria-pressed="ua.tier === t" x-text="t"></button>
+        </template>
+      </div>
+      <select x-model="ua.sort" aria-label="Sort by">
+        <option value="level">Sort: Required level</option>
+        <option value="default">Sort: Wiki order</option>
+        <option value="name">Sort: Name</option>
+        <option value="defense">Sort: Defense (high first)</option>
+      </select>
+      <div class="seg"><button @click="showBase = !showBase" :aria-pressed="showBase">Base stats</button></div>
+      <button class="btn" @click="resetUa()">Reset</button>
+      <span class="count" x-text="uaList.length + ' of ' + armor.length"></span>
+    </div>
+    <div class="grid">
+      <template x-for="a in uaList" :key="a.Name">
+        <article class="card zoned">
+          <div class="zone-head head-row">
+            <h3 x-text="a.Name"></h3>
+            <span class="type-icon" role="img" :aria-label="a.BaseTypeName || a.Type" :title="a.BaseTypeName || a.Type" x-html="icon(a.Icon)"></span>
+          </div>
+          <div class="zone zone-in" x-show="showBase">
+            <dl class="stats">
+              <template x-for="s in uaStats(a)" :key="s[0]">
+                <div><dt x-text="s[0]"></dt><dd x-text="s[1]"></dd></div>
+              </template>
+            </dl>
+          </div>
+          <div class="zone">
+            <ul class="mods"><template x-for="(b, i) in a.Bonuses" :key="i"><li class="mod" x-html="fmtMod(b)"></li></template></ul>
+          </div>
+          <footer class="zone-foot">
+            <span x-text="a.Type"></span>
+            <span class="lvl" x-text="'Required level ' + a.RequiredLevel"></span>
+          </footer>
+        </article>
+      </template>
+    </div>
+    <p class="empty" x-show="!uaList.length">No armor matches these filters.</p>
+  </section>
+
+  <!-- ================= Unique Accessories ================= -->
+  <section x-show="tab === 'accessories' && !loading" aria-labelledby="h-ux">
+    <div class="filters">
+      <input type="search" placeholder="Search name or bonus…" x-model="ux.q" aria-label="Search accessories">
+      <div class="seg" role="group" aria-label="Accessory type">
+        <button @click="ux.type = ''" :aria-pressed="ux.type === ''">All types</button>
+        <template x-for="t in uxTypes" :key="t">
+          <button @click="ux.type = t" :aria-pressed="ux.type === t" x-text="t"></button>
+        </template>
+      </div>
+      <select x-model="ux.sort" aria-label="Sort by">
+        <option value="level">Sort: Required level</option>
+        <option value="default">Sort: Wiki order</option>
+        <option value="name">Sort: Name</option>
+      </select>
+      <button class="btn" @click="resetUx()">Reset</button>
+      <span class="count" x-text="uxList.length + ' of ' + accessories.length"></span>
+    </div>
+    <div class="grid">
+      <template x-for="a in uxList" :key="a.Name">
+        <article class="card zoned">
+          <div class="zone-head head-row">
+            <h3 x-text="a.Name"></h3>
+            <span class="type-icon" role="img" :aria-label="a.BaseTypeName" :title="a.BaseTypeName" x-html="icon(a.Icon)"></span>
+          </div>
+          <div class="zone">
+            <!-- "or"/"and" trennen Varianten (z. B. Kadala's Heirloom) -->
+            <ul class="mods"><template x-for="(b, i) in a.Bonuses" :key="i"><li :class="/^(or|and)$/.test(b) ? 'sep' : 'mod'" x-html="fmtMod(b)"></li></template></ul>
+          </div>
+          <footer class="zone-foot">
+            <span x-text="a.BaseTypeName"></span>
+            <span class="lvl" x-show="a.RequiredLevel" x-text="'Required level ' + a.RequiredLevel"></span>
+          </footer>
+        </article>
+      </template>
+    </div>
+    <p class="empty" x-show="!uxList.length">No accessory matches these filters.</p>
   </section>
 
   <!-- ================= Uber Bosses ================= -->

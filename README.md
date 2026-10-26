@@ -1,6 +1,6 @@
 # PD2 Sheet
 
-Kleines Nachschlagewerk für Project Diablo 2: Runewords, Crafting, Cube Recipes, Corruptions, Unique Weapons und Uber Bosses.
+Kleines Nachschlagewerk für Project Diablo 2: Runewords, Crafting, Cube Recipes, Corruptions, Unique Weapons, Unique Armor, Unique Accessories und Uber Bosses.
 
 ## Struktur
 
